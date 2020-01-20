@@ -2,6 +2,8 @@
 
 ## Project setup
 ```
+git clone https://github.com/viewprogis/html_templates html_templates
+cd html_templates
 npm install
 ```
 
