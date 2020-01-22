@@ -17,21 +17,17 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#316aff",
-        secondary: "#141416",
-        tertiary: "#f8f8f8",
-        green: "#6ac75a",
-        lightgray: "#f6f6f6",
-        default: "#262626",
-        "design-orange": "#ff6641"
+        primary: "#9DC653",
+        secondary: "#FECC4E",
+        tertiary: "#519CBA",
+        lightgray: "#F0F2F4"
       },
       letterSpacing: {
         wider: "3px",
         widest: "6px"
       },
       fontFamily: {
-        geomanist: "geomanist",
-        "geomanist-book": "geomanistbook"
+        'open-sans': "'Open Sans', sans-serif"
       },
       fontSize: {
         "2xs": "0.65rem",

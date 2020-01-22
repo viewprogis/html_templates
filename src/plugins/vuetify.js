@@ -13,10 +13,10 @@ const opts = {
     },
     themes: {
       light: {
-        primary: "#b00835",
-        secondary: "#ec6607",
-        tertiary: "#fbf5f6",
-        lightgray: "#f6f6f6"
+        primary: "#9DC653",
+        secondary: "#FECC4E",
+        tertiary: "#519CBA",
+        lightgray: "#F0F2F4"
       }
     }
   }
