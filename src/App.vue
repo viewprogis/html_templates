@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="tw-font-open-sans">
+  <div id="app" class="tw-font-open-sans tw-relative">
     <router-view />
   </div>
 </template>

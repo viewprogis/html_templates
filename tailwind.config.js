@@ -20,7 +20,9 @@ module.exports = {
         primary: "#9DC653",
         secondary: "#FECC4E",
         tertiary: "#519CBA",
-        lightgray: "#F0F2F4"
+        lightgray: "#F0F2F4",
+        red: "#D62828",
+        blue: "#5190F6"
       },
       letterSpacing: {
         wider: "3px",
@@ -50,6 +52,13 @@ module.exports = {
         "05": "0.05rem"
       },
       width: {
+        "72":"18rem",
+        "80":"20rem",
+        "88":"22rem",
+        "96":"24rem",
+        "104":"26rem",
+        "112":"28rem",
+        "120":"30rem",
         "full-05": "105%",
         "full-10": "110%",
         "full-15": "115%",
