@@ -1,27 +1,13 @@
 <template>
   <div
-    class="sidebar tw-relative tw-z-10 tw-bg-lightgray tw-w-120 tw-min-h-screen tw-inline-flex tw-flex-col"
+    class="sidebar tw-relative tw-z-10 tw-bg-lightgray tw-min-h-screen tw-inline-flex tw-flex-col"
   >
-    <div
-      class="tw-flex tw-items-center tw-bg-tertiary tw-px-3 tw-pr-10 tw-py-2 tw-text-white tw-relative"
-    >
-      <a href="/"><img class="tw-w-32" src="@/assets/img/logo.png"/></a>
-      <a href="/" class="flex-equal-col tw-text-center tw-text-xl tw-font-light"
-        >West Palm Beach</a
-      >
-      <a
-        href="/"
-        class="tw-text-xs tw-border-l tw-border-gray-200 tw-pl-3"
-        ><span class="tw-text-gray-400">Zoning Map Viewer</span></a
-      >
-
-      <a
-        href="javascript:void(0)"
-        id="toggle-sidebar"
-        class="tw-absolute tw-right-0 tw--mr-3 tw-flex tw-items-center tw-justify-center tw-w-8 tw-h-8 tw-border tw-border-lightgray tw-rounded-full tw-bg-tertiary"
-        ><i class="fas fa-chevron-left"></i
-      ></a>
-    </div>
+    <a
+      href="javascript:void(0)"
+      id="toggle-sidebar"
+      class="tw-absolute tw-right-0 tw-mt-3 tw--mr-3 tw-flex tw-items-center tw-justify-center tw-w-8 tw-h-8 tw-border tw-border-lightgray tw-rounded-full tw-bg-lightgray"
+      ><i class="fas fa-chevron-right"></i
+    ></a>
     <div class="tw-flex tw-flex-grow">
       <!-- Nav Items -->
       <div
@@ -31,29 +17,34 @@
         <router-link
           to="/"
           class="tw-block tw-text-center tw-uppercase tw-text-xs tw-mb-5"
+          ><img class="mx-auto tw-mb-3" src="@/assets/img/logo_icon.png"/></router-link
+        >
+        <router-link
+          to="/legend"
+          class="tw-block tw-text-center tw-uppercase tw-text-xs tw-mb-5"
           ><i class="fas fa-layer-group tw-text-2xl tw-mb-2"></i
           ><br />Legend</router-link
         >
         <router-link
-          to="/"
+          to="/draw"
           class="tw-block tw-text-center tw-uppercase tw-text-xs tw-mb-5"
           ><i class="fas fa-pencil-alt tw-text-2xl tw-mb-2"></i
           ><br />Draw</router-link
         >
         <router-link
-          to="/"
+          to="/measure"
           class="tw-block tw-text-center tw-uppercase tw-text-xs tw-mb-5"
           ><i class="fas fa-arrows-alt-h tw-text-2xl tw-mb-2"></i
           ><br />Measure</router-link
         >
         <router-link
-          to="/"
+          to="/address-mapping"
           class="tw-block tw-text-center tw-uppercase tw-text-xs tw-mb-5"
           ><i class="fas fa-cloud-upload-alt tw-text-2xl tw-mb-2"></i
           ><br />Address<br />Mapping</router-link
         >
         <router-link
-          to="/"
+          to="/print"
           class="tw-block tw-text-center tw-uppercase tw-text-xs tw-mb-5"
           ><i class="material-icons tw-text-2xl tw-mb-2">print</i
           ><br />Print</router-link
@@ -77,14 +68,11 @@
           ><br />Project<br />Info</router-link
         >
         <div class="tw-flex-grow"></div>
-        <router-link
+        <a href="javascript:void(0)"
           to="/"
           class="tw-block tw-text-center tw-uppercase tw-text-xs"
           ><i class="fas fa-cog tw-text-2xl tw-mb-2"></i
-        ></router-link>
-      </div>
-      <div class="tw-flex-grow tw-p-3">
-        <component :is="currentSidebar" />
+        ></a>
       </div>
     </div>
   </div>
@@ -92,13 +80,7 @@
 
 <script>
 export default {
-  name: "sidebar",
-  props: {
-    currentSidebar: {
-      type: [String, Object],
-      default: "div"
-    }
-  }
+  name: "sidebarclosed"
 };
 </script>
 <style scoped lang="scss"></style>
