@@ -29,7 +29,7 @@ module.exports = {
         widest: "6px"
       },
       fontFamily: {
-        'open-sans': "'Open Sans', sans-serif"
+        "open-sans": "'Open Sans', sans-serif"
       },
       fontSize: {
         "2xs": "0.65rem",
@@ -52,13 +52,13 @@ module.exports = {
         "05": "0.05rem"
       },
       width: {
-        "72":"18rem",
-        "80":"20rem",
-        "88":"22rem",
-        "96":"24rem",
-        "104":"26rem",
-        "112":"28rem",
-        "120":"30rem",
+        "72": "18rem",
+        "80": "20rem",
+        "88": "22rem",
+        "96": "24rem",
+        "104": "26rem",
+        "112": "28rem",
+        "120": "30rem",
         "full-05": "105%",
         "full-10": "110%",
         "full-15": "115%",

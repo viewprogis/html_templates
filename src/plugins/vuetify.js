@@ -1,7 +1,19 @@
 import Vue from "vue";
-import Vuetify from "vuetify/lib";
+import Vuetify, {
+  VApp, VSwitch
+} from "vuetify/lib";
+import { Ripple } from 'vuetify/lib/directives'
+//import 'vuetify/dist/vuetify.min.css';
 
-Vue.use(Vuetify);
+Vue.use(Vuetify, {
+  components: {
+    VApp,
+    VSwitch
+  },
+  directives: {
+    Ripple,
+  }
+});
 
 const opts = {
   icons: {
@@ -16,7 +28,10 @@ const opts = {
         primary: "#9DC653",
         secondary: "#FECC4E",
         tertiary: "#519CBA",
-        lightgray: "#F0F2F4"
+        lightgray: "#F0F2F4",
+        red: "#D62828",
+        blue: "#5190F6",
+        anchor: "inherit",
       }
     }
   }

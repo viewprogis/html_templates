@@ -8,6 +8,11 @@
     flex-grow: 1;
     flex-basis: 0;
 }
+#nav a:hover,
+.router-link-exact-active{
+    @apply tw-text-tertiary !important;
+}
+
 
 /*** Responsive Work Below ***/
 /*****************************/
