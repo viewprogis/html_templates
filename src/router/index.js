@@ -27,6 +27,24 @@ const routes = [
     name: "calendar",
     component: () =>
       import("../views/Calendar.vue")
+  },
+  {
+    path: "/buffer",
+    name: "buffer",
+    component: () =>
+      import("../views/Buffer.vue")
+  },
+  {
+    path: "/legend",
+    name: "legend",
+    component: () =>
+      import("../views/Legend.vue")
+  },
+  {
+    path: "/settings",
+    name: "settings",
+    component: () =>
+      import("../views/Settings.vue")
   }
 ];
 

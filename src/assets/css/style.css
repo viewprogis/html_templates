@@ -12,6 +12,39 @@
 .router-link-exact-active{
     @apply tw-text-tertiary !important;
 }
+.router-link-exact-active img.non-active{
+    display: none !important;
+}
+.router-link-exact-active img.active{
+    display: block !important;
+}
+
+/** Tree View **/
+.tree-view li{
+    position: relative;
+    margin-bottom: 5px;
+}
+.tree-view li.has-child:after{
+    content: "\f078";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.tree-view li.has-child.active:after{
+    content: "\f077";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+}
+.tree-view li > .v-input{
+    padding-right: 20px;
+    margin: 0;
+}
+.tree-view ul{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 
 
 /*** Responsive Work Below ***/

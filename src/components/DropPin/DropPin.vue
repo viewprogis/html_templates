@@ -5,10 +5,10 @@
 
     <!-- Drop Pin -->
     <div class="tw-flex tw-mt-6 tw-py-2 tw-px-3">
-      <div class="tw-flex-grow tw-flex tw-items-center">
-        <i class="fas fa-map-marker-alt tw-text-2xl tw-mr-2"></i> Drop Pin
+      <div class="tw-flex-grow tw-flex tw-items-center tw-font-semibold tw-text-lg">
+        <img class="tw-mr-2" src="@/assets/img/pin_drop.svg"/> Drop Pin
       </div>
-      <i class="fas fa-info-circle tw-text-2xl tw-flex-none"></i>
+      <img class="tw-flex-none" src="@/assets/img/project_info.svg"/>
     </div>
 
     <!-- Participate Closed -->
@@ -91,7 +91,7 @@
           <div class="tw-flex-grow">
             <v-switch color="tertiary" inset>
               <template v-slot:label>
-                <div class="tw-flex tw-flex-col">
+                <div class="tw-flex tw-flex-col tw-text-black">
                   <b class="tw-text-base">Traffic Issues</b>
                   86 active pins
                 </div>
@@ -99,7 +99,7 @@
             </v-switch>
           </div>
           <i
-            class="fas fa-map-marker-alt tw-text-tertiary tw-text-xl tw-ml-2"
+            class="fas fa-map-marker-alt tw-text-tertiary tw-text-3xl tw-ml-2"
           ></i>
         </div>
 
@@ -113,7 +113,7 @@
           <div class="tw-flex-grow">
             <v-switch color="secondary" inset>
               <template v-slot:label>
-                <div class="tw-flex tw-flex-col">
+                <div class="tw-flex tw-flex-col tw-text-black">
                   <b class="tw-text-base">Traffic Issues</b>
                   86 active pins
                 </div>
@@ -121,7 +121,7 @@
             </v-switch>
           </div>
           <i
-            class="fas fa-map-marker-alt tw-text-secondary tw-text-xl tw-ml-2"
+            class="fas fa-map-marker-alt tw-text-secondary tw-text-3xl tw-ml-2"
           ></i>
         </div>
 
@@ -130,19 +130,19 @@
           class="tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-rounded tw-overflow-hidden tw-py-3 tw-px-4 tw-text-sm tw-border-l-4 tw-border-solid tw-border-red"
         >
           <div
-            class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-red tw-opacity-25"
+            class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-redcustom tw-opacity-25"
           ></div>
           <div class="tw-flex-grow">
             <v-switch color="red" inset>
               <template v-slot:label>
-                <div class="tw-flex tw-flex-col">
+                <div class="tw-flex tw-flex-col tw-text-black">
                   <b class="tw-text-base">Traffic Issues</b>
                   86 active pins
                 </div>
               </template>
             </v-switch>
           </div>
-          <i class="fas fa-map-marker-alt tw-text-red tw-text-xl tw-ml-2"></i>
+          <i class="fas fa-map-marker-alt tw-text-redcustom tw-text-3xl tw-ml-2"></i>
         </div>
 
         <!-- Primary Pin -->
@@ -155,14 +155,14 @@
           <div class="tw-flex-grow">
             <v-switch color="primary" inset>
               <template v-slot:label>
-                <div class="tw-flex tw-flex-col">
+                <div class="tw-flex tw-flex-col tw-text-black">
                   <b class="tw-text-base">Traffic Issues</b>
                   86 active pins
                 </div>
               </template>
             </v-switch>
           </div>
-          <i class="fas fa-map-marker-alt tw-text-primary tw-text-xl tw-ml-2"></i>
+          <i class="fas fa-map-marker-alt tw-text-primary tw-text-3xl tw-ml-2"></i>
         </div>
 
         <!-- Blue Pin -->
@@ -170,19 +170,19 @@
           class="tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-rounded tw-overflow-hidden tw-py-3 tw-px-4 tw-text-sm tw-border-l-4 tw-border-solid tw-border-blue"
         >
           <div
-            class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-blue tw-opacity-25"
+            class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-bluecustom tw-opacity-25"
           ></div>
           <div class="tw-flex-grow">
             <v-switch color="blue" inset>
               <template v-slot:label>
-                <div class="tw-flex tw-flex-col">
+                <div class="tw-flex tw-flex-col tw-text-black">
                   <b class="tw-text-base">Traffic Issues</b>
                   86 active pins
                 </div>
               </template>
             </v-switch>
           </div>
-          <i class="fas fa-map-marker-alt tw-text-blue tw-text-xl tw-ml-2"></i>
+          <i class="fas fa-map-marker-alt tw-text-bluecustom tw-text-3xl tw-ml-2"></i>
         </div>
 
         <button
@@ -199,7 +199,7 @@
 import SearchBox from "@/components/SearchBox.vue";
 
 export default {
-  name: "droppin1",
+  name: "droppin",
   components: {
     SearchBox
   }

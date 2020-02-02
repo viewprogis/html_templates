@@ -1,5 +1,5 @@
 <template>
-  <div class="drop-pin">
+  <div class="calendar-view">
     <Sidebar :currentSidebar="DynamicComponent" />
     <PalmBeach />
   </div>

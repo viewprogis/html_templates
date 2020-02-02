@@ -1,5 +1,5 @@
 <template>
-  <div class="drop-pin">
+  <div class="home-view">
     <SidebarClosed />
     <PalmBeach />
   </div>

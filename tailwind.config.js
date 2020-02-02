@@ -21,8 +21,10 @@ module.exports = {
         secondary: "#FECC4E",
         tertiary: "#519CBA",
         lightgray: "#F0F2F4",
-        red: "#D62828",
-        blue: "#5190F6"
+        redcustom: "#D62828",
+        bluecustom: "#5190F6",
+        greencustom: "#4BE600",
+        bp: "#0070FF"
       },
       letterSpacing: {
         wider: "3px",

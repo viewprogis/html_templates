@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Vuetify, {
-  VApp, VSwitch
+  VApp, VSwitch, VSlider, VRadio, VRadioGroup
 } from "vuetify/lib";
 import { Ripple } from 'vuetify/lib/directives'
 //import 'vuetify/dist/vuetify.min.css';
@@ -8,7 +8,10 @@ import { Ripple } from 'vuetify/lib/directives'
 Vue.use(Vuetify, {
   components: {
     VApp,
-    VSwitch
+    VSwitch,
+    VSlider,
+    VRadio,
+    VRadioGroup
   },
   directives: {
     Ripple,
@@ -31,6 +34,7 @@ const opts = {
         lightgray: "#F0F2F4",
         red: "#D62828",
         blue: "#5190F6",
+        green: "#4BE600",
         anchor: "inherit",
       }
     }

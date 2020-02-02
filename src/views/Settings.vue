@@ -1,5 +1,5 @@
 <template>
-  <div class="drop-pin-view">
+  <div class="settings-view">
     <Sidebar :currentSidebar="DynamicComponent" />
     <PalmBeach />
   </div>
@@ -8,17 +8,17 @@
 <script>
 import Sidebar from "@/components/Sidebar.vue";
 import PalmBeach from "@/components/Map/PalmBeach.vue";
-import DropPin from "@/components/DropPin/DropPin.vue";
+import Settings from "@/components/Settings/Settings.vue";
 
 export default {
-  name: "droppin",
+  name: "settings",
   components: {
     Sidebar,
     PalmBeach
   },
   data() {
     return {
-      DynamicComponent: DropPin
+      DynamicComponent: Settings
     };
   }
 };
