@@ -83,7 +83,7 @@
         </table>
 
         <button
-          class="tw-mt-4 tw-rounded-br-15 tw-bg-tertiary hover:tw-bg-black tw-text-white tw-py-2 tw-px-4 tw-text-sm tw-w-full"
+          class="btn-primary tw-mt-4 tw-rounded-br-15 tw-py-2 tw-px-4 tw-text-sm tw-w-full"
         >
           Export
         </button>

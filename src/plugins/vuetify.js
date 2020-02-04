@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Vuetify, {
-  VApp, VSwitch, VSlider, VRadio, VRadioGroup
+  VApp, VSwitch, VSlider, VRadio, VRadioGroup, VBtn, VDialog, VDialogTransition
 } from "vuetify/lib";
 import { Ripple } from 'vuetify/lib/directives'
 //import 'vuetify/dist/vuetify.min.css';
@@ -11,7 +11,10 @@ Vue.use(Vuetify, {
     VSwitch,
     VSlider,
     VRadio,
-    VRadioGroup
+    VRadioGroup,
+    VBtn,
+    VDialog,
+    VDialogTransition
   },
   directives: {
     Ripple,

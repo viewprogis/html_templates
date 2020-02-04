@@ -186,7 +186,7 @@
         </div>
 
         <button
-          class="tw-mt-2 tw-rounded-br-15 tw-bg-tertiary tw-text-white tw-py-2 tw-px-4 tw-text-sm tw-w-full tw-opacity-25 tw-cursor-not-allowed"
+          class="btn-primary tw-mt-2 tw-rounded-br-15 tw-py-2 tw-px-4 tw-text-sm tw-w-full tw-opacity-25 tw-cursor-not-allowed"
         >
           Reset map
         </button>

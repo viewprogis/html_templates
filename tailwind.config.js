@@ -21,6 +21,7 @@ module.exports = {
         secondary: "#FECC4E",
         tertiary: "#519CBA",
         lightgray: "#F0F2F4",
+        lightbluealpha: "rgba(81, 156, 186, 0.2)",
         redcustom: "#D62828",
         bluecustom: "#5190F6",
         greencustom: "#4BE600",

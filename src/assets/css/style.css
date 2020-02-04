@@ -18,6 +18,13 @@
 .router-link-exact-active img.active{
     display: block !important;
 }
+.btn-primary{
+    @apply tw-bg-tertiary tw-text-white;
+}
+.btn-primary:not(.tw-cursor-not-allowed):hover,
+.btn-primary:not(.tw-cursor-not-allowed):visited{
+    @apply tw-bg-black;
+}
 
 /** Tree View **/
 .tree-view li{

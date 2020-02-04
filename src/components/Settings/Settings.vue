@@ -8,7 +8,10 @@
       <div class="tw-flex-grow tw-flex tw-items-center tw-font-semibold tw-text-lg">
         <i class="fas fa-question tw-mr-2"></i> Settings
       </div>
-      <img class="tw-flex-none" src="@/assets/img/project_info.svg"/>
+      <button type="button" @click.stop="dialog = true"><img class="tw-flex-none" src="@/assets/img/project_info.svg"/></button>
+
+      <!-- Help Dialog -->
+      <help-dialog :dialog="dialog" @ChangeDialog="updateDialog"></help-dialog>
     </div>
 
     <!-- Settings -->
@@ -28,12 +31,12 @@
         <div class="tw-font-semibold tw-pt-2 tw-pb-1">Color Mode</div>
         <div class="tw-inline-flex tw-whitespace-no-wrap">
         <button
-          class="tw-rounded-br-15 tw-bg-tertiary tw-text-white tw-m-2 tw-py-1 tw-px-4 tw-text-sm tw-w-full tw-opacity-25"
+          class="btn-primary tw-rounded-br-15 tw-m-2 tw-py-1 tw-px-4 tw-text-sm tw-w-full tw-opacity-25"
         >
           Light Theme
         </button>
         <button
-          class="tw-rounded-br-15 tw-bg-tertiary tw-text-white tw-m-2 tw-py-1 tw-px-4 tw-text-sm tw-w-full"
+          class="btn-primary tw-rounded-br-15 tw-m-2 tw-py-1 tw-px-4 tw-text-sm tw-w-full"
         >
           Dark Theme
         </button>
@@ -54,7 +57,6 @@
     <!-- Activate Private Layers -->
     <private-layers-panel />
     
-    
   </div>
 </template>
 
@@ -62,11 +64,22 @@
 import SearchBox from "@/components/SearchBox.vue";
 import LoginPanel from "@/components/Settings/LoginPanel.vue";
 import PrivateLayersPanel from "@/components/Settings/PrivateLayersPanel.vue";
+import HelpDialog from "@/components/Settings/HelpDialog.vue";
 
 export default {
   name: "settings",
   components: {
-    SearchBox, LoginPanel, PrivateLayersPanel
+    SearchBox, LoginPanel, PrivateLayersPanel, HelpDialog
+  },
+  data(){
+    return{
+      dialog: false
+    }
+  },
+  methods: {
+    updateDialog(value) {
+        this.dialog = value
+    }
   }
 };
 </script>
