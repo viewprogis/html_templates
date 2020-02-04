@@ -42,13 +42,7 @@
 
         <!-- Selection -->
         <div class="tw-font-semibold tw-pt-2 tw-pb-1">Selection</div>
-        <ul class="tw-list-none tw-flex tw-flex-wrap" style="padding: 0;">
-          <li class="tw-p-1"><a class="tw-flex tw-rounded tw-p-2 tw-border hover:tw-border-tertiary tw-w-10 tw-h-10" href="javascript:void(0)"><img class="tw-mx-auto" src="@/assets/img/pin_icon.svg" /></a></li>
-          <li class="tw-p-1"><a class="tw-flex tw-rounded tw-p-2 tw-border hover:tw-border-tertiary tw-w-10 tw-h-10" href="javascript:void(0)"><img class="tw-mx-auto" src="@/assets/img/selection_line.svg" /></a></li>
-          <li class="tw-p-1"><a class="tw-flex tw-rounded tw-p-2 tw-border hover:tw-border-tertiary tw-w-10 tw-h-10" href="javascript:void(0)"><img class="tw-mx-auto" src="@/assets/img/selection_polygon.png" /></a></li>
-          <li class="tw-p-1"><a class="tw-flex tw-rounded tw-p-2 tw-border hover:tw-border-tertiary tw-w-10 tw-h-10" href="javascript:void(0)"><img class="tw-mx-auto" src="@/assets/img/selection_layer.svg" /></a></li>
-          <li class="tw-p-1"><a class="tw-flex tw-rounded tw-p-2 tw-border hover:tw-border-tertiary tw-w-10 tw-h-10" href="javascript:void(0)"><img class="tw-mx-auto" src="@/assets/img/trash_icon.svg" /></a></li>
-        </ul>
+        <drawing-tools />
 
         <!-- Radius -->
         <div class="tw-font-semibold tw-pt-2 tw-pb-1">Radius</div>
@@ -106,11 +100,12 @@
 <script>
 import SearchBox from "@/components/SearchBox.vue";
 import LegendPanel from "@/components/Legend/LegendPanel.vue";
+import DrawingTools from "@/components/Draw/DrawingTools.vue";
 
 export default {
   name: "buffer",
   components: {
-    SearchBox, LegendPanel
+    SearchBox, LegendPanel, DrawingTools
   },
   data(){
     return{

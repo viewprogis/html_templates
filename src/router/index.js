@@ -45,6 +45,12 @@ const routes = [
     name: "settings",
     component: () =>
       import("../views/Settings.vue")
+  },
+  {
+    path: "/draw",
+    name: "draw",
+    component: () =>
+      import("../views/Draw.vue")
   }
 ];
 
