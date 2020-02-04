@@ -26,7 +26,6 @@
       <div class="tw-mt-4">
 
         <!-- Selection -->
-        <div class="tw-font-semibold tw-pt-2 tw-pb-1">Selection</div>
         <drawing-tools />
 
       </div>

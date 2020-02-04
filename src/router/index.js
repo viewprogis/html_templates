@@ -51,6 +51,12 @@ const routes = [
     name: "draw",
     component: () =>
       import("../views/Draw.vue")
+  },
+  {
+    path: "/measure",
+    name: "measure",
+    component: () =>
+      import("../views/Measure.vue")
   }
 ];
 
