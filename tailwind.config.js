@@ -21,10 +21,15 @@ module.exports = {
         secondary: "#FECC4E",
         tertiary: "#519CBA",
         lightgray: "#F0F2F4",
-        lightbluealpha: "rgba(81, 156, 186, 0.2)",
         redcustom: "#D62828",
         bluecustom: "#5190F6",
         greencustom: "#4BE600",
+        graycustom: "#cccccc",
+        lightbluealpha: "rgba(81, 156, 186, 0.2)",
+        lightyellowalpha: "rgba(254, 204, 78, 0.2)",
+        lightredalpha: "rgba(214, 40, 40, 0.2)",
+        lightgreenalpha: "rgba(157, 198, 83, 0.2)",
+        darkbluealpha: "rgba(81, 144, 246, 0.2)",
         bp: "#0070FF"
       },
       letterSpacing: {

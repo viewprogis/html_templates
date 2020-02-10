@@ -25,6 +25,21 @@
 .btn-primary:not(.tw-cursor-not-allowed):visited{
     @apply tw-bg-black;
 }
+.comments-down-arrow{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top-width: 10px;
+}
 
 /** Tree View **/
 .tree-view li{
@@ -51,6 +66,22 @@
 .tree-view ul{
     margin-top: 15px;
     margin-bottom: 15px;
+}
+.tree-view .v-input .v-label{
+    color: #000;
+}
+
+
+/*** Override Styles ***/
+.v-input--switch--inset .v-input--switch__track {
+    opacity: 1 !important;
+}
+.v-input--switch--inset .v-input--switch__thumb {
+    border: 2px solid #fff !important;
+    top: calc(50% - 12px) !important;
+    height: 24px !important;
+    width: 24px !important;
+    right: 2px !important;
 }
 
 

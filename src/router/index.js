@@ -17,6 +17,18 @@ const routes = [
       import("../views/DropPin.vue")
   },
   {
+    path: "/drop-pin/add",
+    name: "adddroppin",
+    component: () =>
+      import("../views/AddDropPin.vue")
+  },
+  {
+    path: "/drop-pin/comments",
+    name: "adddroppin",
+    component: () =>
+      import("../views/ViewAllComments.vue")
+  },
+  {
     path: "/project-info",
     name: "projectinfo",
     component: () =>
@@ -57,6 +69,18 @@ const routes = [
     name: "measure",
     component: () =>
       import("../views/Measure.vue")
+  },
+  {
+    path: "/address-mapping",
+    name: "addressmapping",
+    component: () =>
+      import("../views/AddressMapping.vue")
+  },
+  {
+    path: "/search",
+    name: "search",
+    component: () =>
+      import("../views/Search.vue")
   }
 ];
 

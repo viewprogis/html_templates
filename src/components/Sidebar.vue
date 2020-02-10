@@ -30,60 +30,60 @@
       >
         <router-link
           to="/legend"
-          class="tw-block tw-text-center tw-uppercase tw-text-xs tw-mb-5"
+          class="tw-block tw-text-center tw-uppercase tw-text-xs tw-mt-2 tw-h-20"
           ><i class="fas fa-layer-group tw-text-2xl tw-mb-2"></i
           ><br />Legend</router-link
         >
         <router-link
           to="/draw"
-          class="tw-block tw-text-center tw-uppercase tw-text-xs tw-mb-5"
+          class="tw-block tw-text-center tw-uppercase tw-text-xs tw-h-20"
           ><i class="fas fa-pencil-alt tw-text-2xl tw-mb-2"></i
           ><br />Draw</router-link
         >
         <router-link
           to="/measure"
-          class="tw-block tw-text-center tw-uppercase tw-text-xs tw-mb-5"
+          class="tw-block tw-text-center tw-uppercase tw-text-xs tw-h-20"
           ><i class="fas fa-arrows-alt-h tw-text-2xl tw-mb-2"></i
           ><br />Measure</router-link
         >
         <router-link
           to="/buffer"
-          class="tw-group tw-block tw-text-center tw-uppercase tw-text-xs tw-mb-5"
+          class="tw-group tw-block tw-text-center tw-uppercase tw-text-xs tw-h-20"
           >
           <img class="non-active mx-auto tw-mb-3 group-hover:tw-hidden" src="@/assets/img/buffer_spinner.svg"/>
           <img class="active mx-auto tw-mb-3 tw-hidden group-hover:tw-block" src="@/assets/img/buffer_spinner_active.svg"/>Buffer</router-link
         >
         <router-link
           to="/address-mapping"
-          class="tw-block tw-text-center tw-uppercase tw-text-xs tw-mb-5"
+          class="tw-block tw-text-center tw-uppercase tw-text-xs tw-h-20"
           ><i class="fas fa-cloud-upload-alt tw-text-2xl tw-mb-2"></i
           ><br />Address<br />Mapping</router-link
         >
         <router-link
           to="/print"
-          class="tw-block tw-text-center tw-uppercase tw-text-xs tw-mb-5"
+          class="tw-block tw-text-center tw-uppercase tw-text-xs tw-h-20"
           ><i class="material-icons tw-text-2xl tw-mb-2">print</i
           ><br />Print</router-link
         >
         <router-link
           to="/calendar"
-          class="tw-block tw-text-center tw-uppercase tw-text-xs tw-mb-5"
+          class="tw-block tw-text-center tw-uppercase tw-text-xs tw-h-20"
           ><i class="far fa-calendar tw-text-2xl tw-mb-2"></i
           ><br />Calendar</router-link
         >
         <router-link
           to="/drop-pin"
-          class="tw-group tw-block tw-text-center tw-uppercase tw-text-xs tw-mb-5"
+          class="tw-group tw-block tw-text-center tw-uppercase tw-text-xs tw-h-20"
           >
-          <img class="non-active mx-auto tw-mb-3 group-hover:tw-hidden" src="@/assets/img/pin_drop.svg"/>
-          <img class="active mx-auto tw-mb-3 tw-hidden group-hover:tw-block" src="@/assets/img/pin_drop_active.svg"/>Drop<br />Pin</router-link
+          <img class="non-active mx-auto tw-mb-1 group-hover:tw-hidden" src="@/assets/img/pin_drop.svg"/>
+          <img class="active mx-auto tw-mb-1 tw-hidden group-hover:tw-block" src="@/assets/img/pin_drop_active.svg"/>Drop<br />Pin</router-link
         >
         <router-link
           to="/project-info"
-          class="tw-group tw-block tw-text-center tw-uppercase tw-text-xs tw-mb-5"
+          class="tw-group tw-block tw-text-center tw-uppercase tw-text-xs tw-h-20"
           >
-          <img class="non-active mx-auto tw-mb-3 group-hover:tw-hidden" src="@/assets/img/project_info.svg"/>
-          <img class="active mx-auto tw-mb-3 tw-hidden group-hover:tw-block" src="@/assets/img/project_info_active.svg"/>Project<br />Info</router-link
+          <img class="non-active mx-auto tw-mb-1 group-hover:tw-hidden" src="@/assets/img/project_info.svg"/>
+          <img class="active mx-auto tw-mb-1 tw-hidden group-hover:tw-block" src="@/assets/img/project_info_active.svg"/>Project<br />Info</router-link
         >
         <div class="tw-flex-grow"></div>
         <router-link

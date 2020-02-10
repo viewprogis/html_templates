@@ -40,7 +40,7 @@
         </p>
 
         <a
-          href="javascript:void(0)"
+          href="/drop-pin/comments"
           class="tw-flex tw-items-center tw-relative tw-z-10 tw-mt-4 tw-rounded tw-overflow-hidden tw-py-2 tw-px-4 tw-text-sm"
         >
           <div
@@ -127,7 +127,7 @@
 
         <!-- Red Pin -->
         <div
-          class="tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-rounded tw-overflow-hidden tw-py-3 tw-px-4 tw-text-sm tw-border-l-4 tw-border-solid tw-border-red"
+          class="tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-rounded tw-overflow-hidden tw-py-3 tw-px-4 tw-text-sm tw-border-l-4 tw-border-solid tw-border-redcustom"
         >
           <div
             class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-redcustom tw-opacity-25"
@@ -167,7 +167,7 @@
 
         <!-- Blue Pin -->
         <div
-          class="tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-rounded tw-overflow-hidden tw-py-3 tw-px-4 tw-text-sm tw-border-l-4 tw-border-solid tw-border-blue"
+          class="tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-rounded tw-overflow-hidden tw-py-3 tw-px-4 tw-text-sm tw-border-l-4 tw-border-solid tw-border-bluecustom"
         >
           <div
             class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-bluecustom tw-opacity-25"
