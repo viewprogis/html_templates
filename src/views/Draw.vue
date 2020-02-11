@@ -1,5 +1,5 @@
 <template>
-  <div class="draw-view">
+  <div class="draw-view dark-mode">
     <Sidebar :currentSidebar="DynamicComponent" />
     <PalmBeach />
   </div>

@@ -4,11 +4,11 @@
     <search-box></search-box>
 
     <!-- Settings -->
-    <div class="tw-flex tw-mt-6 tw-py-2 tw-px-3">
+    <div class="tw-flex tw-items-center tw-mt-6 tw-py-2 tw-px-3">
       <div class="tw-flex-grow tw-flex tw-items-center tw-font-semibold tw-text-lg">
         <i class="fas fa-question tw-mr-2"></i> Settings
       </div>
-      <button type="button" @click.stop="dialog = true"><img class="tw-flex-none" src="@/assets/img/project_info.svg"/></button>
+      <button type="button" @click.stop="dialog = true"><i class="fas fa-info-circle tw-text-2xl tw-flex-none"></i></button>
 
       <!-- Help Dialog -->
       <help-dialog :dialog="dialog" @ChangeDialog="updateDialog"></help-dialog>

@@ -5,12 +5,57 @@
       class="tw-w-full tw-h-full"
     ></iframe>
     <a class="tw-absolute tw-z-10 tw-top-0 tw-right-0 tw-mt-20 tw-mr-20 tw-rounded tw-border-2 tw-border-solid tw-border-black tw-bg-white tw-text-black hover:tw-bg-black hover:tw-text-white tw-py-1 tw-px-4" href="/drop-pin/add">CLICK TO ADD A PIN</a>
+    
+    <button 
+    type="button" 
+    @click.stop="dialog = true"
+    class="tw-absolute tw-z-10 tw-top-0 tw-right-0 tw-mt-32 tw-mr-20 tw-rounded tw-border-2 tw-border-solid tw-border-black tw-bg-white tw-text-black hover:tw-bg-black hover:tw-text-white tw-py-1 tw-px-4"
+    >
+    Help Video
+    </button>
+
+    <!-- Help Video Dialog -->
+    <help-video-dialog :dialog="dialog" @ChangeDialog="updateDialog"></help-video-dialog>
+
+    <button 
+    type="button" 
+    @click.stop="dialog2 = true"
+    class="tw-absolute tw-z-10 tw-top-0 tw-right-0 tw-mt-32 tw-mr-56 tw-rounded tw-border-2 tw-border-solid tw-border-black tw-bg-white tw-text-black hover:tw-bg-black hover:tw-text-white tw-py-1 tw-px-4"
+    >
+    Disclaimer
+    </button>
+
+    <!-- Disclaimer Dialog -->
+    <disclaimer-dialog :dialog="dialog2" @ChangeDialog="updateDialog2"></disclaimer-dialog>
+
+    <!-- Base Map -->
+    <a class="tw-absolute tw-z-10 tw-top-0 tw-right-0 tw-mt-56 tw-mr-20 tw-rounded tw-border-2 tw-border-solid tw-border-black tw-bg-white tw-text-black hover:tw-bg-black hover:tw-text-white tw-py-1 tw-px-4" href="/base-map">Base Map</a>
+
   </div>
 </template>
-
 <script>
+import HelpVideoDialog from "@/components/Settings/HelpVideoDialog.vue";
+import DisclaimerDialog from "@/components/Settings/DisclaimerDialog.vue";
+
 export default {
-  name: "palmbeach"
+  name: "palmbeach",
+  components: {
+    HelpVideoDialog, DisclaimerDialog
+  },
+  data(){
+    return{
+      dialog: false,
+      dialog2: false
+    }
+  },
+  methods: {
+    updateDialog(value) {
+        this.dialog = value
+    },
+    updateDialog2(value) {
+        this.dialog2 = value
+    }
+  }
 };
 </script>
 <style scoped lang="scss"></style>

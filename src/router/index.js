@@ -81,6 +81,12 @@ const routes = [
     name: "search",
     component: () =>
       import("../views/Search.vue")
+  },
+  {
+    path: "/base-map",
+    name: "basemap",
+    component: () =>
+      import("../views/BaseMap.vue")
   }
 ];
 

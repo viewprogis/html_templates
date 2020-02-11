@@ -14,7 +14,7 @@
 
       <div class="tw-mt-4">
         
-        <ul class="tree-view" style="padding-left: 0;">
+        <ul class="tree-view tw-text-black" style="padding-left: 0;">
           <li>
             <v-switch color="black" inset hide-details label="City Limits" />
           </li>

@@ -4,11 +4,11 @@
     <search-box></search-box>
 
     <!-- Calendar -->
-    <div class="tw-flex tw-mt-6 tw-py-2 tw-px-3">
+    <div class="tw-flex tw-items-center tw-mt-6 tw-py-2 tw-px-3">
       <div class="tw-flex-grow tw-flex tw-items-center tw-font-semibold tw-text-lg">
         <i class="far fa-calendar tw-text-2xl tw-mr-2"></i> Calendar
       </div>
-      <img class="tw-flex-none" src="@/assets/img/project_info.svg"/>
+      <i class="fas fa-info-circle tw-text-2xl tw-flex-none"></i>
     </div>
 
     <!-- Upcoming Events -->

@@ -10,11 +10,11 @@
     </div>
 
     <!-- Add Drop Pin -->
-    <div class="tw-flex tw-mt-6 tw-py-2">
+    <div class="tw-flex tw-items-center tw-mt-6 tw-py-2">
       <div class="tw-flex-grow tw-flex tw-items-center tw-font-semibold tw-text-lg">
         Add Pin details
       </div>
-      <img class="tw-flex-none" src="@/assets/img/project_info.svg"/>
+      <i class="fas fa-info-circle tw-text-2xl tw-flex-none"></i>
     </div>
 
     <!-- Form -->

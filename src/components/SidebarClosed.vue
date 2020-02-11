@@ -12,12 +12,12 @@
       <!-- Nav Items -->
       <div
         id="nav"
-        class="tw-flex tw-flex-col tw-flex-none tw-p-3 tw-text-black tw-border-r tw-border-gray-300"
+        class="tw-flex tw-flex-col tw-flex-none tw-p-3 tw-border-r tw-border-gray-300"
       >
         <router-link
           to="/legend"
           class="tw-block tw-text-center tw-uppercase tw-text-xs tw-mt-2 tw-h-20"
-          ><i class="fas fa-layer-group tw-text-2xl tw-mb-2"></i
+          ><i class="fab fa-buffer tw-text-2xl tw-mb-2"></i
           ><br />Legend</router-link
         >
         <router-link
@@ -36,8 +36,9 @@
           to="/buffer"
           class="tw-group tw-block tw-text-center tw-uppercase tw-text-xs tw-h-20"
           >
-          <img class="non-active mx-auto tw-mb-3 group-hover:tw-hidden" src="@/assets/img/buffer_spinner.svg"/>
-          <img class="active mx-auto tw-mb-3 tw-hidden group-hover:tw-block" src="@/assets/img/buffer_spinner_active.svg"/>Buffer</router-link
+          <i class="fas fa-circle-notch tw-text-2xl tw-mb-2"></i>
+          <!--<img class="non-active mx-auto tw-mb-3 group-hover:tw-hidden" src="@/assets/img/buffer_spinner.svg"/>
+          <img class="active mx-auto tw-mb-3 tw-hidden group-hover:tw-block" src="@/assets/img/buffer_spinner_active.svg"/>--><br/>Buffer</router-link
         >
         <router-link
           to="/address-mapping"
@@ -61,15 +62,17 @@
           to="/drop-pin"
           class="tw-group tw-block tw-text-center tw-uppercase tw-text-xs tw-h-20"
           >
-          <img class="non-active mx-auto tw-mb-1 group-hover:tw-hidden" src="@/assets/img/pin_drop.svg"/>
-          <img class="active mx-auto tw-mb-1 tw-hidden group-hover:tw-block" src="@/assets/img/pin_drop_active.svg"/>Drop<br />Pin</router-link
+          <i class="fas fa-map-marker-alt tw-text-2xl tw-mb-2"></i>
+          <!--<img class="non-active mx-auto tw-mb-1 group-hover:tw-hidden" src="@/assets/img/pin_drop.svg"/>
+          <img class="active mx-auto tw-mb-1 tw-hidden group-hover:tw-block" src="@/assets/img/pin_drop_active.svg"/>--><br/>Drop<br />Pin</router-link
         >
         <router-link
           to="/project-info"
           class="tw-group tw-block tw-text-center tw-uppercase tw-text-xs tw-h-20"
           >
-          <img class="non-active mx-auto tw-mb-1 group-hover:tw-hidden" src="@/assets/img/project_info.svg"/>
-          <img class="active mx-auto tw-mb-1 tw-hidden group-hover:tw-block" src="@/assets/img/project_info_active.svg"/>Project<br />Info</router-link
+          <i class="fas fa-info-circle tw-text-2xl tw-mb-2"></i>
+          <!--<img class="non-active mx-auto tw-mb-1 group-hover:tw-hidden" src="@/assets/img/project_info.svg"/>
+          <img class="active mx-auto tw-mb-1 tw-hidden group-hover:tw-block" src="@/assets/img/project_info_active.svg"/>--><br/>Project<br />Info</router-link
         >
         <div class="tw-flex-grow"></div>
         <router-link
@@ -78,6 +81,7 @@
           >
           <i class="fas fa-cog tw-text-2xl tw-mb-2"></i>
           </router-link>
+        
       </div>
     </div>
   </div>

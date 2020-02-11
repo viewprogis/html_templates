@@ -40,6 +40,12 @@
     border-right: 10px solid transparent;
     border-top-width: 10px;
 }
+.base-map-list a:hover{
+    @apply tw-text-tertiary !important;
+}
+.base-map-list a:hover img{
+    @apply tw-border-tertiary !important;
+}
 
 /** Tree View **/
 .tree-view li{
@@ -84,6 +90,13 @@
     right: 2px !important;
 }
 
+/** Dark Mode **/
+.dark-mode .sidebar{
+    @apply tw-bg-black tw-text-white !important;
+}
+.dark-mode #nav{
+    border-color: rgba(255,255,255,0.2);
+}
 
 /*** Responsive Work Below ***/
 /*****************************/
