@@ -12,7 +12,7 @@
       <a
         href="/"
         class="tw-text-xs tw-border-l tw-border-gray-200 tw-pl-3"
-        ><span class="tw-text-gray-400">Zoning Map Viewer</span></a
+        ><span class="tw-text-gray-400">Zoning Map Viewer 0.1</span></a
       >
 
       <a
