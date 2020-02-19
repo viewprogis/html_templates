@@ -1,32 +1,34 @@
 <template>
   <div
-    class="sidebar tw-relative tw-z-10 tw-bg-lightgray tw-w-120 tw-min-h-screen tw-inline-flex tw-flex-col"
+    class="sidebar tw-relative tw-z-10 tw-bg-lightgray tw-min-h-screen tw-inline-flex tw-flex-col"
+    id="sidebar"
   >
+    <a
+    href="javascript:void(0)"
+    id="toggle-sidebar"
+    class="toggle-sidebar"
+    ></a>
+
     <div
       class="tw-flex tw-items-center tw-bg-tertiary tw-px-3 tw-pr-10 tw-py-2 tw-text-white tw-relative"
+      id="logoComponentsDiv"
     >
-      <a href="/"><img class="tw-w-32" src="@/assets/img/logo.png"/></a>
-      <a href="/" class="flex-equal-col tw-text-center tw-text-xl tw-font-light"
+      <a href="/"><img class="tw-w-24" src="@/assets/img/logo.png"/></a>
+      <a href="/" class="flex-equal-col tw-text-center tw-text-lg"
         >West Palm Beach</a
       >
       <a
         href="/"
         class="tw-text-xs tw-border-l tw-border-gray-200 tw-pl-3"
-        ><span class="tw-text-gray-400">Zoning Map Viewer</span></a
+        id="zoning-map-viewer"
+        ><span class="tw-text-gray-500 hover:tw-text-gray-300">Zoning Map Viewer</span></a
       >
-
-      <a
-        href="javascript:void(0)"
-        id="toggle-sidebar"
-        class="tw-absolute tw-right-0 tw--mr-3 tw-flex tw-items-center tw-justify-center tw-w-8 tw-h-8 tw-border tw-border-lightgray tw-rounded-full tw-bg-tertiary"
-        ><i class="fas fa-chevron-left"></i
-      ></a>
     </div>
-    <div class="tw-flex tw-flex-grow">
+    <div class="tw-flex tw-flex-grow tw-overflow-hidden">
       <!-- Nav Items -->
       <div
         id="nav"
-        class="tw-flex tw-flex-col tw-flex-none tw-p-3 tw-border-r tw-border-gray-300"
+        class="tw-flex tw-flex-col tw-flex-none tw-py-3 tw-border-r tw-border-gray-300"
       >
         <router-link
           to="/legend"
@@ -97,7 +99,7 @@
           </router-link>
         
       </div>
-      <div class="tw-flex-grow tw-p-3">
+      <div class="tw-flex-grow tw-p-3" id="sidebarComponentsDiv">
         <component :is="currentSidebar" />
       </div>
     </div>

@@ -1,18 +1,18 @@
 <template>
   <div class="home-view">
-    <SidebarClosed />
+    <Sidebar />
     <PalmBeach />
   </div>
 </template>
 
 <script>
-import SidebarClosed from "@/components/SidebarClosed.vue";
+import Sidebar from "@/components/Sidebar.vue";
 import PalmBeach from "@/components/Map/PalmBeach.vue";
 
 export default {
   name: "home",
   components: {
-    SidebarClosed,
+    Sidebar,
     PalmBeach
   }
 };
