@@ -1,24 +1,16 @@
 <template>
-  <div class="tw-flex tw-flex-col tw-min-h-full">
+  <div class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full">
     
-    <!-- Breadcrumb -->
-    <div class="tw-flex tw-mt-4">
-      <a href="/drop-pin" class="tw-mr-1">
-        <span class="tw-text-tertiary"><i class="fas fa-long-arrow-alt-left"></i> Back</span>
-      </a>
-      / Drop Pin
-    </div>
-
     <!-- Add Drop Pin -->
-    <div class="tw-flex tw-items-center tw-mt-6 tw-py-2">
+    <div class="tw-flex tw-items-center tw-py-2 tw-px-3">
       <div class="tw-flex-grow tw-flex tw-items-center tw-font-semibold tw-text-lg">
         Add Pin details
       </div>
-      <i class="fas fa-info-circle tw-text-2xl tw-flex-none"></i>
+      <img class="tw-flex-none" src="@/assets/img/icon_info.svg"/>
     </div>
 
     <!-- Form -->
-    <div class="tw-bg-white tw-rounded tw-p-3 tw-mt-3">
+    <div class="tw-bg-white tw-rounded tw-p-3 tw-mt-2">
 
       <!-- Select Box -->
         <div class="tw-w-full tw-relative tw-z-10 tw-rounded tw-overflow-hidden tw-my-2">
@@ -31,8 +23,8 @@
             <option>Condition 2</option>
             <option>Condition 3</option>
           </select>
-          <div class="tw-pointer-events-none tw-absolute tw-inset-y-0 tw-right-0 tw-flex tw-items-center tw-px-2 tw-text-black">
-            <svg class="tw-fill-current tw-h-6 tw-w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+          <div class="tw-pointer-events-none tw-absolute tw-inset-y-0 tw-right-0 tw-flex tw-items-center tw-pr-3 tw-text-black">
+            <i class="fas fa-caret-down tw-fill-current"></i>
           </div>
         </div>
 

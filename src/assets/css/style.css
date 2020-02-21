@@ -9,15 +9,32 @@
     flex-basis: 0;
 }
 #nav a:hover,
-.router-link-exact-active{
+#nav a.router-link-exact-active{
     @apply tw-text-tertiary !important;
 }
-.router-link-exact-active img.non-active{
-    display: none !important;
+#nav a > img.active,
+#nav a > img.invert{
+    display: none;
 }
-.router-link-exact-active img.active{
-    display: block !important;
+#nav a:hover > img.active,
+#nav a.router-link-exact-active > img.active{
+    display: inline-block;
 }
+#nav a:hover > img:not(.active):not(.invert),
+#nav a.router-link-exact-active > img:not(.active):not(.invert){
+    display: none;
+}
+.dark-mode #nav a > img:not(.active):not(.invert){
+    display: none;
+}
+.dark-mode #nav a > img.invert{
+    display: inline-block;
+}
+.dark-mode #nav a:hover > img.invert,
+.dark-mode #nav a.router-link-exact-active > img.invert{
+    display: none;
+}
+
 .btn-primary{
     @apply tw-bg-tertiary tw-text-white;
 }
@@ -48,32 +65,38 @@
 }
 
 /** Tree View **/
-.tree-view li{
+ul.tree-view li{
     position: relative;
-    margin-bottom: 5px;
+    margin-top: 12px;
 }
-.tree-view li.has-child:after{
-    content: "\f078";
-    font-family: "Font Awesome 5 Pro";
-    font-weight: 900;
+ul.tree-view ul{
+    display: none;
+    padding-left: 48px;
+}
+ul.tree-view li.active > ul{
+    display: block;
+}
+ul.tree-view li.has-child > .toggle{
     position: absolute;
     top: 5px;
     right: 5px;
+    border: 0 !important;
+    box-shadow: none !important;
+    outline: none !important;
 }
-.tree-view li.has-child.active:after{
-    content: "\f077";
+ul.tree-view li.has-child > .toggle:after{
+    content: "\f0d8";
     font-family: "Font Awesome 5 Pro";
     font-weight: 900;
 }
-.tree-view li > .v-input{
+ul.tree-view li.has-child.active > .toggle:after{
+    content: "\f0d7";
+}
+ul.tree-view li > .v-input{
     padding-right: 20px;
     margin: 0;
 }
-.tree-view ul{
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-.tree-view .v-input .v-label{
+ul.tree-view .v-input .v-label{
     color: #000;
 }
 
@@ -84,10 +107,44 @@
 }
 .v-input--switch--inset .v-input--switch__thumb {
     border: 2px solid #fff !important;
-    top: calc(50% - 12px) !important;
+    /*top: calc(50% - 12px) !important;
     height: 24px !important;
     width: 24px !important;
-    right: 2px !important;
+    right: 2px !important;*/
+}
+.v-input--switch--inset .v-input--switch__track{
+    height: 100%;
+    top: 0;
+}
+.v-input--switch--inset .v-input--switch__track, .v-input--switch--inset .v-input--selection-controls__input{
+    width: 42px;
+    left: 0;
+}
+.v-input--switch.v-input--dense.v-input--switch--inset .v-input--switch__track{
+    width: 38px;
+}
+.v-application--is-ltr .v-input--switch--inset .v-input--selection-controls__ripple, .v-application--is-ltr .v-input--switch--inset .v-input--switch__thumb {
+    -webkit-transform: translate(3px, 0) !important;
+    transform: translate(3px, 0) !important;
+}
+.v-application--is-ltr .v-input--switch--inset.v-input--is-dirty .v-input--selection-controls__ripple, .v-application--is-ltr .v-input--switch--inset.v-input--is-dirty .v-input--switch__thumb {
+    -webkit-transform: translate(20px, 0) !important;
+    transform: translate(20px, 0) !important;
+}
+.v-input--selection-controls__ripple{
+    display: none !important;
+}
+
+
+.v-slider__thumb-container .v-slider__thumb:before {
+    -webkit-transform: scale(1) !important;
+    transform: scale(1) !important;
+}
+.v-slider--horizontal .v-slider__track-container{
+    -webkit-box-shadow: 0 0 0 2px #F0F2F4 !important;
+    -moz-box-shadow: 0 0 0 2px #F0F2F4 !important;
+    box-shadow: 0 0 0 2px #F0F2F4 !important;
+    border-radius: 20px;
 }
 
 /** Dark Mode **/
@@ -104,7 +161,7 @@
     @apply tw-w-20;
 }
 .sidebar-content{
-    height: 850px;
+    
 }
 #sidebar #nav{
     @apply tw-w-20;
@@ -113,7 +170,7 @@
     @apply tw-w-120;
 }
 #sidebar .toggle-sidebar{
-    @apply tw-absolute tw-z-10 tw-right-0 tw-mt-3 tw--mr-3 tw-flex tw-items-center tw-justify-center tw-w-8 tw-h-8 tw-border tw-border-lightgray tw-rounded-full tw-bg-tertiary tw-text-white;
+    @apply tw-absolute tw-z-10 tw-right-0 tw-mt-2 tw--mr-3 tw-flex tw-items-center tw-justify-center tw-w-8 tw-h-8 tw-border tw-border-lightgray tw-rounded-full tw-bg-tertiary tw-text-white;
 }
 #sidebar .toggle-sidebar:after{
     content: "\f053";
@@ -177,11 +234,51 @@
     height: 22px;
     line-height: 22px;
     text-align: center;
-    @apply tw-mr-4;
+    @apply tw-mr-2;
 }
-.panel.active > .panel-heading:before{
+.panel.active .panel-heading:before{
     content: "\f078";
     line-height: 25px;
+}
+.blue-arrow-right:after{
+    content: "\f054";
+    display: block;
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    font-size: 14px;
+    color: #fff;
+    @apply tw-bg-tertiary;
+    border-radius: 100%;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    text-indent: 1.5px;
+}
+
+/** Search home btn **/
+.search-home-btn{
+    background: rgba(0,0,0,0.08);
+}
+.dark-mode .search-home-btn{
+    background: rgba(255,255,255,0.8);
+}
+
+/** Radio Buttons **/
+.v-application .v-radio .v-icon{
+    font-weight: bold !important;
+}
+.v-application .yellow-radio .v-icon{
+    @apply tw-text-yellowcustom !important;
+}
+.v-application .green-radio .v-icon{
+    @apply tw-text-seagreencustom !important;
+}
+.v-application .pink-radio .v-icon{
+    @apply tw-text-pinkcustom !important;
+}
+.v-application .red-radio .v-icon{
+    @apply tw-text-redcustom !important;
 }
 
 /*** Responsive Work Below ***/

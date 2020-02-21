@@ -1,5 +1,5 @@
 <template>
-  <div class="tw-flex">
+  <div class="tw-flex tw-p-3">
     <div class="tw-flex tw-flex-grow tw-items-center tw-bg-white tw-rounded">
       <a href="/search"><img class="tw-flex-none tw-px-3" src="@/assets/img/icon_search.svg"/></a>
       <input
@@ -8,7 +8,7 @@
         placeholder="Search"
       />
     </div>
-    <button type="button" class="tw-items-center tw-rounded tw-ml-2 tw-px-3" style="background: rgba(0,0,0,0.08);">
+    <button type="button" class="search-home-btn tw-items-center tw-rounded tw-ml-2 tw-px-3">
       <img src="@/assets/img/icon_material_home.svg" />
     </button>
   </div>

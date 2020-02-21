@@ -1,19 +1,17 @@
 <template>
-  <div class="tw-flex tw-flex-col tw-min-h-full">
-    <!-- Search Box -->
-    <search-box></search-box>
+  <div class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full">
 
     <!-- Draw -->
-    <div class="tw-flex tw-items-center tw-mt-6 tw-py-2 tw-px-3">
+    <div class="tw-flex tw-items-center tw-py-2 tw-px-3">
       <div class="tw-flex-grow tw-flex tw-items-center tw-font-semibold tw-text-lg">
-        <i class="fas fa-pencil-alt tw-text-2xl tw-mr-2"></i
-          > Draw
+        <img class="tw-mr-2 tw-hidden" src="@/assets/img/icon_draw.svg"/>
+        <img class="tw-mr-2" src="@/assets/img/icon_draw_white.svg"/> Draw
       </div>
-      <i class="fas fa-info-circle tw-text-2xl tw-flex-none"></i>
+      <img class="tw-flex-none" src="@/assets/img/icon_info_white.svg"/>
     </div>
 
     <!-- Draw -->
-    <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-3">
+    <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-2">
       <a
         href="javascript:void(0)"
         class="tw-flex tw-items-center panel-heading"
@@ -30,20 +28,20 @@
     </div>
 
     <!-- Legend -->
+    <div class="tw-mt-2"></div>
     <legend-panel/>
     
   </div>
 </template>
 
 <script>
-import SearchBox from "@/components/SearchBox.vue";
 import LegendPanel from "@/components/Legend/LegendPanel.vue";
 import DrawingTools from "@/components/Draw/DrawingTools.vue";
 
 export default {
   name: "buffer",
   components: {
-    SearchBox, LegendPanel, DrawingTools
+    LegendPanel, DrawingTools
   },
   data(){
     return{

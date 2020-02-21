@@ -13,11 +13,11 @@
 
           <p>Running into technical issues? We can help. Fill out this form and we will contact you.</p>
 
-          <textarea class="tw-w-full tw-rounded-br-15 tw-bg-lightbluealpha tw-placeholder-gray-700 tw-outline-none tw-resize-none tw-py-2 tw-px-3" rows="10" placeholder="Write your message..."></textarea>
+          <textarea class="tw-w-full tw-rounded tw-bg-lightbluealpha tw-placeholder-gray-700 tw-outline-none tw-resize-none tw-py-2 tw-px-3" rows="10" placeholder="Write your message..."></textarea>
 
-          <input type="email" class="tw-mt-3 tw-w-full tw-rounded-br-15 tw-bg-lightbluealpha tw-placeholder-gray-700 tw-outline-none tw-resize-none tw-py-2 tw-px-3" placeholder="Email" />
+          <input type="email" class="tw-mt-3 tw-w-full tw-rounded tw-bg-lightbluealpha tw-placeholder-gray-700 tw-outline-none tw-resize-none tw-py-2 tw-px-3" placeholder="Email" />
           
-          <input type="text" class="tw-mt-2 tw-w-full tw-rounded-br-15 tw-bg-lightbluealpha tw-placeholder-gray-700 tw-outline-none tw-resize-none tw-py-2 tw-px-3" placeholder="Screen Name (optional)" />
+          <input type="text" class="tw-mt-2 tw-w-full tw-rounded tw-bg-lightbluealpha tw-placeholder-gray-700 tw-outline-none tw-resize-none tw-py-2 tw-px-3" placeholder="Screen Name (optional)" />
 
           <button
             class="btn-primary tw-mt-4 tw-rounded-br-15 tw-py-2 tw-px-4 tw-text-sm tw-w-full tw-max-w-3xs"

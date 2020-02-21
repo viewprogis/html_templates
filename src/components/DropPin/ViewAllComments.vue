@@ -1,20 +1,12 @@
 <template>
-  <div class="tw-flex tw-flex-col tw-min-h-full">
+  <div class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full">
     
-    <!-- Breadcrumb -->
-    <div class="tw-flex tw-mt-4">
-      <a href="/drop-pin" class="tw-mr-1">
-        <span class="tw-text-tertiary"><i class="fas fa-long-arrow-alt-left"></i> Back</span>
-      </a>
-      / Drop Pin
-    </div>
-
     <!-- Add Drop Pin -->
-    <div class="tw-flex tw-items-center tw-mt-6 tw-py-2">
+    <div class="tw-flex tw-items-center tw-py-2 tw-px-3">
       <div class="tw-flex-grow tw-flex tw-items-center tw-font-semibold tw-text-lg">
         All comments
       </div>
-      <i class="fas fa-info-circle tw-text-2xl tw-flex-none"></i>
+      <img class="tw-flex-none" src="@/assets/img/icon_info.svg"/>
     </div>
 
     <!-- All Comments -->
@@ -22,7 +14,7 @@
 
       <!-- Tertiary Pin -->
       <div
-        class="tw-bg-white tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-rounded tw-overflow-hidden tw-text-sm tw-border-l-4 tw-border-solid tw-border-tertiary"
+        class="tw-bg-white tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-overflow-hidden tw-text-sm tw-border-l-4 tw-border-solid tw-border-tertiary"
       >
         <div
           class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-tertiary tw-opacity-25"
@@ -50,7 +42,7 @@
 
       <!-- Yellow Pin -->
       <div
-        class="tw-bg-white tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-rounded tw-overflow-hidden tw-text-sm tw-border-l-4 tw-border-solid tw-border-secondary"
+        class="tw-bg-white tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-overflow-hidden tw-text-sm tw-border-l-4 tw-border-solid tw-border-secondary"
       >
         <div
           class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-secondary tw-opacity-25"
@@ -79,12 +71,12 @@
             <div class="tw-border-secondary tw-opacity-25 comments-down-arrow"></div>
 
             <form>
-              <textarea class="tw-w-full tw-rounded-br-15 tw-bg-lightyellowalpha tw-placeholder-gray-700 tw-outline-none tw-resize-none tw-py-2 tw-px-3" rows="5" placeholder="Write your reply..."></textarea>
+              <textarea class="tw-w-full tw-rounded tw-bg-lightyellowalpha tw-placeholder-gray-700 tw-outline-none tw-resize-none tw-py-2 tw-px-3" rows="5" placeholder="Write your reply..."></textarea>
 
               <p class="tw-text-xs" style="margin-bottom: 0.5rem;">All comments are subject to approval process</p>
-              <input type="email" class="tw-w-full tw-rounded-br-15 tw-bg-lightyellowalpha tw-placeholder-gray-700 tw-outline-none tw-resize-none tw-py-2 tw-px-3" placeholder="Email" />
+              <input type="email" class="tw-w-full tw-rounded tw-bg-lightyellowalpha tw-placeholder-gray-700 tw-outline-none tw-resize-none tw-py-2 tw-px-3" placeholder="Email" />
               
-              <input type="text" class="tw-mt-2 tw-w-full tw-rounded-br-15 tw-bg-lightyellowalpha tw-placeholder-gray-700 tw-outline-none tw-resize-none tw-py-2 tw-px-3" placeholder="Screen Name (optional)" />
+              <input type="text" class="tw-mt-2 tw-w-full tw-rounded tw-bg-lightyellowalpha tw-placeholder-gray-700 tw-outline-none tw-resize-none tw-py-2 tw-px-3" placeholder="Screen Name (optional)" />
 
               <button
                 class="tw-bg-graycustom tw-text-black tw-font-bold tw-my-4 tw-rounded-br-15 tw-py-1 tw-px-4 tw-float-right tw-w-24 tw-text-lg"
@@ -129,7 +121,7 @@
 
       <!-- Red Pin -->
       <div
-        class="tw-bg-white tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-rounded tw-overflow-hidden tw-text-sm tw-border-l-4 tw-border-solid tw-border-redcustom"
+        class="tw-bg-white tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-overflow-hidden tw-text-sm tw-border-l-4 tw-border-solid tw-border-redcustom"
       >
         <div
           class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-redcustom tw-opacity-25"
@@ -157,7 +149,7 @@
 
       <!-- Primary Pin -->
       <div
-        class="tw-bg-white tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-rounded tw-overflow-hidden tw-text-sm tw-border-l-4 tw-border-solid tw-border-primary"
+        class="tw-bg-white tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-overflow-hidden tw-text-sm tw-border-l-4 tw-border-solid tw-border-primary"
       >
         <div
           class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-primary tw-opacity-25"
@@ -185,7 +177,7 @@
 
       <!-- Blue Pin -->
       <div
-        class="tw-bg-white tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-rounded tw-overflow-hidden tw-text-sm tw-border-l-4 tw-border-solid tw-border-bluecustom"
+        class="tw-bg-white tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-overflow-hidden tw-text-sm tw-border-l-4 tw-border-solid tw-border-bluecustom"
       >
         <div
           class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-bluecustom tw-opacity-25"

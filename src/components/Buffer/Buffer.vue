@@ -1,18 +1,16 @@
 <template>
-  <div class="tw-flex tw-flex-col tw-min-h-full">
-    <!-- Search Box -->
-    <search-box></search-box>
-
+  <div class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full">
+    
     <!-- Buffer -->
-    <div class="tw-flex tw-items-center tw-mt-6 tw-py-2 tw-px-3">
+    <div class="tw-flex tw-items-center tw-py-2 tw-px-3">
       <div class="tw-flex-grow tw-flex tw-items-center tw-font-semibold tw-text-lg">
         <img class="tw-mr-2" src="@/assets/img/icon_buffer.svg"/> Buffer
       </div>
-      <i class="fas fa-info-circle tw-text-2xl tw-flex-none"></i>
+      <img class="tw-flex-none" src="@/assets/img/icon_info.svg"/>
     </div>
 
     <!-- Buffer Opened -->
-    <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-3">
+    <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-2">
       <a
         href="javascript:void(0)"
         class="tw-flex tw-items-center panel-heading"
@@ -33,18 +31,24 @@
             <option>Parcel 2</option>
             <option>Parcel 3</option>
           </select>
-          <div class="tw-pointer-events-none tw-absolute tw-inset-y-0 tw-right-0 tw-flex tw-items-center tw-px-2 tw-text-black">
-            <svg class="tw-fill-current tw-h-6 tw-w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+          <div class="tw-pointer-events-none tw-absolute tw-inset-y-0 tw-right-0 tw-flex tw-items-center tw-pr-3 tw-text-black">
+            <i class="fas fa-caret-down tw-fill-current"></i>
           </div>
         </div>
 
         <!-- Selection -->
         <div class="tw-font-semibold tw-pt-2 tw-pb-1">Selection</div>
-        <drawing-tools />
+        <ul class="tw-list-none tw-flex tw-flex-wrap" style="padding: 0;">
+          <li class="tw-p-1"><a class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12" href="javascript:void(0)"><img class="tw-mx-auto" src="@/assets/img/pin_icon.svg" /></a></li>
+          <li class="tw-p-1"><a class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12" href="javascript:void(0)"><img class="tw-mx-auto" src="@/assets/img/selection_line.svg" /></a></li>
+          <li class="tw-p-1"><a class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12" href="javascript:void(0)"><img class="tw-mx-auto" src="@/assets/img/selection_polygon.png" /></a></li>
+          <li class="tw-p-1"><a class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12" href="javascript:void(0)"><img class="tw-mx-auto" src="@/assets/img/selection_layer.svg" /></a></li>
+          <li class="tw-p-1"><a class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12" href="javascript:void(0)"><img class="tw-mx-auto" src="@/assets/img/trash_icon.svg" /></a></li>
+        </ul>
 
         <!-- Radius -->
         <div class="tw-font-semibold tw-pt-2 tw-pb-1">Radius</div>
-        <v-slider color="black" track-color="grey lighten-2"></v-slider>
+        <v-slider class="tw-mt-2 tw-mb-5" hide-details color="black" track-color="white" track-fill-color="#F0F2F4" loader-height="40"></v-slider>
 
         <!-- Text field with select box -->
         <div class="tw-inline-flex tw-items-center tw-bg-lightgray tw-rounded tw-overflow-hidden">
@@ -63,8 +67,8 @@
               <option>inch</option>
               <option>inch</option>
             </select>
-            <div class="tw-pointer-events-none tw-absolute tw-inset-y-0 tw-right-0 tw-flex tw-items-center tw-px-2 tw-text-black">
-              <svg class="tw-fill-current tw-h-6 tw-w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+            <div class="tw-pointer-events-none tw-absolute tw-inset-y-0 tw-right-0 tw-flex tw-items-center tw-pr-3 tw-text-black">
+              <i class="fas fa-caret-down tw-fill-current"></i>
             </div>
           </div>
         </div>
@@ -90,20 +94,19 @@
     </div>
 
     <!-- Legend -->
+    <div class="tw-mt-2"></div>
     <legend-panel/>
     
   </div>
 </template>
 
 <script>
-import SearchBox from "@/components/SearchBox.vue";
 import LegendPanel from "@/components/Legend/LegendPanel.vue";
-import DrawingTools from "@/components/Draw/DrawingTools.vue";
 
 export default {
   name: "buffer",
   components: {
-    SearchBox, LegendPanel, DrawingTools
+    LegendPanel
   },
   data(){
     return{

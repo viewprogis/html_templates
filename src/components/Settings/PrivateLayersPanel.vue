@@ -1,5 +1,5 @@
 <template>
-  <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-3">
+  <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-2">
     <a
       href="javascript:void(0)"
       class="tw-flex tw-items-center panel-heading"
@@ -12,13 +12,13 @@
 
       <form>
         <input
-          class="tw-w-full tw-bg-white tw-border tw-border-solid tw-rounded tw-appearance-none tw-py-3 tw-px-4 tw-leading-tight focus:tw-outline-none tw-placeholder-black"
+          class="tw-w-full tw-bg-lightbluealpha tw-placeholder-gray-700 tw-rounded tw-appearance-none tw-py-3 tw-px-4 tw-leading-tight focus:tw-outline-none tw-placeholder-black"
           type="text"
           placeholder="Username"
         />
 
         <input
-          class="tw-w-full tw-bg-white tw-border tw-border-solid tw-rounded tw-appearance-none tw-mt-3 tw-py-3 tw-px-4 tw-leading-tight focus:tw-outline-none tw-placeholder-black"
+          class="tw-w-full tw-bg-lightbluealpha tw-placeholder-gray-700 tw-rounded tw-appearance-none tw-mt-3 tw-py-3 tw-px-4 tw-leading-tight focus:tw-outline-none tw-placeholder-black"
           type="password"
           placeholder="Password"
         />

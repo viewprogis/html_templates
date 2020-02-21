@@ -32,63 +32,112 @@
       >
         <router-link
           to="/legend"
-          class="tw-block tw-text-center tw-uppercase tw-text-xs tw-mt-2 tw-h-20"
+          class="tw-block tw-text-center tw-uppercase tw-text-xs tw-mt-2 tw-mb-6"
           ><i class="fab fa-buffer tw-text-2xl tw-mb-2"></i
           ><br />Legend</router-link
         >
         <router-link
           to="/draw"
-          class="tw-block tw-text-center tw-uppercase tw-text-xs tw-h-20"
-          ><i class="fas fa-pencil-alt tw-text-2xl tw-mb-2"></i
-          ><br />Draw</router-link
+          class="tw-block tw-text-center tw-uppercase tw-text-xs tw-mb-6"
+          >
+          <img src="@/assets/img/icon_draw.svg" class="tw-mb-3 tw-inline-block" />
+          <img src="@/assets/img/icon_draw_active.svg" class="tw-mb-3 tw-inline-block active" />
+          <img src="@/assets/img/icon_draw_white.svg" class="tw-mb-3 tw-inline-block invert" />
+          <br />Draw</router-link
         >
         <router-link
           to="/measure"
-          class="tw-block tw-text-center tw-uppercase tw-text-xs tw-h-20"
-          ><i class="fas fa-arrows-alt-h tw-text-2xl tw-mb-2"></i
-          ><br />Measure</router-link
+          class="tw-block tw-text-center tw-uppercase tw-text-xs tw-mb-6"
+          >
+          <img src="@/assets/img/icon_measure.svg" class="tw-mb-4 tw-inline-block" />
+          <img src="@/assets/img/icon_measure_active.svg" class="tw-mb-4 tw-inline-block active" />
+          <img src="@/assets/img/icon_measure_white.svg" class="tw-mb-4 tw-inline-block invert" />
+          <br />Measure</router-link
         >
         <router-link
           to="/buffer"
-          class="tw-group tw-block tw-text-center tw-uppercase tw-text-xs tw-h-20"
+          class="tw-group tw-block tw-text-center tw-uppercase tw-text-xs tw-mb-6"
           >
-          <i class="fas fa-circle-notch tw-text-2xl tw-mb-2"></i>
-          <!--<img class="non-active mx-auto tw-mb-3 group-hover:tw-hidden" src="@/assets/img/buffer_spinner.svg"/>
-          <img class="active mx-auto tw-mb-3 tw-hidden group-hover:tw-block" src="@/assets/img/buffer_spinner_active.svg"/>--><br/>Buffer</router-link
+          <img src="@/assets/img/icon_buffer.svg" class="tw-mb-3 tw-inline-block" />
+          <img src="@/assets/img/icon_buffer_active.svg" class="tw-mb-3 tw-inline-block active" />
+          <img src="@/assets/img/icon_buffer_white.svg" class="tw-mb-3 tw-inline-block invert" />
+          <br/>Buffer</router-link
         >
         <router-link
           to="/address-mapping"
-          class="tw-block tw-text-center tw-uppercase tw-text-xs tw-h-20"
+          class="tw-block tw-text-center tw-uppercase tw-text-xs tw-mb-6"
           ><i class="fas fa-cloud-upload-alt tw-text-2xl tw-mb-2"></i
           ><br />Address<br />Mapping</router-link
         >
         <router-link
           to="/print"
-          class="tw-block tw-text-center tw-uppercase tw-text-xs tw-h-20"
-          ><i class="material-icons tw-text-2xl tw-mb-2">print</i
+          class="tw-block tw-text-center tw-uppercase tw-text-xs tw-mb-6"
+          ><i class="material-icons tw-text-2xl tw-mb-3">print</i
           ><br />Print</router-link
         >
         <router-link
           to="/calendar"
-          class="tw-block tw-text-center tw-uppercase tw-text-xs tw-h-20"
-          ><i class="far fa-calendar tw-text-2xl tw-mb-2"></i
-          ><br />Calendar</router-link
+          class="tw-block tw-text-center tw-uppercase tw-text-xs tw-mb-6"
+          >
+          <img src="@/assets/img/icon_calendar.svg" class="tw-mb-4 tw-inline-block" />
+          <img src="@/assets/img/icon_calendar_active.svg" class="tw-mb-4 tw-inline-block active" />
+          <img src="@/assets/img/icon_calendar_white.svg" class="tw-mb-4 tw-inline-block invert" />
+          <br />Calendar</router-link
         >
         <router-link
           to="/drop-pin"
-          class="tw-group tw-block tw-text-center tw-uppercase tw-text-xs tw-h-20"
+          class="tw-group tw-block tw-text-center tw-uppercase tw-text-xs tw-mb-6"
           >
-          <i class="fas fa-map-marker-alt tw-text-2xl tw-mb-2"></i>
-          <!--<img class="non-active mx-auto tw-mb-1 group-hover:tw-hidden" src="@/assets/img/pin_drop.svg"/>
-          <img class="active mx-auto tw-mb-1 tw-hidden group-hover:tw-block" src="@/assets/img/pin_drop_active.svg"/>--><br/>Drop<br />Pin</router-link
+          <img src="@/assets/img/icon_pindrop.svg" class="tw-mb-2 tw-inline-block" />
+          <img src="@/assets/img/icon_pindrop_active.svg" class="tw-mb-2 tw-inline-block active" />
+          <img src="@/assets/img/icon_pindrop_white.svg" class="tw-mb-2 tw-inline-block invert" />
+          <br/>Drop<br />Pin</router-link
         >
         <router-link
           to="/project-info"
-          class="tw-group tw-block tw-text-center tw-uppercase tw-text-xs tw-h-20"
+          class="tw-group tw-block tw-text-center tw-uppercase tw-text-xs tw-mb-6"
           >
-          <i class="fas fa-info-circle tw-text-2xl tw-mb-2"></i>
-          <!--<img class="non-active mx-auto tw-mb-1 group-hover:tw-hidden" src="@/assets/img/project_info.svg"/>
-          <img class="active mx-auto tw-mb-1 tw-hidden group-hover:tw-block" src="@/assets/img/project_info_active.svg"/>--><br/>Project<br />Info</router-link
+          <img src="@/assets/img/icon_info.svg" class="tw-mb-2 tw-inline-block" />
+          <img src="@/assets/img/icon_info_active.svg" class="tw-mb-2 tw-inline-block active" />
+          <img src="@/assets/img/icon_info_white.svg" class="tw-mb-2 tw-inline-block invert" />
+          <br/>Project<br />Info</router-link
+        >
+        <div class="tw-mx-auto tw-w-4/5 tw-border-t tw-border-gray tw-mb-6"></div>
+        <router-link
+          to="/heatmap-analysis"
+          class="tw-group tw-block tw-text-center tw-uppercase tw-text-xs tw-mb-6"
+          >
+          <img src="@/assets/img/icon_heatmap.svg" class="tw-mb-2 tw-inline-block" />
+          <img src="@/assets/img/icon_heatmap_active.svg" class="tw-mb-2 tw-inline-block active" />
+          <img src="@/assets/img/icon_heatmap_white.svg" class="tw-mb-2 tw-inline-block invert" />
+          <br/>Heatmap<br />Analysis</router-link
+        >
+        <router-link
+          to="/building-permit"
+          class="tw-group tw-block tw-text-center tw-uppercase tw-text-xs tw-mb-6"
+          >
+          <img src="@/assets/img/icon_building.svg" class="tw-mb-2 tw-inline-block" />
+          <img src="@/assets/img/icon_building_active.svg" class="tw-mb-2 tw-inline-block active" />
+          <img src="@/assets/img/icon_building_white.svg" class="tw-mb-2 tw-inline-block invert" />
+          <br/>Building<br />Permit</router-link
+        >
+        <router-link
+          to="/landuse-lookup"
+          class="tw-group tw-block tw-text-center tw-uppercase tw-text-xs tw-mb-6"
+          >
+          <img src="@/assets/img/icon_landuse.svg" class="tw-mb-2 tw-inline-block" />
+          <img src="@/assets/img/icon_landuse_active.svg" class="tw-mb-2 tw-inline-block active" />
+          <img src="@/assets/img/icon_landuse_white.svg" class="tw-mb-2 tw-inline-block invert" />
+          <br/>Landuse<br />Lookup</router-link
+        >
+        <router-link
+          to="/mls-listings"
+          class="tw-group tw-block tw-text-center tw-uppercase tw-text-xs tw-mb-6"
+          >
+          <img src="@/assets/img/icon_mlslisting.svg" class="tw-mb-2 tw-inline-block" />
+          <img src="@/assets/img/icon_mlslisting_active.svg" class="tw-mb-2 tw-inline-block active" />
+          <img src="@/assets/img/icon_mlslisting_white.svg" class="tw-mb-2 tw-inline-block invert" />
+          <br/>MLS<br />Listings</router-link
         >
         <div class="tw-flex-grow"></div>
         <router-link
@@ -99,8 +148,15 @@
           </router-link>
         
       </div>
-      <div class="tw-flex-grow tw-p-3 tw-overflow-auto" id="sidebarComponentsDiv">
-        <component :is="currentSidebar" />
+      <div class="tw-flex-grow" id="sidebarComponentsDiv">
+        <div class="tw-flex tw-flex-col tw-pb-3 tw-h-full">
+          <slot/>
+          <div class="tw-flex-grow tw-px-3 tw-overflow-auto">
+            <div class="tw-relative tw-w-full tw-h-full">
+              <component :is="currentSidebar" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

@@ -1,6 +1,9 @@
 <template>
   <div class="draw-view dark-mode">
-    <Sidebar :currentSidebar="DynamicComponent" />
+    <Sidebar :currentSidebar="DynamicComponent">
+      <!-- Search Box -->
+      <search-box></search-box>
+    </Sidebar>
     <PalmBeach />
   </div>
 </template>
@@ -9,12 +12,14 @@
 import Sidebar from "@/components/Sidebar.vue";
 import PalmBeach from "@/components/Map/PalmBeach.vue";
 import DrawComponent from "@/components/Draw/Draw.vue";
+import SearchBox from "@/components/SearchBox.vue";
 
 export default {
   name: "draw",
   components: {
     Sidebar,
-    PalmBeach
+    PalmBeach,
+    SearchBox
   },
   data() {
     return {

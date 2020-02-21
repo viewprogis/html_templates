@@ -87,6 +87,12 @@ const routes = [
     name: "basemap",
     component: () =>
       import("../views/BaseMap.vue")
+  },
+  {
+    path: "/print",
+    name: "print",
+    component: () =>
+      import("../views/Print.vue")
   }
 ];
 

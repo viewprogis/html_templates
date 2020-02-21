@@ -1,22 +1,19 @@
 <template>
-  <div class="tw-flex tw-flex-col tw-min-h-full">
-    <!-- Search Box -->
-    <search-box></search-box>
+  <div class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full">
 
     <!-- Legend Panel -->
+    <div class="tw-mt-2"></div>
     <legend-panel/>
-
   </div>
 </template>
 
 <script>
-import SearchBox from "@/components/SearchBox.vue";
 import LegendPanel from "@/components/Legend/LegendPanel.vue";
 
 export default {
   name: "legend",
   components: {
-    SearchBox, LegendPanel
+    LegendPanel
   }
 };
 </script>

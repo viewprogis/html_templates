@@ -1,18 +1,16 @@
 <template>
-  <div class="tw-flex tw-flex-col tw-min-h-full">
-    <!-- Search Box -->
-    <search-box></search-box>
-
+  <div class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full">
+    
     <!-- Measure -->
-    <div class="tw-flex tw-items-center tw-mt-6 tw-py-2 tw-px-3">
+    <div class="tw-flex tw-items-center tw-py-2 tw-px-3">
       <div class="tw-flex-grow tw-flex tw-items-center tw-font-semibold tw-text-lg">
-        <i class="fas fa-arrows-alt-h tw-text-2xl tw-mr-2"></i> Measure
+        <img src="@/assets/img/icon_measure.svg" class="tw-mr-2" /> Measure
       </div>
-      <i class="fas fa-info-circle tw-text-2xl tw-flex-none"></i>
+      <img class="tw-flex-none" src="@/assets/img/icon_info.svg"/>
     </div>
 
     <!-- Measure -->
-    <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-3">
+    <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-2">
       <a
         href="javascript:void(0)"
         class="tw-flex tw-items-center panel-heading"
@@ -23,7 +21,15 @@
       <div class="panel-content tw-mt-4">
 
         <!-- Selection -->
-        <drawing-tools />
+        <ul class="tw-list-none tw-flex tw-flex-wrap" style="padding: 0;">
+          <li class="tw-p-1"><a class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12" href="javascript:void(0)"><img class="tw-mx-auto" src="@/assets/img/selection_line.svg" /></a></li>
+          <li class="tw-p-1"><a class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12" href="javascript:void(0)"><img class="tw-mx-auto" src="@/assets/img/draw_circle.svg" /></a></li>
+          <li class="tw-p-1"><a class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12" href="javascript:void(0)"><img class="tw-mx-auto" src="@/assets/img/selection_polygon.png" /></a></li>
+          <li class="tw-p-1"><a class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12" href="javascript:void(0)"><img class="tw-mx-auto" src="@/assets/img/draw_rectangle.svg" /></a></li>
+        </ul>
+        <ul class="tw-list-none tw-flex tw-flex-wrap" style="padding: 0;">
+          <li class="tw-p-1"><a class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12" href="javascript:void(0)"><img class="tw-mx-auto" src="@/assets/img/trash_icon.svg" /></a></li>
+        </ul>
 
         <!-- Length Segment -->
         <table class="tw-text-sm tw-text-left tw-mt-4 tw-w-full tw-max-w-4xs tw-table-fixed">
@@ -69,20 +75,19 @@
     </div>
 
     <!-- Legend -->
+    <div class="tw-mt-2"></div>
     <legend-panel/>
     
   </div>
 </template>
 
 <script>
-import SearchBox from "@/components/SearchBox.vue";
 import LegendPanel from "@/components/Legend/LegendPanel.vue";
-import DrawingTools from "@/components/Draw/DrawingTools.vue";
 
 export default {
   name: "measure",
   components: {
-    SearchBox, LegendPanel, DrawingTools
+    LegendPanel
   },
   data(){
     return{

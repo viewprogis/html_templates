@@ -1,24 +1,22 @@
 <template>
-  <div class="tw-flex tw-flex-col tw-min-h-full">
-    <!-- Search Box -->
-    <search-box></search-box>
-
+  <div class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full">
+    
     <!-- Address Mapping -->
-    <div class="tw-flex tw-items-center tw-mt-6 tw-py-2 tw-px-3">
+    <div class="tw-flex tw-items-center tw-py-2 tw-px-3">
       <div class="tw-flex-grow tw-flex tw-items-center tw-font-semibold tw-text-lg">
         <i class="fas fa-cloud-upload-alt tw-text-2xl tw-mr-2"></i
           > Address Mapping
       </div>
-      <i class="fas fa-info-circle tw-text-2xl tw-flex-none"></i>
+      <img class="tw-flex-none" src="@/assets/img/icon_info.svg"/>
     </div>
 
     <!-- Uploading -->
-    <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-3">
+    <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-2">
       <a
         href="javascript:void(0)"
         class="tw-flex tw-items-center panel-heading"
         >
-        <span class="tw-text-tertiary">Uploading</span></a
+        <span class="tw-text-tertiary">Upload</span></a
       >
 
       <div class="panel-content tw-mt-4 tw-text-sm">
@@ -40,7 +38,7 @@
     </div>
 
     <!-- Results -->
-    <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-3">
+    <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-2">
       <div class="tw-flex tw-items-center">
       <a
         href="javascript:void(0)"
@@ -110,12 +108,8 @@
 </template>
 
 <script>
-import SearchBox from "@/components/SearchBox.vue";
 
 export default {
-  name: "addressmapping",
-  components: {
-    SearchBox
-  }
+  name: "addressmapping"
 };
 </script>

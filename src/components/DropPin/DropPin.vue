@@ -1,23 +1,21 @@
 <template>
-  <div class="tw-flex tw-flex-col tw-min-h-full">
-    <!-- Search Box -->
-    <search-box></search-box>
-
+  <div class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full">
+    
     <!-- Drop Pin -->
-    <div class="tw-flex tw-items-center tw-mt-6 tw-py-2 tw-px-3">
+    <div class="tw-flex tw-items-center tw-py-2 tw-px-3">
       <div class="tw-flex-grow tw-flex tw-items-center tw-font-semibold tw-text-lg">
         <img class="tw-mr-2" src="@/assets/img/icon_pindrop.svg"/> Drop Pin
       </div>
-      <i class="fas fa-info-circle tw-text-2xl tw-flex-none"></i>
+      <img class="tw-flex-none" src="@/assets/img/icon_info.svg"/>
     </div>
 
     <!-- Participate Opened -->
-    <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-3">
+    <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-2">
       <a
         href="javascript:void(0)"
         class="tw-flex tw-items-center panel-heading"
         >
-        <span class="tw-text-tertiary">Participate</span></a
+        <span class="tw-text-tertiary">Question</span></a
       >
 
       <div class="panel-content tw-mt-4">
@@ -33,15 +31,13 @@
             class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-tertiary tw-opacity-25"
           ></div>
           <span class="tw-flex-grow">View All Comments</span
-          ><i
-            class="fas fa-chevron-right tw-flex tw-items-center tw-justify-center tw-w-5 tw-h-5 tw-rounded-full tw-bg-tertiary tw-text-white tw-text-xs tw-ml-2"
-          ></i>
+          ><a href="javascript:void(0)" class="blue-arrow-right"></a>
         </a>
       </div>
     </div>
 
     <!-- Drop Pin Opened -->
-    <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-3">
+    <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-2">
       <a
         href="javascript:void(0)"
         class="tw-flex tw-items-center panel-heading"
@@ -50,11 +46,11 @@
       >
 
       <div class="panel-content tw-mt-4">
-        <p class="tw-text-sm">Select the pin below and drop it on the map</p>
+        <p class="tw-text-sm mb-2">Select the pin below and drop it on the map</p>
 
         <!-- Tertiary Pin -->
         <div
-          class="tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-rounded tw-overflow-hidden tw-py-3 tw-px-4 tw-text-sm tw-border-l-4 tw-border-solid tw-border-tertiary"
+          class="tw-flex tw-items-center tw-relative tw-z-10 tw-rounded-sm tw-overflow-hidden tw-py-1 tw-px-4 tw-text-sm tw-border-l-4 tw-border-solid tw-border-tertiary"
         >
           <div
             class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-tertiary tw-opacity-25"
@@ -77,7 +73,7 @@
 
         <!-- Yellow Pin -->
         <div
-          class="tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-rounded tw-overflow-hidden tw-py-3 tw-px-4 tw-text-sm tw-border-l-4 tw-border-solid tw-border-secondary"
+          class="tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-rounded-sm tw-overflow-hidden tw-py-1 tw-px-4 tw-text-sm tw-border-l-4 tw-border-solid tw-border-secondary"
         >
           <div
             class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-secondary tw-opacity-25"
@@ -99,7 +95,7 @@
 
         <!-- Red Pin -->
         <div
-          class="tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-rounded tw-overflow-hidden tw-py-3 tw-px-4 tw-text-sm tw-border-l-4 tw-border-solid tw-border-redcustom"
+          class="tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-rounded-sm tw-overflow-hidden tw-py-1 tw-px-4 tw-text-sm tw-border-l-4 tw-border-solid tw-border-redcustom"
         >
           <div
             class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-redcustom tw-opacity-25"
@@ -119,7 +115,7 @@
 
         <!-- Primary Pin -->
         <div
-          class="tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-rounded tw-overflow-hidden tw-py-3 tw-px-4 tw-text-sm tw-border-l-4 tw-border-solid tw-border-primary"
+          class="tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-rounded-sm tw-overflow-hidden tw-py-1 tw-px-4 tw-text-sm tw-border-l-4 tw-border-solid tw-border-primary"
         >
           <div
             class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-primary tw-opacity-25"
@@ -139,7 +135,7 @@
 
         <!-- Blue Pin -->
         <div
-          class="tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-rounded tw-overflow-hidden tw-py-3 tw-px-4 tw-text-sm tw-border-l-4 tw-border-solid tw-border-bluecustom"
+          class="tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-rounded-sm tw-overflow-hidden tw-py-1 tw-px-4 tw-text-sm tw-border-l-4 tw-border-solid tw-border-bluecustom"
         >
           <div
             class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-bluecustom tw-opacity-25"
@@ -168,12 +164,8 @@
 </template>
 
 <script>
-import SearchBox from "@/components/SearchBox.vue";
 
 export default {
-  name: "droppin",
-  components: {
-    SearchBox
-  }
+  name: "droppin"
 };
 </script>

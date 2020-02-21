@@ -4,32 +4,36 @@ let runOnce = false;
 
 export default{
 
-    beforeUpdate(){
+    updated(){
         
         if(!runOnce){
             setTimeout(() => {
                 runOnce = true;
-
-                /** Sidebar Open/Collapse **/
-                var doToggle = true;
-                $(document).on("click","#sidebar .toggle-sidebar", function(){
-                    if(doToggle)
-                        $("#sidebar").toggleClass("collapse");
-                });
+                let isHomepage = (this.$route.path == "/");
                 
-                if($("#sidebar #nav a").hasClass("router-link-active")){
-                    doToggle = true;
-                    $("#sidebar").removeClass("collapse");
-                }else{
-                    doToggle = false;
-                    $("#sidebar").addClass("collapse");
+                /** Sidebar Open/Collapse **/
+                $(document).on("click","#sidebar .toggle-sidebar", function(){
+                    $("#sidebar").toggleClass("collapse");
+                });
+                if(isHomepage){
                     $("#sidebar .toggle-sidebar").attr("href","/legend");
+                    $("#sidebar").addClass("collapse");
                 }
-            
                 /** Panel Open/Collapse **/
                 $(document).on("click",".panel-heading", function(){
                     
                     let $parent = $(this).closest(".panel");
+
+                    if($parent.hasClass("active")){
+                        $parent.removeClass("active");
+                    }else{
+                        $parent.addClass("active");
+                    }
+                });
+
+                /** TreeView Open/Collapse **/
+                $(document).on("click","ul.tree-view li.has-child > .toggle", function(){
+                    let $parent = $(this).closest("li");
 
                     if($parent.hasClass("active")){
                         $parent.removeClass("active");
