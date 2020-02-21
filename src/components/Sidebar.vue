@@ -1,6 +1,6 @@
 <template>
   <div
-    class="sidebar tw-relative tw-z-10 tw-bg-lightgray tw-min-h-screen tw-inline-flex tw-flex-col"
+    class="sidebar tw-relative tw-z-10 tw-bg-lightgray tw-inline-flex tw-flex-col tw-min-h-screen"
     id="sidebar"
   >
     <a
@@ -24,7 +24,7 @@
         ><span class="tw-text-gray-500 hover:tw-text-gray-300">Zoning Map Viewer</span></a
       >
     </div>
-    <div class="tw-flex tw-flex-grow tw-overflow-hidden">
+    <div class="tw-flex tw-flex-grow tw-flex-grow sidebar-content">
       <!-- Nav Items -->
       <div
         id="nav"
@@ -95,11 +95,11 @@
           to="/settings"
           class="tw-block tw-text-center tw-uppercase tw-text-xs"
           >
-          <i class="fas fa-cog tw-text-2xl tw-mb-2"></i>
+          <i class="fas fa-cog tw-text-2xl tw-mt-10"></i>
           </router-link>
         
       </div>
-      <div class="tw-flex-grow tw-p-3" id="sidebarComponentsDiv">
+      <div class="tw-flex-grow tw-p-3 tw-overflow-auto" id="sidebarComponentsDiv">
         <component :is="currentSidebar" />
       </div>
     </div>

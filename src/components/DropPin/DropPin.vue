@@ -6,35 +6,21 @@
     <!-- Drop Pin -->
     <div class="tw-flex tw-items-center tw-mt-6 tw-py-2 tw-px-3">
       <div class="tw-flex-grow tw-flex tw-items-center tw-font-semibold tw-text-lg">
-        <img class="tw-mr-2" src="@/assets/img/pin_drop.svg"/> Drop Pin
+        <img class="tw-mr-2" src="@/assets/img/icon_pindrop.svg"/> Drop Pin
       </div>
       <i class="fas fa-info-circle tw-text-2xl tw-flex-none"></i>
     </div>
 
-    <!-- Participate Closed -->
-    <div class="tw-bg-white tw-rounded tw-p-3 tw-mt-3">
-      <a
-        href="javascript:void(0)"
-        class="tw-flex tw-items-center"
-        ><i
-          class="fas fa-chevron-right tw-flex tw-items-center tw-justify-center tw-w-5 tw-h-5 tw-rounded-full tw-bg-tertiary tw-text-white tw-text-xs tw-mr-2"
-        ></i>
-        <span class="tw-text-tertiary">Participate</span></a
-      >
-    </div>
-
     <!-- Participate Opened -->
-    <div class="tw-bg-white tw-rounded tw-p-3 tw-mt-3">
+    <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-3">
       <a
         href="javascript:void(0)"
-        class="tw-flex tw-items-center"
-        ><i
-          class="fas fa-chevron-down tw-flex tw-items-center tw-justify-center tw-w-5 tw-h-5 tw-rounded-full tw-bg-tertiary tw-text-white tw-text-xs tw-mr-2"
-        ></i>
+        class="tw-flex tw-items-center panel-heading"
+        >
         <span class="tw-text-tertiary">Participate</span></a
       >
 
-      <div class="tw-mt-4">
+      <div class="panel-content tw-mt-4">
         <p class="tw-text-xl">
           What are the top safety issues in West Palm Beach?
         </p>
@@ -54,30 +40,16 @@
       </div>
     </div>
 
-    <!-- Drop Pin Closed -->
-    <div class="tw-bg-white tw-rounded tw-p-3 tw-mt-3">
-      <a
-        href="javascript:void(0)"
-        class="tw-flex tw-items-center"
-        ><i
-          class="fas fa-chevron-right tw-flex tw-items-center tw-justify-center tw-w-5 tw-h-5 tw-rounded-full tw-bg-tertiary tw-text-white tw-text-xs tw-mr-2"
-        ></i>
-        <span class="tw-text-tertiary">Drop Pin</span></a
-      >
-    </div>
-
     <!-- Drop Pin Opened -->
-    <div class="tw-bg-white tw-rounded tw-p-3 tw-mt-3">
+    <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-3">
       <a
         href="javascript:void(0)"
-        class="tw-flex tw-items-center"
-        ><i
-          class="fas fa-chevron-down tw-flex tw-items-center tw-justify-center tw-w-5 tw-h-5 tw-rounded-full tw-bg-tertiary tw-text-white tw-text-xs tw-mr-2"
-        ></i>
+        class="tw-flex tw-items-center panel-heading"
+        >
         <span class="tw-text-tertiary">Drop Pin</span></a
       >
 
-      <div class="tw-mt-4">
+      <div class="panel-content tw-mt-4">
         <p class="tw-text-sm">Select the pin below and drop it on the map</p>
 
         <!-- Tertiary Pin -->

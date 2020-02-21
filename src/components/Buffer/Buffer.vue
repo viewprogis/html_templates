@@ -6,23 +6,21 @@
     <!-- Buffer -->
     <div class="tw-flex tw-items-center tw-mt-6 tw-py-2 tw-px-3">
       <div class="tw-flex-grow tw-flex tw-items-center tw-font-semibold tw-text-lg">
-        <img class="tw-mr-2" src="@/assets/img/buffer_spinner.svg"/> Buffer
+        <img class="tw-mr-2" src="@/assets/img/icon_buffer.svg"/> Buffer
       </div>
       <i class="fas fa-info-circle tw-text-2xl tw-flex-none"></i>
     </div>
 
     <!-- Buffer Opened -->
-    <div class="tw-bg-white tw-rounded tw-p-3 tw-mt-3">
+    <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-3">
       <a
         href="javascript:void(0)"
-        class="tw-flex tw-items-center"
-        ><i
-          class="fas fa-chevron-down tw-flex tw-items-center tw-justify-center tw-w-5 tw-h-5 tw-rounded-full tw-bg-tertiary tw-text-white tw-text-xs tw-mr-2"
-        ></i>
+        class="tw-flex tw-items-center panel-heading"
+        >
         <span class="tw-text-tertiary">Choose your parameters</span></a
       >
 
-      <div class="tw-mt-4">
+      <div class="panel-content tw-mt-4">
         
         <!-- Select Box -->
         <div class="tw-w-full tw-relative tw-z-10 tw-rounded tw-overflow-hidden tw-my-2">

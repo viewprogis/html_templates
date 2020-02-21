@@ -15,17 +15,15 @@
     </div>
 
     <!-- Settings -->
-    <div class="tw-bg-white tw-rounded tw-p-3 tw-mt-3">
+    <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-3">
       <a
         href="javascript:void(0)"
-        class="tw-flex tw-items-center"
-        ><i
-          class="fas fa-chevron-down tw-flex tw-items-center tw-justify-center tw-w-5 tw-h-5 tw-rounded-full tw-bg-tertiary tw-text-white tw-text-xs tw-mr-2"
-        ></i>
+        class="tw-flex tw-items-center panel-heading"
+        >
         <span class="tw-text-tertiary">Settings</span></a
       >
 
-      <div class="tw-mt-4">
+      <div class="panel-content tw-mt-4">
 
         <!-- Color Mode -->
         <div class="tw-font-semibold tw-pt-2 tw-pb-1">Color Mode</div>

@@ -2,17 +2,15 @@
   <div class="tw-flex tw-flex-col tw-min-h-full">
 
     <!-- Legend Panel -->
-    <div class="tw-bg-white tw-rounded tw-p-3 tw-mt-3">
+    <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-3 active">
       <a
         href="javascript:void(0)"
-        class="tw-flex tw-items-center"
-        ><i
-          class="fas fa-chevron-down tw-flex tw-items-center tw-justify-center tw-w-5 tw-h-5 tw-rounded-full tw-bg-tertiary tw-text-white tw-text-xs tw-mr-2"
-        ></i>
+        class="tw-flex tw-items-center panel-heading"
+        >
         <span class="tw-text-tertiary">Legend</span></a
       >
 
-      <div class="tw-mt-4">
+      <div class="tw-mt-4 panel-content">
         
         <ul class="tree-view tw-text-black" style="padding-left: 0;">
           <li>
