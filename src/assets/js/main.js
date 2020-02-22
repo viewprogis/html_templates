@@ -41,6 +41,67 @@ export default{
                         $parent.addClass("active");
                     }
                 });
+
+                /** Pagination **/
+                function paginationNumbersCheck(ActiveBtn){
+                    $("#pagination .pagination-numbers button").removeClass("active");
+                    $(ActiveBtn).addClass("active");
+
+                    let $section = $("#section-" + $(ActiveBtn).text());
+                    $(".help-video").removeClass("active");
+                    $section.addClass("active");
+                }
+                function paginationSectionCheck(ActiveSection){
+                    let $section = $("#section-" + $(ActiveSection).text());
+                    $(".help-video").removeClass("active");
+                    $section.addClass("active");
+                }
+                function paginationButtonsCheck(){
+                    let $activeBtn = $("#pagination .pagination-numbers button.active");
+                    let IsPrev = $activeBtn.prevAll().length > 0 ? true : false;
+                    let IsNext = $activeBtn.nextAll().length > 0 ? true : false;
+                    let $prevBtn = $("#pagination #prev");
+                    let $nextBtn = $("#pagination #next");
+                    
+                    if(IsPrev && !IsNext){
+                        $prevBtn.addClass("active");
+                        $nextBtn.removeClass("active");
+                    }else if(IsNext && !IsPrev){
+                        $prevBtn.removeClass("active");
+                        $nextBtn.addClass("active");
+                    }else{
+                        $prevBtn.removeClass("active");
+                        $nextBtn.removeClass("active");
+
+                        $prevBtn.addClass("active");
+                        $nextBtn.addClass("active");
+                    }
+                }
+
+                $(document).on("click", "#pagination .pagination-numbers button", function(){                    
+                    paginationNumbersCheck(this);
+                    paginationSectionCheck(this);
+                    paginationButtonsCheck();
+                });
+
+                $(document).on("click", "#pagination #prev", function(){
+
+                    if($(this).hasClass("active")){
+                        let $activeBtn = $("#pagination .pagination-numbers button.active");
+                        paginationNumbersCheck($activeBtn.prev());
+                        paginationSectionCheck($activeBtn.prev());
+                        paginationButtonsCheck();
+                    }
+                });
+                $(document).on("click", "#pagination #next", function(){
+
+                    if($(this).hasClass("active")){
+                        let $activeBtn = $("#pagination .pagination-numbers button.active");
+                        paginationNumbersCheck($activeBtn.next());
+                        paginationSectionCheck($activeBtn.next());
+                        paginationButtonsCheck();
+                    }
+                });
             
             },100);
         }

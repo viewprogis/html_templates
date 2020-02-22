@@ -28,12 +28,12 @@
           </div>
         </div>
 
-      <textarea class="tw-w-full tw-rounded-br-15 tw-bg-lightbluealpha tw-placeholder-gray-700 tw-outline-none tw-resize-none tw-py-2 tw-px-3" rows="5" placeholder="Write your message..."></textarea>
+      <textarea class="tw-w-full tw-rounded tw-bg-lightbluealpha tw-placeholder-gray-700 tw-outline-none tw-resize-none tw-py-2 tw-px-3" rows="5" placeholder="Write your message..."></textarea>
 
       <p class="tw-text-xs" style="margin-bottom: 0.5rem;">All comments are subject to approval process that may take up to 24 hours. Once approved, your comment will automatically appear on the map with the designated category.</p>
-      <input type="email" class="tw-w-full tw-rounded-br-15 tw-bg-lightbluealpha tw-placeholder-gray-700 tw-outline-none tw-resize-none tw-py-2 tw-px-3" placeholder="Email" />
+      <input type="email" class="tw-w-full tw-rounded tw-bg-lightbluealpha tw-placeholder-gray-700 tw-outline-none tw-resize-none tw-py-2 tw-px-3" placeholder="Email" />
       
-      <input type="text" class="tw-mt-2 tw-w-full tw-rounded-br-15 tw-bg-lightbluealpha tw-placeholder-gray-700 tw-outline-none tw-resize-none tw-py-2 tw-px-3" placeholder="Screen Name (optional)" />
+      <input type="text" class="tw-mt-2 tw-w-full tw-rounded tw-bg-lightbluealpha tw-placeholder-gray-700 tw-outline-none tw-resize-none tw-py-2 tw-px-3" placeholder="Screen Name (optional)" />
 
       <button
         class="btn-primary tw-mt-4 tw-rounded-br-15 tw-py-2 tw-px-4 tw-text-sm tw-w-full"

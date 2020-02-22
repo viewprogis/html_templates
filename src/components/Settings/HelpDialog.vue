@@ -40,10 +40,15 @@
           <p>View a quick overview of the<br/>ViewPRO Zooming Map Viewer</p>
 
           <button
+            type="button" 
+            @click.stop="dialog2 = true"
             class="btn-primary tw-mt-4 tw-rounded-br-15 tw-py-2 tw-px-4 tw-text-sm tw-w-full tw-max-w-3xs"
           >
             See Videos
           </button>
+
+          <!-- Help Video Dialog -->
+          <help-video-dialog :dialog="dialog2" @ChangeDialog="updateDialog2"></help-video-dialog>
         </div>
       </div>
     </div>
@@ -51,8 +56,18 @@
 </template>
 
 <script>
+import HelpVideoDialog from "@/components/Settings/HelpVideoDialog.vue";
+
 export default {
   name: "helpdialog",
+  components: {
+    HelpVideoDialog
+  },
+  data(){
+    return{
+      dialog2: false
+    }
+  },
   props:{
     dialog: {
       type: Boolean,
@@ -62,6 +77,9 @@ export default {
   methods: {
     updateValue: function (value) {
       this.$emit('ChangeDialog', value);
+    },
+    updateDialog2(value) {
+        this.dialog2 = value
     }
   }
 };

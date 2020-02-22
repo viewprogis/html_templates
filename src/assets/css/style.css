@@ -147,6 +147,10 @@ ul.tree-view .v-input .v-label{
     border-radius: 20px;
 }
 
+.v-dialog{
+    background: #fff !important;
+}
+
 /** Dark Mode **/
 .dark-mode .sidebar{
     @apply tw-bg-black tw-text-white !important;
@@ -279,6 +283,40 @@ ul.tree-view .v-input .v-label{
 }
 .v-application .red-radio .v-icon{
     @apply tw-text-redcustom !important;
+}
+
+
+/** Pagination **/
+.pagination-numbers > button{
+    @apply tw-mr-3 tw-w-12 tw-h-10 tw-text-center tw-font-bold tw-text-xl tw-rounded-lg tw-outline-none tw-shadow-none tw-border-none;
+}
+.pagination-numbers > button.active{
+    @apply tw-bg-lightgray;
+}
+.help-video{
+    display: none;
+}
+.help-video.active{
+    display: block;
+}
+.pagination-buttons > button{
+    @apply tw-opacity-25 tw-cursor-not-allowed;
+}
+.pagination-buttons > button.active{
+    @apply tw-opacity-100 tw-cursor-pointer;
+}
+.help-video .video-wrap{
+    @apply tw-border tw-border-graycustom;
+    background: #E6E6E6;
+    /*height: 300px;*/
+}
+.help-video .video-wrap img{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+}
+.help-video .description{
+    /*min-height: 120px;*/
 }
 
 /*** Responsive Work Below ***/

@@ -6,43 +6,17 @@
     ></iframe>
     <a class="tw-absolute tw-z-10 tw-top-0 tw-right-0 tw-mt-20 tw-mr-20 tw-rounded-sm tw-border-2 tw-border-solid tw-border-black tw-bg-white tw-text-black hover:tw-bg-black hover:tw-text-white tw-py-1 tw-px-4" href="/drop-pin/add">CLICK TO ADD A PIN</a>
     
-    <button 
-    type="button" 
-    @click.stop="dialog = true"
-    class="tw-absolute tw-z-10 tw-top-0 tw-right-0 tw-mt-32 tw-mr-20 tw-rounded-sm tw-border-2 tw-border-solid tw-border-black tw-bg-white tw-text-black hover:tw-bg-black hover:tw-text-white tw-py-1 tw-px-4"
-    >
-    Help Video
-    </button>
-
-    <!-- Help Video Dialog -->
-    <help-video-dialog :dialog="dialog" @ChangeDialog="updateDialog"></help-video-dialog>
-
-    
-
     <!-- Base Map -->
     <a class="tw-absolute tw-z-10 tw-top-0 tw-right-0 tw-mt-56 tw-mr-20 tw-rounded-sm tw-border-2 tw-border-solid tw-border-black tw-bg-white tw-text-black hover:tw-bg-black hover:tw-text-white tw-py-1 tw-px-4" href="/base-map">Base Map</a>
 
   </div>
 </template>
 <script>
-import HelpVideoDialog from "@/components/Settings/HelpVideoDialog.vue";
+
 
 
 export default {
-  name: "palmbeach",
-  components: {
-    HelpVideoDialog
-  },
-  data(){
-    return{
-      dialog: false
-    }
-  },
-  methods: {
-    updateDialog(value) {
-        this.dialog = value
-    }
-  }
+  name: "palmbeach"
 };
 </script>
 <style scoped lang="scss"></style>
