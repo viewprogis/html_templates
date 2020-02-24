@@ -3,6 +3,12 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
 
+
+/** Global CSS **/
+button:visited, button:focus,button:active {
+    outline: none;
+}
+
 /* Helper CSS */
 .flex-equal-col{
     flex-grow: 1;
@@ -98,6 +104,7 @@ ul.tree-view li > .v-input{
 }
 ul.tree-view .v-input .v-label{
     color: #000;
+    height: auto;
 }
 
 
@@ -400,8 +407,8 @@ ul.tree-view .v-input .v-label{
     z-index: 99;
     margin-top: -13em;
     margin-left: -13.5em;
-    width: 18em;
-    height: 18em;
+    width: 12.5em;
+    height: 12.5em;
     border-radius: 50%;
     background: transparent;
     opacity: 0;
@@ -430,7 +437,7 @@ ul.tree-view .v-input .v-label{
 .spin-btns:after {
     content: "";
     display: block;
-    font-size: 2.3em;
+    font-size: 1.6em;
     width: 4.3em;
     height: 4.3em;
     position: absolute;
@@ -457,7 +464,7 @@ ul.tree-view .v-input .v-label{
     margin-left: -10em;
     width: 10em;
     height: 10em;
-    font-size: 1em;
+    font-size: 0.7em;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     transition: all .3s ease;
@@ -474,10 +481,10 @@ ul.tree-view .v-input .v-label{
     content: "";
     display: block;
     width: 2px;
-    height: 55px;
+    height: 3.6em;
     background: #000;
     position: absolute;
-    top: 30px;
+    top: 1.8em;
     right: 0;
     z-index: 1;
     -webkit-transform-origin: 100% 100%;

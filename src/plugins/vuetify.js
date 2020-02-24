@@ -45,6 +45,7 @@ const opts = {
         red: "#D62828",
         blue: "#5190F6",
         green: "#4BE600",
+        bluepurple: "#6641FF",
         anchor: "inherit"
       }
     }

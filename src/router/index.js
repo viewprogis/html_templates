@@ -78,6 +78,11 @@ const routes = [
     path: "/mls-listings",
     name: "mlslistings",
     component: () => import("../views/MLSlistings.vue")
+  },
+  {
+    path: "/landuse-lookup",
+    name: "landuselookup",
+    component: () => import("../views/LanduseLookup.vue")
   }
 ];
 

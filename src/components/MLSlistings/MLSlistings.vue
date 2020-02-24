@@ -23,7 +23,7 @@
       <div class="panel-content tw-mt-4">
         
         <v-switch
-            color="#6641FF"
+            color="bluepurple"
             inset
             hide-details
             label="Property For Sale"

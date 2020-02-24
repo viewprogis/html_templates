@@ -6,8 +6,8 @@
 
     <div class="panel-content tw-mt-4">
       <p class="tw-text-sm">
-        Realtors or other ViewPro account holders, please enter credentials
-        below to login
+        Please enter credentials
+        below to Activate Private Layers.
       </p>
 
       <form>
@@ -26,8 +26,8 @@
         <a
           href="javascript:void(0)"
           class="tw-block tw-text-right tw-text-sm tw-mt-2"
-          ><span class="tw-text-tertiary tw-underline"
-            >Forgot Password? ></span
+          ><span class="tw-text-tertiary"
+            >Forgot Password?</span
           ></a
         >
 

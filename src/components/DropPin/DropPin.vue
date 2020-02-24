@@ -48,7 +48,7 @@
 
       <div class="panel-content tw-mt-4">
         <p class="tw-text-sm mb-2">
-          Select the pin below and drop it on the map
+          Select the pin below and drop it on the map.
         </p>
 
         <!-- Tertiary Pin -->

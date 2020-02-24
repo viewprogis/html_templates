@@ -33,6 +33,7 @@ module.exports = {
         lightredalpha: "rgba(214, 40, 40, 0.2)",
         lightgreenalpha: "rgba(157, 198, 83, 0.2)",
         darkbluealpha: "rgba(81, 144, 246, 0.2)",
+        bluepurple: "#6641FF",
         bp: "#0070FF"
       },
       letterSpacing: {

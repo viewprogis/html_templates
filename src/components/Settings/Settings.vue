@@ -45,6 +45,13 @@
         <button
           class="tw-block hover:tw-text-tertiary tw-mb-1"
           type="button"
+          @click.stop="dialog = true"
+        >
+          Support
+        </button>
+        <button
+          class="tw-block hover:tw-text-tertiary tw-mb-1"
+          type="button"
           @click.stop="dialog2 = true"
         >
           Disclaimer
@@ -54,13 +61,7 @@
           href="javascript:void(0)"
           >Terms of Use</a
         >
-        <button
-          class="tw-block hover:tw-text-tertiary tw-mb-1"
-          type="button"
-          @click.stop="dialog = true"
-        >
-          Support
-        </button>
+        
 
         <!-- Help Dialog -->
         <help-dialog

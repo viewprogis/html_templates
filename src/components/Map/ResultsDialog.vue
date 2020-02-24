@@ -31,43 +31,39 @@
           <table class="tw-text-sm tw-text-left">
             <tr class="tw-border-b tw-border-solid">
               <td
-                class="tw-py-1 tw-px-2 tw-text-right tw-align-top tw-whitespace-no-wrap"
+                class="tw-py-1 tw-pr-2 tw-text-right tw-align-top tw-whitespace-no-wrap"
               >
                 Zoining Codes
               </td>
-              <td class="tw-py-1 tw-px-2">B-P</td>
+              <td class="tw-py-1 tw-pl-2">B-P</td>
             </tr>
             <tr class="tw-border-b tw-border-solid">
-              <td class="tw-py-1 tw-px-2 tw-text-right tw-align-top">
+              <td class="tw-py-1 tw-pr-2 tw-text-right tw-align-top">
                 Zoining Description
               </td>
-              <td class="tw-py-1 tw-px-2">
+              <td class="tw-py-1 tw-pl-2">
                 Planned Business Park District nned Business Park District
               </td>
             </tr>
             <tr>
-              <td class="tw-py-1 tw-px-2 tw-text-right tw-align-top">
+              <td class="tw-py-1 tw-pr-2 tw-text-right tw-align-top">
                 Zone Hyperlinks
               </td>
-              <td class="tw-py-1 tw-px-2">
-                <a href="javascript:void(0)"
-                  ><span class="tw-text-tertiary"
-                    >Zone District Regulations</span
-                  >
-                  <br
-                /></a>
-                <a href="javascript:void(0)"
-                  ><span class="tw-text-tertiary">Accessory Uses</span></a
+              <td class="tw-py-1 tw-pl-2 tw-leading-tight">
+                <a href="javascript:void(0)" class="tw-block tw-mb-2"
+                  ><span class="tw-text-tertiary hover:tw-underline hover:tw-font-bold"
+                    >Zone District Regulations asdas as das d</span
+                  ></a>
+                <a href="javascript:void(0)" class="tw-block tw-mb-2"
+                  ><span class="tw-text-tertiary hover:tw-underline hover:tw-font-bold">Accessory Uses</span></a
                 >
-                <br />
-                <a href="javascript:void(0)"
-                  ><span class="tw-text-tertiary"
+                <a href="javascript:void(0)" class="tw-block tw-mb-2"
+                  ><span class="tw-text-tertiary hover:tw-underline hover:tw-font-bold"
                     >Landscape Requirements</span
                   ></a
                 >
-                <br />
-                <a href="javascript:void(0)"
-                  ><span class="tw-text-tertiary">Sign Regulations</span></a
+                <a href="javascript:void(0)" class="tw-block tw-mb-2"
+                  ><span class="tw-text-tertiary hover:tw-underline hover:tw-font-bold">Sign Regulations</span></a
                 >
               </td>
             </tr>
@@ -91,17 +87,17 @@
           <table class="tw-text-sm tw-text-left">
             <tr class="tw-border-b tw-border-solid">
               <td
-                class="tw-py-1 tw-px-2 tw-text-right tw-align-top tw-whitespace-no-wrap"
+                class="tw-py-1 tw-pr-2 tw-text-right tw-align-top tw-whitespace-no-wrap"
               >
                 Zoining Codes
               </td>
-              <td class="tw-py-1 tw-px-2">B-P</td>
+              <td class="tw-py-1 tw-pl-2">B-P</td>
             </tr>
             <tr class="tw-border-b tw-border-solid">
-              <td class="tw-py-1 tw-px-2 tw-text-right tw-align-top">
+              <td class="tw-py-1 tw-pr-2 tw-text-right tw-align-top">
                 Zoining Description
               </td>
-              <td class="tw-py-1 tw-px-2">
+              <td class="tw-py-1 tw-pl-2">
                 Planned Business Park District nned Business Park District
               </td>
             </tr>
