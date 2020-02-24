@@ -151,6 +151,10 @@ ul.tree-view .v-input .v-label{
     background: #fff !important;
 }
 
+.theme--light.v-label{
+    color: #000;
+}
+
 /** Dark Mode **/
 .dark-mode .sidebar{
     @apply tw-bg-black tw-text-white !important;
@@ -226,7 +230,7 @@ ul.tree-view .v-input .v-label{
 .panel.active > .panel-content{
     display: block;
 }
-.panel .panel-heading:before{
+.panel .panel-heading:not(.right):before{
     content: "\f077";
     font-family: "Font Awesome 5 Pro";
     font-weight: 900;
@@ -240,7 +244,25 @@ ul.tree-view .v-input .v-label{
     text-align: center;
     @apply tw-mr-2;
 }
-.panel.active .panel-heading:before{
+.panel.active .panel-heading:not(.right):before{
+    content: "\f078";
+    line-height: 25px;
+}
+.panel .panel-heading.right:after{
+    content: "\f077";
+    display: block;
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    font-size: 14px;
+    color: #fff;
+    @apply tw-bg-tertiary;
+    border-radius: 100%;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+}
+.panel.active .panel-heading.right:after{
     content: "\f078";
     line-height: 25px;
 }
@@ -317,6 +339,254 @@ ul.tree-view .v-input .v-label{
 }
 .help-video .description{
     /*min-height: 120px;*/
+}
+
+/** Map buttons **/
+.map-buttons{
+    padding-left: 5rem;
+}
+.sidebar-active .map-buttons{
+    padding-left: 30rem;
+}
+.map-buttons li > a,
+.map-buttons li > button{
+    @apply tw-block tw-bg-white tw-w-8 tw-h-8 tw-rounded-sm tw-flex tw-items-center tw-justify-center;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+}
+.map-buttons li > a.tw-w-auto,
+.map-buttons li > button.tw-w-auto{
+    @apply tw-w-auto tw-px-3 tw-text-sm;
+}
+.map-buttons li.no-rounded-right > a{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.map-buttons li.no-rounded-left > a{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.map-buttons li > a:hover,
+.map-buttons li > button:hover{
+    @apply tw-bg-lightgray;
+}
+
+/** BASE MAP **/
+.base-map{
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+    transition: all ease 0.2s;
+    transition: all ease 0.2s;
+    transition: all ease 0.2s;
+}
+.base-map.collapse{
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+/** Results Dialog **/
+.results-dialog{
+    @apply tw-border-2 tw-border-tertiary tw-rounded-lg !important;
+}
+
+/** Spin buttons **/
+.spin-btns{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 99;
+    margin-top: -13em;
+    margin-left: -13.5em;
+    width: 18em;
+    height: 18em;
+    border-radius: 50%;
+    background: transparent;
+    opacity: 0;
+    -webkit-transition: all .3s ease 0.3s;
+    -moz-transition: all .3s ease 0.3s;
+    transition: all .3s ease 0.3s;
+    -webkit-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    transform: scale(0.1);
+    pointer-events: none;
+    overflow: hidden;
+}
+.active > .spin-btns{
+    border-radius: 50%;
+    opacity: 1;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    pointer-events: auto;
+}
+.spin-btns:after {
+    content: "";
+    display: block;
+    font-size: 2.3em;
+    width: 4.3em;
+    height: 4.3em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 10;
+    color: transparent;
+    border: 2px solid #000;
+    pointer-events: none;
+}
+.spin-btns ul{
+    padding: 0;
+    margin: 0;
+}
+.spin-btns ul li {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    margin-top: -1em;
+    margin-left: -10em;
+    width: 10em;
+    height: 10em;
+    font-size: 1em;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+    -webkit-transform: rotate(75deg) skew(62deg);
+    -moz-transform: rotate(75deg) skew(62deg);
+    -ms-transform: rotate(75deg) skew(62deg);
+    transform: rotate(75deg) skew(62deg);
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    pointer-events: none;
+}
+.spin-btns ul li:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 55px;
+    background: #000;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    z-index: 1;
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.spin-btns ul li:first-child {
+    -webkit-transform: rotate(20deg) skew(18deg);
+    -moz-transform: rotate(20deg) skew(18deg);
+    -ms-transform: rotate(20deg) skew(18deg);
+    transform: rotate(20deg) skew(18deg);
+}
+.spin-btns ul li:nth-child(2) {
+    -webkit-transform: rotate(92deg) skew(18deg);
+    -moz-transform: rotate(92deg) skew(18deg);
+    -ms-transform: rotate(92deg) skew(18deg);
+    transform: rotate(92deg) skew(18deg);
+}
+.spin-btns ul li:nth-child(3) {
+    -webkit-transform: rotate(164deg) skew(18deg);
+    -moz-transform: rotate(164deg) skew(18deg);
+    -ms-transform: rotate(164deg) skew(18deg);
+    transform: rotate(164deg) skew(18deg);
+}
+.spin-btns ul li:nth-child(4) {
+    -webkit-transform: rotate(236deg) skew(18deg);
+    -moz-transform: rotate(236deg) skew(18deg);
+    -ms-transform: rotate(236deg) skew(18deg);
+    transform: rotate(236deg) skew(18deg);
+}
+.spin-btns ul li:nth-child(5) {
+    -webkit-transform: rotate(308deg) skew(18deg);
+    -moz-transform: rotate(308deg) skew(18deg);
+    -ms-transform: rotate(308deg) skew(18deg);
+    transform: rotate(308deg) skew(18deg);
+}
+.spin-btns ul li a {
+    position: absolute;
+    right: -7.25em;
+    bottom: -7.25em;
+    display: block;
+    width: 14.5em;
+    height: 14.5em;
+    border-radius: 50%;
+    background: #37383E;
+    background: -webkit-radial-gradient(transparent 40%, #37383E 40%);
+    background: -moz-radial-gradient(transparent 40%, #08c 40%);
+    background: radial-gradient(transparent 40%, #37383E 40%);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    line-height: 2;
+    -webkit-transform: skew(-18deg) rotate(-75deg) scale(1);
+    -moz-transform: skew(-18deg) rotate(-75deg) scale(1);
+    -ms-transform: skew(-18deg) rotate(-75deg) scale(1);
+    transform: skew(-18deg) rotate(-56deg) scale(1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    pointer-events: auto;
+    border-top: 2px solid #000;
+}
+.spin-btns ul li a span {
+    position: relative;
+    top: 1.8em;
+    display: block;
+    font-size: .5em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.spin-btns ul li:first-child a span{
+    -webkit-transform: rotate(36deg);
+    -moz-transform: rotate(36deg);
+    transform: rotate(36deg);
+}
+.spin-btns ul li:nth-child(2) a span{
+    -webkit-transform: rotate(-36deg);
+    -moz-transform: rotate(-36deg);
+    transform: rotate(-36deg);
+}
+.spin-btns ul li:nth-child(3) a span{
+    -webkit-transform: rotate(-108deg);
+    -moz-transform: rotate(-108deg);
+    transform: rotate(-108deg);
+}
+.spin-btns ul li:nth-child(4) a span{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.spin-btns ul li:nth-child(5) a span{
+    -webkit-transform: rotate(108deg);
+    -moz-transform: rotate(108deg);
+    transform: rotate(108deg);
+}
+.spin-btns ul li a img{
+    display: inline-block;
+}
+.spin-btns ul li.active > a{
+    background: -webkit-radial-gradient(transparent 40%,  40%);
+    background: -moz-radial-gradient(transparent 40%, var(--v-tertiary-base) 40%);
+    background: radial-gradient(transparent 40%, var(--v-tertiary-base) 40%);
+}
+.spin-btns ul li a:hover{
+    background: -webkit-radial-gradient(transparent 40%,  40%);
+    background: -moz-radial-gradient(transparent 40%, #000 40%);
+    background: radial-gradient(transparent 40%, #000 40%);
 }
 
 /*** Responsive Work Below ***/

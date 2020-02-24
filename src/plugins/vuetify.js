@@ -1,8 +1,15 @@
 import Vue from "vue";
 import Vuetify, {
-  VApp, VSwitch, VSlider, VRadio, VRadioGroup, VBtn, VDialog, VDialogTransition
+  VApp,
+  VSwitch,
+  VSlider,
+  VRadio,
+  VRadioGroup,
+  VBtn,
+  VDialog,
+  VDialogTransition
 } from "vuetify/lib";
-import { Ripple } from 'vuetify/lib/directives'
+import { Ripple } from "vuetify/lib/directives";
 //import 'vuetify/dist/vuetify.min.css';
 
 Vue.use(Vuetify, {
@@ -17,7 +24,7 @@ Vue.use(Vuetify, {
     VDialogTransition
   },
   directives: {
-    Ripple,
+    Ripple
   }
 });
 
@@ -38,7 +45,7 @@ const opts = {
         red: "#D62828",
         blue: "#5190F6",
         green: "#4BE600",
-        anchor: "inherit",
+        anchor: "inherit"
       }
     }
   }

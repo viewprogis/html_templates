@@ -1,12 +1,13 @@
 <template>
   <div class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full">
-    
     <!-- Buffer -->
     <div class="tw-flex tw-items-center tw-py-2 tw-px-3">
-      <div class="tw-flex-grow tw-flex tw-items-center tw-font-semibold tw-text-lg">
-        <img class="tw-mr-2" src="@/assets/img/icon_buffer.svg"/> Buffer
+      <div
+        class="tw-flex-grow tw-flex tw-items-center tw-font-semibold tw-text-lg"
+      >
+        <img class="tw-mr-2" src="@/assets/img/icon_buffer.svg" /> Buffer
       </div>
-      <img class="tw-flex-none" src="@/assets/img/icon_info.svg"/>
+      <img class="tw-flex-none" src="@/assets/img/icon_info.svg" />
     </div>
 
     <!-- Buffer Opened -->
@@ -14,24 +15,29 @@
       <a
         href="javascript:void(0)"
         class="tw-flex tw-items-center panel-heading"
-        >
+      >
         <span class="tw-text-tertiary">Choose your parameters</span></a
       >
 
       <div class="panel-content tw-mt-4">
-        
         <!-- Select Box -->
-        <div class="tw-w-full tw-relative tw-z-10 tw-rounded tw-overflow-hidden tw-my-2">
+        <div
+          class="tw-w-full tw-relative tw-z-10 tw-rounded tw-overflow-hidden tw-my-2"
+        >
           <div
             class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-tertiary tw-opacity-25"
           ></div>
-          <select class="tw-py-2 tw-px-4 tw-text-sm tw-w-full tw-placeholder-black tw-appearance-none">
+          <select
+            class="tw-py-2 tw-px-4 tw-text-sm tw-w-full tw-placeholder-black tw-appearance-none"
+          >
             <option selected>Parcels</option>
             <option>Parcel 1</option>
             <option>Parcel 2</option>
             <option>Parcel 3</option>
           </select>
-          <div class="tw-pointer-events-none tw-absolute tw-inset-y-0 tw-right-0 tw-flex tw-items-center tw-pr-3 tw-text-black">
+          <div
+            class="tw-pointer-events-none tw-absolute tw-inset-y-0 tw-right-0 tw-flex tw-items-center tw-pr-3 tw-text-black"
+          >
             <i class="fas fa-caret-down tw-fill-current"></i>
           </div>
         </div>
@@ -39,19 +45,58 @@
         <!-- Selection -->
         <div class="tw-font-semibold tw-pt-2 tw-pb-1">Selection</div>
         <ul class="tw-list-none tw-flex tw-flex-wrap" style="padding: 0;">
-          <li class="tw-p-1"><a class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12" href="javascript:void(0)"><img class="tw-mx-auto" src="@/assets/img/pin_icon.svg" /></a></li>
-          <li class="tw-p-1"><a class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12" href="javascript:void(0)"><img class="tw-mx-auto" src="@/assets/img/selection_line.svg" /></a></li>
-          <li class="tw-p-1"><a class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12" href="javascript:void(0)"><img class="tw-mx-auto" src="@/assets/img/selection_polygon.png" /></a></li>
-          <li class="tw-p-1"><a class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12" href="javascript:void(0)"><img class="tw-mx-auto" src="@/assets/img/selection_layer.svg" /></a></li>
-          <li class="tw-p-1"><a class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12" href="javascript:void(0)"><img class="tw-mx-auto" src="@/assets/img/trash_icon.svg" /></a></li>
+          <li class="tw-p-1">
+            <a
+              class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12"
+              href="javascript:void(0)"
+              ><img class="tw-mx-auto" src="@/assets/img/pin_icon.svg"
+            /></a>
+          </li>
+          <li class="tw-p-1">
+            <a
+              class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12"
+              href="javascript:void(0)"
+              ><img class="tw-mx-auto" src="@/assets/img/selection_line.svg"
+            /></a>
+          </li>
+          <li class="tw-p-1">
+            <a
+              class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12"
+              href="javascript:void(0)"
+              ><img class="tw-mx-auto" src="@/assets/img/selection_polygon.png"
+            /></a>
+          </li>
+          <li class="tw-p-1">
+            <a
+              class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12"
+              href="javascript:void(0)"
+              ><img class="tw-mx-auto" src="@/assets/img/selection_layer.svg"
+            /></a>
+          </li>
+          <li class="tw-p-1">
+            <a
+              class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12"
+              href="javascript:void(0)"
+              ><img class="tw-mx-auto" src="@/assets/img/trash_icon.svg"
+            /></a>
+          </li>
         </ul>
 
         <!-- Radius -->
         <div class="tw-font-semibold tw-pt-2 tw-pb-1">Radius</div>
-        <v-slider class="tw-mt-2 tw-mb-5" hide-details color="black" track-color="white" track-fill-color="#F0F2F4" loader-height="40"></v-slider>
+        <v-slider
+          class="tw-mt-2 tw-mb-5"
+          hide-details
+          color="black"
+          track-color="white"
+          track-fill-color="#F0F2F4"
+          loader-height="40"
+        ></v-slider>
 
         <!-- Text field with select box -->
-        <div class="tw-inline-flex tw-items-center tw-bg-lightgray tw-rounded tw-overflow-hidden">
+        <div
+          class="tw-inline-flex tw-items-center tw-bg-lightgray tw-rounded tw-overflow-hidden"
+        >
           <input
             class="tw-flex-grow tw-w-32 tw-bg-transparent tw-border-none tw-appearance-none tw-py-2 tw-px-4 tw-text-gray-700 tw-leading-tight focus:tw-outline-none"
             type="text"
@@ -61,18 +106,22 @@
             <div
               class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-tertiary tw-opacity-25"
             ></div>
-            <select class="tw-py-2 tw-px-4 tw-text-sm tw-w-full tw-placeholder-black tw-appearance-none">
+            <select
+              class="tw-py-2 tw-px-4 tw-text-sm tw-w-full tw-placeholder-black tw-appearance-none"
+            >
               <option selected>ft</option>
               <option>inch</option>
               <option>inch</option>
               <option>inch</option>
             </select>
-            <div class="tw-pointer-events-none tw-absolute tw-inset-y-0 tw-right-0 tw-flex tw-items-center tw-pr-3 tw-text-black">
+            <div
+              class="tw-pointer-events-none tw-absolute tw-inset-y-0 tw-right-0 tw-flex tw-items-center tw-pr-3 tw-text-black"
+            >
               <i class="fas fa-caret-down tw-fill-current"></i>
             </div>
           </div>
         </div>
-        
+
         <table class="tw-text-sm tw-text-left tw-mt-4">
           <tr class="tw-border-b tw-border-solid">
             <th class="tw-p-1 tw-text-xs">Area</th>
@@ -89,14 +138,12 @@
         >
           Export
         </button>
-
       </div>
     </div>
 
     <!-- Legend -->
     <div class="tw-mt-2"></div>
-    <legend-panel/>
-    
+    <legend-panel />
   </div>
 </template>
 
@@ -108,10 +155,10 @@ export default {
   components: {
     LegendPanel
   },
-  data(){
-    return{
+  data() {
+    return {
       radius: null
-    }
+    };
   }
 };
 </script>

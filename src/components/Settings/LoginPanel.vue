@@ -1,14 +1,14 @@
 <template>
   <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-2">
-    <a
-      href="javascript:void(0)"
-      class="tw-flex tw-items-center panel-heading"
-      >
+    <a href="javascript:void(0)" class="tw-flex tw-items-center panel-heading">
       <span class="tw-text-tertiary">Login</span></a
     >
 
     <div class="panel-content tw-mt-4">
-      <p class="tw-text-sm">Realtors or other ViewPro account holders, please enter credentials below to login</p>
+      <p class="tw-text-sm">
+        Realtors or other ViewPro account holders, please enter credentials
+        below to login
+      </p>
 
       <form>
         <input
@@ -23,7 +23,13 @@
           placeholder="Password"
         />
 
-        <a href="javascript:void(0)" class="tw-block tw-text-right tw-text-sm tw-mt-2"><span class="tw-text-tertiary tw-underline">Forgot Password? ></span></a>
+        <a
+          href="javascript:void(0)"
+          class="tw-block tw-text-right tw-text-sm tw-mt-2"
+          ><span class="tw-text-tertiary tw-underline"
+            >Forgot Password? ></span
+          ></a
+        >
 
         <button
           class="btn-primary tw-rounded-br-15 tw-mt-5 tw-py-2 tw-px-4 tw-text-sm tw-w-full"
@@ -36,7 +42,6 @@
 </template>
 
 <script>
-
 export default {
   name: "loginpanel"
 };

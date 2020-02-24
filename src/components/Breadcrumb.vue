@@ -1,9 +1,10 @@
 <template>
   <div class="tw-flex tw-p-3">
-
     <!-- Breadcrumb -->
     <a :href="path" class="tw-mr-1">
-      <span class="tw-text-tertiary"><i class="fas fa-long-arrow-alt-left"></i> Back</span>
+      <span class="tw-text-tertiary"
+        ><i class="fas fa-long-arrow-alt-left"></i> Back</span
+      >
     </a>
     / Drop Pin
   </div>
@@ -12,7 +13,7 @@
 <script>
 export default {
   name: "breadcrumb",
-  props: ['path']
+  props: ["path"]
 };
 </script>
 <style scoped lang="scss"></style>

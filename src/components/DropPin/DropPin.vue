@@ -1,12 +1,13 @@
 <template>
   <div class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full">
-    
     <!-- Drop Pin -->
     <div class="tw-flex tw-items-center tw-py-2 tw-px-3">
-      <div class="tw-flex-grow tw-flex tw-items-center tw-font-semibold tw-text-lg">
-        <img class="tw-mr-2" src="@/assets/img/icon_pindrop.svg"/> Drop Pin
+      <div
+        class="tw-flex-grow tw-flex tw-items-center tw-font-semibold tw-text-lg"
+      >
+        <img class="tw-mr-2" src="@/assets/img/icon_pindrop.svg" /> Drop Pin
       </div>
-      <img class="tw-flex-none" src="@/assets/img/icon_info.svg"/>
+      <img class="tw-flex-none" src="@/assets/img/icon_info.svg" />
     </div>
 
     <!-- Participate Opened -->
@@ -14,7 +15,7 @@
       <a
         href="javascript:void(0)"
         class="tw-flex tw-items-center panel-heading"
-        >
+      >
         <span class="tw-text-tertiary">Question</span></a
       >
 
@@ -41,12 +42,14 @@
       <a
         href="javascript:void(0)"
         class="tw-flex tw-items-center panel-heading"
-        >
+      >
         <span class="tw-text-tertiary">Drop Pin</span></a
       >
 
       <div class="panel-content tw-mt-4">
-        <p class="tw-text-sm mb-2">Select the pin below and drop it on the map</p>
+        <p class="tw-text-sm mb-2">
+          Select the pin below and drop it on the map
+        </p>
 
         <!-- Tertiary Pin -->
         <div
@@ -110,7 +113,9 @@
               </template>
             </v-switch>
           </div>
-          <i class="fas fa-map-marker-alt tw-text-redcustom tw-text-3xl tw-ml-2"></i>
+          <i
+            class="fas fa-map-marker-alt tw-text-redcustom tw-text-3xl tw-ml-2"
+          ></i>
         </div>
 
         <!-- Primary Pin -->
@@ -130,7 +135,9 @@
               </template>
             </v-switch>
           </div>
-          <i class="fas fa-map-marker-alt tw-text-primary tw-text-3xl tw-ml-2"></i>
+          <i
+            class="fas fa-map-marker-alt tw-text-primary tw-text-3xl tw-ml-2"
+          ></i>
         </div>
 
         <!-- Blue Pin -->
@@ -150,7 +157,9 @@
               </template>
             </v-switch>
           </div>
-          <i class="fas fa-map-marker-alt tw-text-bluecustom tw-text-3xl tw-ml-2"></i>
+          <i
+            class="fas fa-map-marker-alt tw-text-bluecustom tw-text-3xl tw-ml-2"
+          ></i>
         </div>
 
         <button
@@ -164,7 +173,6 @@
 </template>
 
 <script>
-
 export default {
   name: "droppin"
 };
