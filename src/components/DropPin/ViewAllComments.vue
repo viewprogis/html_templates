@@ -1,15 +1,6 @@
 <template>
   <div class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full">
-    <!-- Add Drop Pin -->
-    <div class="tw-flex tw-items-center tw-py-2 tw-px-3">
-      <div
-        class="tw-flex-grow tw-flex tw-items-center tw-font-semibold tw-text-lg"
-      >
-        All comments
-      </div>
-      <img class="tw-flex-none" src="@/assets/img/icon_info.svg" />
-    </div>
-
+    
     <!-- All Comments -->
     <div>
       <!-- Tertiary Pin -->

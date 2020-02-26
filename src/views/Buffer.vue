@@ -3,6 +3,16 @@
     <Sidebar :currentSidebar="DynamicComponent">
       <!-- Search Box -->
       <search-box></search-box>
+
+      <!-- Buffer Title -->
+      <div class="tw-flex tw-items-center tw-py-2 tw-px-4">
+        <div
+          class="tw-flex-grow tw-flex tw-items-center tw-font-semibold tw-text-lg"
+        >
+          <img class="tw-mr-2" src="@/assets/img/icon_buffer.svg" /> Buffer
+        </div>
+        <img class="tw-flex-none" src="@/assets/img/icon_info.svg" />
+      </div>
     </Sidebar>
     <PalmBeach />
   </div>

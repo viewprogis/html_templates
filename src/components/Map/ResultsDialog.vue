@@ -104,7 +104,8 @@
           </table>
 
           <button
-            class="btn-primary tw-mt-8 tw-font-bold tw-rounded-br-15 tw-py-2 tw-px-4 tw-text-sm tw-w-full"
+            class="btn-primary tw-mt-8 tw-font-bold tw-rounded-br-15 tw-py-2 tw-px-4 tw-text-sm tw-w-full toggle-spin"
+            @click="updateValue(false)"
           >
             Open Analytical Tools
           </button>

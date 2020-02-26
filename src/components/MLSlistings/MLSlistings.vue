@@ -1,17 +1,7 @@
 <template>
   <div class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full">
-    <!-- Draw -->
-    <div class="tw-flex tw-items-center tw-py-2 tw-px-3">
-      <div
-        class="tw-flex-grow tw-flex tw-items-center tw-font-semibold tw-text-lg"
-      >
-        <img class="tw-mr-2 tw-hidden" src="@/assets/img/icon_mlslisting.svg" />
-        <img class="tw-mr-2" src="@/assets/img/icon_mlslisting_white.svg" /> MLS listings
-      </div>
-      <img class="tw-flex-none" src="@/assets/img/icon_info_white.svg" />
-    </div>
-
-    <!-- Draw -->
+    
+    <!-- MLS listing -->
     <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-2 active">
       <a
         href="javascript:void(0)"

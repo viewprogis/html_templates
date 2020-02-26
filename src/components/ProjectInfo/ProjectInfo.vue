@@ -1,15 +1,6 @@
 <template>
   <div class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full">
-    <!-- Project Info -->
-    <div class="tw-flex tw-items-center tw-py-2 tw-px-3">
-      <div
-        class="tw-flex-grow tw-flex tw-items-center tw-font-semibold tw-text-lg"
-      >
-        <i class="fas fa-info-circle tw-text-2xl tw-mr-2"></i> Project Info
-      </div>
-      <img class="tw-flex-none" src="@/assets/img/icon_info.svg" />
-    </div>
-
+    
     <!-- Information -->
     <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-2">
       <a

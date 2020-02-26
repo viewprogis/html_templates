@@ -1,15 +1,6 @@
 <template>
   <div class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full">
-    <!-- Print -->
-    <div class="tw-flex tw-items-center tw-py-2 tw-px-3">
-      <div
-        class="tw-flex-grow tw-flex tw-items-center tw-font-semibold tw-text-lg"
-      >
-        <i class="material-icons tw-text-2xl tw-mr-2">print</i> Print
-      </div>
-      <img class="tw-flex-none" src="@/assets/img/icon_info.svg" />
-    </div>
-
+    
     <!-- Print Opened -->
     <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-2 active">
       <a

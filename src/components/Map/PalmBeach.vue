@@ -28,7 +28,7 @@
             /></a>
           </li>
           <li class="tw-mr-3">
-            <button type="button" @click.stop="dialog3 = true">
+            <button type="button" @click.stop="dialog2 = true">
               <img src="@/assets/img/icon_map_zoom.svg" />
             </button>
           </li>
@@ -38,12 +38,12 @@
             /></a>
           </li>
           <li class="tw-mr-3">
-            <a href="javascript:void(0)" id="toggle-spin"
+            <a href="javascript:void(0)" @click.stop="dialog = true"
               ><img src="@/assets/img/icon_map_3d.svg"
             /></a>
           </li>
           <li class="tw-mr-3">
-            <button type="button" @click.stop="dialog2 = true">
+            <button type="button" class="toggle-spin">
               <img src="@/assets/img/icon_map_circle.svg" />
             </button>
           </li>
@@ -54,33 +54,45 @@
           </li>
         </ul>
         <ul class="tw-flex">
+          <li class="tw-mr-1">
+            <a href="https://www.facebook.com" class="tw-w-auto" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="tw-mr-1">
+            <a href="https://www.twitter.com" class="tw-w-auto" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="tw-mr-1">
+            <a href="https://www.linkedin.com" class="tw-w-auto" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
           <li class="tw-mr-3">
-            <button type="button" @click.stop="dialog = true">
-              <img class="tw-h-6" src="@/assets/img/icon_map_question.svg" />
-            </button>
+            <a href="https://www.youtube.com" class="tw-w-auto" target="_blank">
+              <i class="fab fa-youtube"></i>
+            </a>
           </li>
           <li class="no-rounded-right">
-            <a href="javascript:void(0)" class="tw-w-auto">Custom Link 1</a>
+            <a href="javascript:void(0)" class="tw-w-auto" target="_blank">Custom Link 1</a>
           </li>
           <li class="no-rounded-left">
-            <a href="javascript:void(0)" class="tw-w-auto">Custom Link 2</a>
+            <a href="javascript:void(0)" class="tw-w-auto" target="_blank">Custom Link 2</a>
           </li>
         </ul>
       </div>
 
-      <!-- Help Dialog -->
-      <help-dialog :dialog="dialog" @ChangeDialog="updateDialog"></help-dialog>
-
       <!-- Results Dialog -->
       <results-dialog
-        :dialog="dialog2"
-        @ChangeDialog="updateDialog2"
+        :dialog="dialog"
+        @ChangeDialog="updateDialog"
       ></results-dialog>
 
       <!-- Warning Dialog -->
       <warning-dialog
-        :dialog="dialog3"
-        @ChangeDialog="updateDialog3"
+        :dialog="dialog2"
+        @ChangeDialog="updateDialog2"
       ></warning-dialog>
     </div>
 
@@ -122,7 +134,6 @@
   </div>
 </template>
 <script>
-import HelpDialog from "@/components/Settings/HelpDialog.vue";
 import ResultsDialog from "@/components/Map/ResultsDialog.vue";
 import WarningDialog from "@/components/Map/WarningDialog.vue";
 import BaseMap from "@/components/BaseMap/BaseMap.vue";
@@ -130,7 +141,6 @@ import BaseMap from "@/components/BaseMap/BaseMap.vue";
 export default {
   name: "palmbeach",
   components: {
-    HelpDialog,
     ResultsDialog,
     BaseMap,
     WarningDialog
@@ -138,8 +148,7 @@ export default {
   data() {
     return {
       dialog: false,
-      dialog2: false,
-      dialog3: false
+      dialog2: false
     };
   },
   methods: {
@@ -148,9 +157,6 @@ export default {
     },
     updateDialog2(value) {
       this.dialog2 = value;
-    },
-    updateDialog3(value) {
-      this.dialog3 = value;
     }
   }
 };

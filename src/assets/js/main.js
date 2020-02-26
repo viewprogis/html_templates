@@ -120,7 +120,7 @@ export default {
         });
 
         /** Toggle Circular menu **/
-        $(document).on("click", "#toggle-spin", function() {
+        $(document).on("click", ".toggle-spin", function() {
           $("#spin-3d").toggleClass("active");
         });
       }, 200);

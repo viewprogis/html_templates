@@ -1,15 +1,6 @@
 <template>
   <div class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full">
-    <!-- Buffer -->
-    <div class="tw-flex tw-items-center tw-py-2 tw-px-3">
-      <div
-        class="tw-flex-grow tw-flex tw-items-center tw-font-semibold tw-text-lg"
-      >
-        <img class="tw-mr-2" src="@/assets/img/icon_buffer.svg" /> Buffer
-      </div>
-      <img class="tw-flex-none" src="@/assets/img/icon_info.svg" />
-    </div>
-
+    
     <!-- Buffer Opened -->
     <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-2">
       <a
@@ -85,7 +76,7 @@
         <!-- Radius -->
         <div class="tw-font-semibold tw-pt-2 tw-pb-1">Radius</div>
         <v-slider
-          class="tw-mt-2 tw-mb-5"
+          class="tw-mt-2 tw-mb-5 tw-ml-3"
           hide-details
           color="black"
           track-color="white"
