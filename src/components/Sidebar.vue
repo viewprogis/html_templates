@@ -11,7 +11,7 @@
     >
       <a href="/"><img class="tw-w-24" src="@/assets/img/logo.png"/></a>
       <a href="/" class="flex-equal-col tw-text-center tw-text-lg"
-        >West Palm Beach 0.1</a
+        >West Palm Beach</a
       >
       <a
         href="/"
