@@ -13,12 +13,12 @@ export default {
         $("body").addClass("sidebar-active");
 
         /** Sidebar Open/Collapse **/
-        $(document).on("click", "#sidebar .toggle-sidebar", function() {
+        $(document).on("click", "#sidebar .toggle-sidebar, #mobile-menu-btn", function() {
           $("#sidebar").toggleClass("collapse");
           $("body").toggleClass("sidebar-active");
         });
         if (isHomepage) {
-          $("#sidebar .toggle-sidebar").attr("href", "/legend");
+          $("#sidebar .toggle-sidebar, #mobile-menu-btn").attr("href", "/legend");
           $("#sidebar").addClass("collapse");
           $("body").removeClass("sidebar-active");
         }
@@ -112,7 +112,7 @@ export default {
         });
 
         /** Base map **/
-        $(document).on("click", "#base-map-collapse", function() {
+        $(document).on("click", ".base-map-collapse", function() {
           $("#base-map").addClass("collapse");
         });
         $(document).on("click", "#base-map-open", function() {

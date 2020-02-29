@@ -20,7 +20,7 @@
             />
           </div>
 
-          <div class="tw-text-xl tw-font-bold tw-mb-1">Draw Tool</div>
+          <div class="tw-text-lg tw-font-bold tw-mb-1">Draw Tool</div>
           <p class="description">
             Click on this tool to draw various objects such as Point, Line,
             Freehand Curve, Circle, and Polygons. These objects will remain on
@@ -37,7 +37,7 @@
             />
           </div>
 
-          <div class="tw-text-xl tw-font-bold tw-mb-1">Measure Tool</div>
+          <div class="tw-text-lg tw-font-bold tw-mb-1">Measure Tool</div>
           <p class="description">
             Click on this tool to measure length between two points and
             calculate area of various polygon shapes in three separate units at
@@ -54,7 +54,7 @@
             />
           </div>
 
-          <div class="tw-text-xl tw-font-bold tw-mb-1">Buffer Tool</div>
+          <div class="tw-text-lg tw-font-bold tw-mb-1">Buffer Tool</div>
           <p class="description">
             Buffer tool allows you to select data within a desire buffer
             distance from the point of selection. The selection is made by
@@ -73,7 +73,7 @@
             />
           </div>
 
-          <div class="tw-text-xl tw-font-bold tw-mb-1">
+          <div class="tw-text-lg tw-font-bold tw-mb-1">
             Mail-Merge Functionality
           </div>
           <p class="description">
@@ -94,7 +94,7 @@
             />
           </div>
 
-          <div class="tw-text-xl tw-font-bold tw-mb-1">
+          <div class="tw-text-lg tw-font-bold tw-mb-1">
             Address Mapping Tool
           </div>
           <p class="description">
@@ -113,7 +113,7 @@
             />
           </div>
 
-          <div class="tw-text-xl tw-font-bold tw-mb-1">Export to PDF</div>
+          <div class="tw-text-lg tw-font-bold tw-mb-1">Export to PDF</div>
           <p class="description">
             Click on this tool to generate PDF document of the current zoom
             extent of the map. The export tool allows the user to export the map
@@ -130,7 +130,7 @@
             />
           </div>
 
-          <div class="tw-text-xl tw-font-bold tw-mb-1">
+          <div class="tw-text-lg tw-font-bold tw-mb-1">
             Search Functionality
           </div>
           <p class="description">
@@ -151,7 +151,7 @@
             />
           </div>
 
-          <div class="tw-text-xl tw-font-bold tw-mb-1">Menu</div>
+          <div class="tw-text-lg tw-font-bold tw-mb-1">Menu</div>
           <p class="description">
             Menu button stores various functionalities under one button. These
             functionalities can include but not limited to storing Legend,
@@ -168,7 +168,7 @@
             />
           </div>
 
-          <div class="tw-text-xl tw-font-bold tw-mb-1">Land Use Look Up</div>
+          <div class="tw-text-lg tw-font-bold tw-mb-1">Land Use Look Up</div>
           <p class="description">
             This functionality is embedded inside the Menu button. The user can
             go to enCodePlus specific project link to generate “Allowed”,
@@ -189,7 +189,7 @@
             />
           </div>
 
-          <div class="tw-text-xl tw-font-bold tw-mb-1">Legend</div>
+          <div class="tw-text-lg tw-font-bold tw-mb-1">Legend</div>
           <p class="description">
             This functionality is embedded inside the Menu button. The user can
             turn on or off any data layer using the radio buttons. Keep in mind
@@ -207,7 +207,7 @@
             />
           </div>
 
-          <div class="tw-text-xl tw-font-bold tw-mb-1">Change Basemap</div>
+          <div class="tw-text-lg tw-font-bold tw-mb-1">Change Basemap</div>
           <p class="description">
             The user can change the basemap setting by clicking on Personalize
             Map Style icon at the lower right corner of the map viewer. The
@@ -217,7 +217,7 @@
         </div>
 
         <div class="tw-flex tw-flex-col" id="pagination">
-          <div class="tw-flex tw-flex-row tw-mb-2 pagination-numbers">
+          <div class="tw-flex tw-flex-row tw-justify-center tw-mb-2 pagination-numbers">
             <button type="button" class="active">1</button>
             <button type="button">2</button>
             <button type="button">3</button>

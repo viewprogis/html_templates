@@ -1,9 +1,17 @@
 <template>
   <v-dialog v-model="dialog" persistent max-width="900">
     <div class="tw-bg-white tw-p-3">
-      <div class="tw-flex">
+      <div class="tw-flex tw-flex-col xs:tw-flex-row tw-relative">
+        <button
+            type="button"
+            @click="updateValue(false)"
+            class="tw-text-tertiary tw-absolute tw-z-10 tw-top-0 tw-right-0 tw-mt-2 tw-mr-2 tw-font-bold"
+          >
+            Close
+          </button>
+
         <!-- Left Col -->
-        <div class="tw-flex-1 tw-pt-5 tw-pr-12 tw-pl-4 tw-pb-12">
+        <div class="tw-flex-1 tw-pt-5 xs:tw-pr-12 tw-px-4 tw-pb-12">
           <h1 class="tw-text-2xl tw-mb-2">Support</h1>
 
           <p>
@@ -38,15 +46,8 @@
 
         <!-- Right Col -->
         <div
-          class="tw-flex-1 tw-flex tw-flex-col tw-justify-center tw-items-center tw-bg-lightgray tw-relative tw-rounded-lg"
-        >
-          <button
-            type="button"
-            @click="updateValue(false)"
-            class="tw-text-tertiary tw-absolute tw-top-0 tw-right-0 tw-mt-2 tw-mr-2 tw-font-bold"
-          >
-            Close
-          </button>
+          class="tw-flex-1 tw-flex tw-flex-col tw-justify-center tw-items-center tw-bg-lightgray tw-relative tw-rounded-lg tw-px-4 tw-py-10"
+        >          
 
           <h1 class="tw-text-2xl tw-mb-2">Take a Tour</h1>
 

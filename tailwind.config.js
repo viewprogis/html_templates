@@ -3,11 +3,14 @@ module.exports = {
   theme: {
     screens: {
       //Matching breakpoints with Vuetify.
-      sm: "600px",
+      xs: "700px",
       // => @media (min-width: 600px) { ... }
 
-      md: "960px",
-      // => @media (min-width: 960px) { ... }
+      sm: "860px",
+      // => @media (min-width: 860px) { ... }
+
+      md: "1100px",
+      // => @media (min-width: 1100px) { ... }
 
       lg: "1264px",
       // => @media (min-width: 1264px) { ... }

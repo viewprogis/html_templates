@@ -1,12 +1,17 @@
 <template>
   <div
-    class="sidebar tw-relative tw-z-20 tw-bg-lightgray tw-inline-flex tw-flex-col tw-min-h-screen"
+    class="sidebar tw-absolute tw-bottom-0 tw-left-0 tw-rounded-tl-lg tw-rounded-tr-lg tw-px-8 tw-py-16 xs:tw-p-0 xs:tw-rounded-none xs:tw-relative tw-z-20 tw-bg-white xs:tw-bg-lightgray tw-inline-flex tw-flex-col tw-w-full xs:tw-min-h-screen"
     id="sidebar"
   >
     <a href="javascript:void(0)" id="toggle-sidebar" class="toggle-sidebar"></a>
 
+    <!-- Mobile Menu Button -->
+    <div class="tw-fixed tw-bottom-0 tw-left-0 tw-px-4 tw-py-4 tw-z-10 tw-block md:tw-hidden" id="mobile-menu-btn-wrap">
+      <a href="javascript:void(0)" id="mobile-menu-btn" class="tw-flex md:tw-hidden tw-bg-white tw-w-12 tw-h-12 tw-rounded-sm tw-items-center tw-justify-center"><img src="@/assets/img/mobile_menu.svg"/></a>
+    </div>
+
     <div
-      class="tw-flex tw-items-center tw-bg-tertiary tw-px-3 tw-pr-10 tw-py-2 tw-text-white tw-relative"
+      class="tw-flex tw-items-center tw-bg-tertiary tw-px-3 tw-pr-10 xs:tw-py-2 tw-text-white xs:tw-relative xs:tw-w-auto tw-h-16 xs:tw-h-auto tw-fixed tw-top-0 tw-left-0 tw-w-full"
       id="logoComponentsDiv"
     >
       <a href="/"><img class="tw-w-24" src="@/assets/img/logo.png"/></a>
@@ -15,23 +20,23 @@
       >
       <a
         href="/"
-        class="tw-text-xs tw-border-l tw-border-gray-200 tw-pl-3"
+        class="tw-text-xs tw-border-l tw-border-gray-200 tw-pl-3 tw-hidden xs:tw-block"
         id="zoning-map-viewer"
         ><span class="tw-text-gray-500 hover:tw-text-gray-300"
           >Zoning Map Viewer</span
         ></a
       >
     </div>
-    <div class="tw-flex tw-flex-grow tw-flex-grow sidebar-content">
+    <div class="tw-flex tw-flex-grow tw-flex-grow tw-flex-col xs:tw-flex-row sidebar-content">
       <!-- Nav Items -->
       <div
         id="nav"
-        class="tw-flex tw-flex-col tw-flex-none tw-py-3 tw-border-r tw-border-gray-300"
+        class="tw-flex tw-flex-wrap xs:tw-flex-col tw-flex-none tw-py-3 tw-border-r tw-border-gray-300"
       >
         <router-link
           to="/legend"
-          class="tw-block tw-text-center tw-uppercase tw-text-xs tw-mt-2 tw-mb-6"
-          ><i class="fab fa-buffer tw-text-2xl tw-mb-2"></i
+          class="tw-block tw-text-center tw-uppercase tw-text-xs xs:tw-mt-2 tw-mb-6"
+          ><i class="fab fa-buffer tw-text-2xl xs:tw-mb-2"></i
           ><br />Legend</router-link
         >
         <router-link
@@ -100,6 +105,9 @@
           ><i class="material-icons tw-text-2xl tw-mb-3">print</i
           ><br />Print</router-link
         >
+        <div
+          class="tw-mx-auto tw-w-4/5 tw-border-t tw-border-gray tw-mb-6"
+        ></div>
         <router-link
           to="/calendar"
           class="tw-block tw-text-center tw-uppercase tw-text-xs tw-mb-6"
@@ -154,9 +162,6 @@
           />
           <br />Project<br />Info</router-link
         >
-        <div
-          class="tw-mx-auto tw-w-4/5 tw-border-t tw-border-gray tw-mb-6"
-        ></div>
         <router-link
           to="/heatmap-analysis"
           class="tw-group tw-block tw-text-center tw-uppercase tw-text-xs tw-mb-6"
