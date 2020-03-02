@@ -1,5 +1,5 @@
 <template>
-  <div class="tw-flex tw-p-3">
+  <div class="tw-flex tw-p-3 tw-justify-center xs:tw-justify-start">
     <!-- Breadcrumb -->
     <a :href="path" class="tw-mr-1">
       <span class="tw-text-tertiary"

@@ -3,29 +3,87 @@ import $ from "jquery";
 let runOnce = false;
 
 export default {
+  watch:{
+    $route(){
+        runOnce = false;
+    }
+  },
   updated() {
     if (!runOnce) {
       setTimeout(() => {
+        /** Breakpoints **/
+        var xs = window.matchMedia("(max-width: 700px)");
+
+
         runOnce = true;
         let isHomepage = this.$route.path == "/";
+        
+        /** helper functions  **/
+        function toggleSidebar(){
+            $("body").toggleClass("sidebar-active");
+        }
+        function hideSidebar(){
+            $("body").removeClass("sidebar-active");
+        }
+        function showSidebar(){
+            $("body").addClass("sidebar-active");
+        }
+        function toggleToolbox(){
+            $("body").toggleClass("toolbox-active");
+        }
+        function hideToolbox(){
+            $("body").removeClass("toolbox-active");
+        }
+        function showToolbox(){
+            $("body").addClass("toolbox-active");
+        }
+        function hideBaseMap(){
+            $("body").removeClass("basemap-active");
+        }
+        function showBaseMap(){
+            $("body").addClass("basemap-active");
+        }
 
         /** Map buttons **/
-        $("body").addClass("sidebar-active");
-
+        if(!isHomepage)
+            showSidebar(); //Show Sidebar if homepage
+        
         /** Sidebar Open/Collapse **/
-        $(document).on("click", "#sidebar .toggle-sidebar, #mobile-menu-btn", function() {
-          $("#sidebar").toggleClass("collapse");
-          $("body").toggleClass("sidebar-active");
+        $(document).on("click", "#sidebar .toggle-sidebar, .tablet-menu-btn, .mobile-menu-btn", function(e) {// On click of sidebar arrow and mobile menu button
+            e.stopImmediatePropagation();
+
+            toggleSidebar();  //active/inactive sidebar
         });
         if (isHomepage) {
-          $("#sidebar .toggle-sidebar, #mobile-menu-btn").attr("href", "/legend");
-          $("#sidebar").addClass("collapse");
-          $("body").removeClass("sidebar-active");
+            //This is just for homepage, since this is a static site. On homepage nothing shows in sidebar that's why i redirected user to legend page here. You can remove it after integrating backend
+          $("#sidebar .toggle-sidebar, .tablet-menu-btn, .mobile-menu-btn").attr("href", "/legend");
+          hideSidebar();
         }
-        /** Panel Open/Collapse **/
-        $(document).on("click", ".panel-heading", function() {
-          let $parent = $(this).closest(".panel");
 
+        /** Toolbox Open/Collapse **/
+        $(document).on("click", ".mobile-toolbox-btn", function(e) {
+            e.stopImmediatePropagation();
+
+            toggleToolbox();
+        });
+        $(document).on("click", "#nav .nav-links a", function(e) {
+            e.stopImmediatePropagation();
+
+            showSidebar();
+            hideToolbox();
+        });
+        $(document).on("click", ".mobile-toolbox-active", function(e) {
+            e.stopImmediatePropagation();
+            
+            hideSidebar();
+            showToolbox();
+        });
+
+        /** Panel Open/Collapse **/
+        $(document).on("click", ".panel-heading", function(e) {
+          e.stopImmediatePropagation();
+          let $parent = $(this).closest(".panel");
+            
           if ($parent.hasClass("active")) {
             $parent.removeClass("active");
           } else {
@@ -37,7 +95,8 @@ export default {
         $(document).on(
           "click",
           "ul.tree-view li.has-child > .toggle",
-          function() {
+          function(e) {
+            e.stopImmediatePropagation();
             let $parent = $(this).closest("li");
 
             if ($parent.hasClass("active")) {
@@ -48,7 +107,7 @@ export default {
           }
         );
 
-        /** Pagination **/
+        /** Pagination for Video dialog **/
         function paginationNumbersCheck(ActiveBtn) {
           $("#pagination .pagination-numbers button").removeClass("active");
           $(ActiveBtn).addClass("active");
@@ -87,14 +146,16 @@ export default {
         $(document).on(
           "click",
           "#pagination .pagination-numbers button",
-          function() {
+          function(e) {
+            e.stopImmediatePropagation();
             paginationNumbersCheck(this);
             paginationSectionCheck(this);
             paginationButtonsCheck();
           }
         );
 
-        $(document).on("click", "#pagination #prev", function() {
+        $(document).on("click", "#pagination #prev", function(e) {
+            e.stopImmediatePropagation();
           if ($(this).hasClass("active")) {
             let $activeBtn = $("#pagination .pagination-numbers button.active");
             paginationNumbersCheck($activeBtn.prev());
@@ -102,7 +163,8 @@ export default {
             paginationButtonsCheck();
           }
         });
-        $(document).on("click", "#pagination #next", function() {
+        $(document).on("click", "#pagination #next", function(e) {
+            e.stopImmediatePropagation();
           if ($(this).hasClass("active")) {
             let $activeBtn = $("#pagination .pagination-numbers button.active");
             paginationNumbersCheck($activeBtn.next());
@@ -111,16 +173,25 @@ export default {
           }
         });
 
-        /** Base map **/
-        $(document).on("click", ".base-map-collapse", function() {
-          $("#base-map").addClass("collapse");
+        /** Base map Active/Inactive **/
+        $(document).on("click", ".base-map-collapse", function(e) {
+          e.stopImmediatePropagation();
+          
+          hideBaseMap();
         });
-        $(document).on("click", "#base-map-open", function() {
-          $("#base-map").removeClass("collapse");
+        $(document).on("click", "#base-map-open", function(e) {
+          e.stopImmediatePropagation();
+          
+          if(xs.matches){
+            hideSidebar();
+            hideToolbox();
+          }
+          showBaseMap();
         });
 
         /** Toggle Circular menu **/
-        $(document).on("click", ".toggle-spin", function() {
+        $(document).on("click", ".toggle-spin", function(e) {
+          e.stopImmediatePropagation();
           $("#spin-3d").toggleClass("active");
         });
       }, 200);

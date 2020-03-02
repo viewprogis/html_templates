@@ -1,23 +1,24 @@
 <template>
+  <div>
   <div class="tw-fixed tw-top-0 tw-w-full tw-h-full tw-overflow-hidden xs:tw-pt-0 tw-pt-16">
     <div class="tw-relative tw-w-full tw-h-full">
-    <div class="map-container tw-w-full tw-h-full">
+    <div class="map-container tw-w-full tw-h-full tw-relative tw--z-10">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26371661.859564565!2d-113.72360706725826!3d36.210406270518746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2s!4v1579731061144!5m2!1sen!2s"
         class="tw-w-full tw-h-full"
       ></iframe>
-      <a
-        class="tw-absolute tw-z-10 tw-top-0 tw-right-0 tw-mt-20 tw-mr-20 tw-rounded-sm tw-border-2 tw-border-solid tw-border-black tw-bg-white tw-text-black hover:tw-bg-black hover:tw-text-white tw-py-1 tw-px-4"
-        href="/drop-pin/add"
-        >CLICK TO ADD A PIN</a
-      >
     </div>
+    <a
+      class="tw-absolute tw-z-10 tw-top-0 tw-right-0 tw-mt-20 tw-mr-20 tw-rounded-sm tw-border-2 tw-border-solid tw-border-black tw-bg-white tw-text-black hover:tw-bg-black hover:tw-text-white tw-py-1 tw-px-4"
+      href="/drop-pin/add"
+      >CLICK TO ADD A PIN</a
+    >
 
     <div
-      class="map-buttons tw-absolute tw-right-0 tw-top-0 md:tw-top-auto md:tw-bottom-0 md:tw-right-auto md:tw-left-0 tw-bottom-0 tw-z-10 tw-h-full tw-w-auto md:tw-w-full md:tw-h-auto"
+      class="map-buttons tw-absolute tw-right-0 tw-top-0 md:tw-top-auto md:tw-bottom-0 md:tw-right-auto md:tw-left-0 tw-bottom-0 tw-z-10 tw-h-full tw-w-auto md:tw-w-full md:tw-h-auto tw-pointer-events-none"
     >
-      <div class="tw-flex tw-flex-col md:tw-flex-row tw-h-full md:tw-h-auto tw-items-end md:tw-items-center tw-px-4 tw-py-4 md:tw-py-2 tw-justify-between">
-        <ul class="tw-flex tw-flex-grow md:tw-flex-grow-0 tw-flex-col md:tw-flex-row pl-0">
+      <div class="tw-flex tw-flex-col md:tw-flex-row tw-h-full md:tw-h-auto tw-items-end md:tw-items-center tw-px-4 tw-py-4 md:tw-py-2 tw-justify-between tw-pointer-events-none">
+        <ul class="tw-flex tw-flex-col md:tw-flex-row pl-0 tw-pointer-events-auto">
           <li class="tw-mb-2 md:tw-mr-3">
             <a href="javascript:void(0)" class="tw-p-2"
               ><img src="@/assets/img/icon_map_plus.svg"
@@ -54,7 +55,7 @@
             /></a>
           </li>
         </ul>
-        <ul class="tw-flex">
+        <ul class="tw-hidden xs:tw-flex tw-pointer-events-auto">
           <li class="tw-mr-1">
             <a href="https://www.facebook.com" class="tw-p-2" target="_blank">
               <i class="fab fa-facebook-f"></i>
@@ -130,10 +131,11 @@
         </ul>
       </div>
     </div>
-
-    <!-- Base MAP -->
-    <base-map />
+    
     </div>
+  </div>
+  <!-- Base MAP -->
+  <base-map />
   </div>
 </template>
 <script>

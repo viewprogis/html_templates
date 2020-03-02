@@ -3,8 +3,10 @@ module.exports = {
   theme: {
     screens: {
       //Matching breakpoints with Vuetify.
+      xss: "480px",
+      // => @media (min-width: 480px) { ... }
       xs: "700px",
-      // => @media (min-width: 600px) { ... }
+      // => @media (min-width: 700px) { ... }
 
       sm: "860px",
       // => @media (min-width: 860px) { ... }
@@ -38,6 +40,9 @@ module.exports = {
         darkbluealpha: "rgba(81, 144, 246, 0.2)",
         bluepurple: "#6641FF",
         bp: "#0070FF"
+      },
+      textColor: {
+        inherit: "inherit"
       },
       letterSpacing: {
         wider: "3px",

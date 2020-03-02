@@ -1,5 +1,5 @@
 <template>
-  <div class="tw-flex tw-p-3">
+  <div class="tw-hidden xs:tw-flex tw-p-3">
     <div class="tw-flex tw-flex-grow tw-items-center tw-bg-white tw-rounded">
       <a href="/search"
         ><img class="tw-flex-none tw-px-3" src="@/assets/img/icon_search.svg"

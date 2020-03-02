@@ -1,6 +1,6 @@
 <template>
   <div
-    class="base-map collapse tw-fixed tw-z-30 tw-bottom-0 tw-left-0 tw-z-10 tw-w-full tw-bg-white tw-rounded-tl-lg tw-rounded-tr-lg tw-p-6 tw-pt-2"
+    class="base-map tw-hidden tw-fixed tw-z-30 tw-bottom-0 tw-left-0 tw-z-10 tw-w-full tw-bg-white tw-rounded-tl-lg tw-rounded-tr-lg tw-p-6 tw-pt-2"
     id="base-map"
   >
     <a

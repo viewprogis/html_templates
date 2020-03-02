@@ -7,12 +7,12 @@
       <!-- Landuse Lookup Title -->
       <div class="tw-flex tw-items-center tw-py-2 tw-px-4">
         <div
-          class="tw-flex-grow tw-flex tw-items-center tw-font-semibold tw-text-lg"
+          class="tw-flex-grow tw-flex tw-items-center tw-justify-center xs:tw-justify-start tw-font-bold xs:tw-font-semibold tw-text-lg"
         >
           <img class="tw-mr-2 tw-hidden" src="@/assets/img/icon_landuse.svg" />
-          <img class="tw-mr-2" src="@/assets/img/icon_landuse_white.svg" /> Landuse Lookup
+          <img class="tw-mr-2 tw-hidden xs:tw-inline-flex" src="@/assets/img/icon_landuse_white.svg" /> Landuse Lookup
         </div>
-        <img class="tw-flex-none" src="@/assets/img/icon_info_white.svg" />
+        <img class="tw-flex-none tw-hidden xs:tw-flex" src="@/assets/img/icon_info_white.svg" />
       </div>
 
     </Sidebar>

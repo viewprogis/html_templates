@@ -3,6 +3,7 @@
     <Sidebar :currentSidebar="DynamicComponent">
       <!-- Search Box -->
       <search-box></search-box>
+      <div class="mt-8 tw-block xs:tw-hidden"></div>
     </Sidebar>
     <PalmBeach />
   </div>

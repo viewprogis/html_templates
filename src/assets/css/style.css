@@ -18,30 +18,22 @@ button:visited, button:focus,button:active {
     flex-grow: 1;
     flex-basis: 0;
 }
-#nav a:hover,
-#nav a.router-link-exact-active{
+#nav .nav-links a:hover,
+#nav .nav-links a.router-link-exact-active,
+#nav .nav-links a:hover i,
+#nav .nav-links a.router-link-exact-active i{
     @apply tw-text-tertiary !important;
 }
-#nav a > img.active,
-#nav a > img.invert{
+#nav .nav-links a img.active,
+#nav .nav-links a img.invert{
     display: none;
 }
-#nav a:hover > img.active,
-#nav a.router-link-exact-active > img.active{
+#nav .nav-links a:hover img.active,
+#nav .nav-links a.router-link-exact-active img.active{
     display: inline-block;
 }
-#nav a:hover > img:not(.active):not(.invert),
-#nav a.router-link-exact-active > img:not(.active):not(.invert){
-    display: none;
-}
-.dark-mode #nav a > img:not(.active):not(.invert){
-    display: none;
-}
-.dark-mode #nav a > img.invert{
-    display: inline-block;
-}
-.dark-mode #nav a:hover > img.invert,
-.dark-mode #nav a.router-link-exact-active > img.invert{
+#nav .nav-links a:hover img:not(.active):not(.invert),
+#nav .nav-links a.router-link-exact-active img:not(.active):not(.invert){
     display: none;
 }
 
@@ -170,8 +162,21 @@ ul.tree-view .v-input .v-label{
 .dark-mode .sidebar{
     @apply tw-bg-black tw-text-white !important;
 }
-.dark-mode #nav{
+.dark-mode #nav .nav-links{
     border-color: rgba(255,255,255,0.2);
+}
+.dark-mode #nav .nav-links a img:not(.active):not(.invert){
+    display: none;
+}
+.dark-mode #nav .nav-links a img.invert{
+    display: inline-block;
+}
+.dark-mode #nav .nav-links a:hover img.invert,
+.dark-mode #nav .nav-links a.router-link-exact-active img.invert{
+    display: none;
+}
+.dark-mode .mobile-toolbox-btn span{
+    @apply tw-text-white;
 }
 
 
@@ -334,33 +339,24 @@ ul.tree-view .v-input .v-label{
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
-#mobile-menu-btn:hover,
+.tablet-menu-btn:hover,
 .map-buttons li > a:hover,
 .map-buttons li > button:hover{
     @apply tw-bg-lightgray;
 }
-#mobile-menu-btn{
+.tablet-menu-btn{
     -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
     -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
 }
-#sidebar:not(.collapse) #mobile-menu-btn-wrap{
+body.sidebar-active #sidebar .tablet-menu-btn-wrap{
     margin-left: var(--sidebar-active-width);
 }
 
+
 /** BASE MAP **/
-.base-map{
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    transform: translateY(0);
-    transition: all ease 0.2s;
-    transition: all ease 0.2s;
-    transition: all ease 0.2s;
-}
-.base-map.collapse{
-    -webkit-transform: translateY(100%);
-    -moz-transform: translateY(100%);
-    transform: translateY(100%);
+body.basemap-active .base-map{
+    @apply tw-block;
 }
 .base-map-collapse{
     @apply tw-text-base tw-font-bold tw-text-tertiary !important;
@@ -583,16 +579,16 @@ html{
     #sidebar{
         width: var(--sidebar-width);
     }
-    #sidebar.collapse{
+    body:not(.sidebar-active) #sidebar{
         width: 0;
     }
-    #sidebar.collapse > *:not(#logoComponentsDiv):not(#mobile-menu-btn-wrap){
+    body:not(.sidebar-active) #sidebar > *:not(#logoComponentsDiv):not(.tablet-menu-btn-wrap){
         @apply tw-hidden;
     }
     #sidebar #nav{
         width: var(--sidebar-width);
     }
-    #sidebar:not(.collapse){
+    body.sidebar-active #sidebar{
         width: var(--sidebar-active-width);
     }
     #sidebar .toggle-sidebar{
@@ -603,11 +599,11 @@ html{
         font-family: "Font Awesome 5 Pro";
         font-weight: 900;
     }
-    #sidebar.collapse .toggle-sidebar:after{
+    body:not(.sidebar-active) #sidebar .toggle-sidebar:after{
         content: "\f054";
     }
 
-    #sidebar.collapse #logoComponentsDiv{
+    body:not(.sidebar-active) #sidebar #logoComponentsDiv{
         @apply tw-fixed tw-top-0;
         left: 50%;
         -webkit-transform: translateX(-50%);
@@ -616,10 +612,10 @@ html{
         border-radius: 0px 0px 25px 25px;
         box-shadow: 0 0 10px -5px rgba(0, 0, 0, 0.7);
     }
-    #sidebar.collapse #logoComponentsDiv #zoning-map-viewer{
+    body:not(.sidebar-active) #sidebar #logoComponentsDiv #zoning-map-viewer{
         @apply tw-hidden;
     }
-    #sidebar.collapse #sidebarComponentsDiv{
+    body:not(.sidebar-active) #sidebar #sidebarComponentsDiv{
         @apply tw-opacity-0 tw-invisible;
     }
 }
@@ -648,10 +644,10 @@ html{
         padding-left: var(--sidebar-active-width);
     }
 
-    #sidebar.collapse{
+    body:not(.sidebar-active) #sidebar{
         width: var(--sidebar-width);
     }
-    #sidebar.collapse > *:not(#logoComponentsDiv):not(#mobile-menu-btn-wrap){
+    body:not(.sidebar-active) #sidebar > *:not(#logoComponentsDiv):not(.tablet-menu-btn-wrap){
         @apply tw-flex;
     }
 }
@@ -673,6 +669,45 @@ html{
     
 }
 @media (max-width: 960px){
+
 }
-@media (max-width: 600px){
+@media (max-width: 700px){
+    
+    #nav .nav-links a{
+        width: 14.2%;
+    }
+
+    .dark-mode #nav,
+    .dark-mode #sidebarComponentsDiv{
+        @apply tw-bg-black tw-text-white !important;
+    }
+    .dark-mode #nav .nav-links a span{
+        @apply tw-bg-transparent tw-border tw-border-gray-500;
+    }
+
+    body.toolbox-active #sidebar .mobile-toolbox-btn-wrap,
+    body.sidebar-active #sidebar .mobile-toolbox-btn-wrap,
+    body.basemap-active #sidebar .mobile-toolbox-btn-wrap{
+        @apply tw-hidden;
+    }
+    body:not(.toolbox-active) #sidebar #nav{
+        @apply tw-hidden;
+    }
+    body.sidebar-active #sidebar #sidebarComponentsDiv > div{
+        height: 70vh;
+    }
+    body:not(.sidebar-active) #sidebar #sidebarComponentsDiv{
+        @apply tw-hidden;
+    }
+
+    /** Sping btn **/
+    .spin-btns{
+        top: 20vh;
+    }
+}
+@media (max-width: 480px){
+    
+    #nav .nav-links a{
+        width: 25%;
+    }
 }
