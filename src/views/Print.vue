@@ -11,7 +11,9 @@
         >
           <i class="material-icons tw-text-2xl tw-mr-2 tw-hidden xs:tw-inline-flex">print</i> Print
         </div>
-        <img class="tw-flex-none tw-hidden xs:tw-flex" src="@/assets/img/icon_info.svg" />
+        <div class="tw-flex-none tw-hidden xs:tw-flex" data-tooltip="Click on this tool to print the current zoom extent of the map area. The print tool allows commonly used page sizes in portrait and landscape format." data-tooltip-position="right" data-tooltip-oneline="false">
+          <img src="@/assets/img/icon_info.svg" />
+        </div>
       </div>
     </Sidebar>
     <PalmBeach />

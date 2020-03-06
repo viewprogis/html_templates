@@ -11,7 +11,9 @@
         >
           <img class="tw-mr-2 tw-hidden xs:tw-inline-flex" src="@/assets/img/icon_buffer.svg" /> Buffer
         </div>
-        <img class="tw-flex-none tw-hidden xs:tw-flex" src="@/assets/img/icon_info.svg" />
+        <div class="tw-flex-none tw-hidden xs:tw-flex" data-tooltip="This tool allows you to select data within a desired buffer distance from the point of selection. The selection can be made by drawing a line, polygon, point or selecting individual parcels polygons." data-tooltip-position="right" data-tooltip-oneline="false">
+          <img src="@/assets/img/icon_info.svg" />
+        </div>
       </div>
     </Sidebar>
     <PalmBeach />

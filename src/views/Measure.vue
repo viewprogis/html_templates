@@ -11,7 +11,9 @@
         >
           <img src="@/assets/img/icon_measure.svg" class="tw-mr-2 tw-hidden xs:tw-inline-flex" /> Measure
         </div>
-        <img class="tw-flex-none tw-hidden xs:tw-flex" src="@/assets/img/icon_info.svg" />
+        <div class="tw-flex-none tw-hidden xs:tw-flex" data-tooltip="Click on this tool to measure length between two points and calculate area of various polygon shapes in three separate units at one time. Click delete button to clear the results." data-tooltip-position="right" data-tooltip-oneline="false">
+          <img  src="@/assets/img/icon_info.svg" />
+        </div>
       </div>
 
     </Sidebar>

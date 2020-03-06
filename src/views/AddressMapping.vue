@@ -12,7 +12,9 @@
           <i class="fas fa-cloud-upload-alt tw-text-2xl tw-mr-2 tw-hidden xs:tw-inline-flex"></i> Address
           Mapping
         </div>
-        <img class="tw-flex-none tw-hidden xs:tw-flex" src="@/assets/img/icon_info.svg" />
+        <div class="tw-flex-none tw-hidden xs:tw-flex" data-tooltip="This tool returns the geographic location of addresses on the map stored in a spreadsheet. Click clear to remove the selection." data-tooltip-position="right" data-tooltip-oneline="false">
+          <img src="@/assets/img/icon_info.svg" />
+        </div>
       </div>
     </Sidebar>
     <PalmBeach />

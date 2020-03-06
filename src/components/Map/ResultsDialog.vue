@@ -5,17 +5,18 @@
     max-width="380"
     content-class="results-dialog"
   >
+    <div
+      class="tw-flex tw-items-center tw-justify-between tw-bg-tertiary tw-text-lg tw-font-bold tw-text-white tw-px-4 tw-py-2 tw-relative"
+    >
+      Results
+      <button type="button" @click="updateValue(false)">
+        <img src="@/assets/img/icon_close.svg" />
+      </button>
+    </div>
     <div class="tw-bg-white tw-w-full tw-h-full">
-      <div
-        class="tw-flex tw-items-center tw-justify-between tw-bg-tertiary tw-text-lg tw-font-bold tw-text-white tw-px-4 tw-py-2 tw-relative"
-      >
-        Results
-        <button type="button" @click="updateValue(false)">
-          <img src="@/assets/img/icon_close.svg" />
-        </button>
-      </div>
+      
 
-      <div class="tw-relative tw-overflow-auto tw-w-full" style="max-height: 65vh;">
+      <div class="tw-relative tw-overflow-auto tw-w-full" style="max-height: 55vh;">
         
           <!-- Parcel Opened -->
           <div class="panel active">
