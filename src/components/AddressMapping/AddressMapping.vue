@@ -17,7 +17,7 @@
         </p>
 
         <button
-          class="btn-primary tw-mb-4 tw-rounded-br-15 tw-py-2 tw-px-4 tw-text-sm tw-w-full"
+          class="btn-primary tw-mb-4 tw-rounded-br-15 tw-py-2 tw-px-4 tw-text-sm tw-w-full tw-max-w-sm"
         >
           Upload Excel
         </button>

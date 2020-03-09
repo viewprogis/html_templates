@@ -1,5 +1,5 @@
 <template>
-  <ul class="tw-list-none tw-flex tw-flex-wrap" style="padding: 0;">
+  <ul class="drawing-tools tw-list-none tw-flex tw-flex-wrap">
     <li class="tw-p-1">
       <a
         class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12"

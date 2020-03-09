@@ -9,7 +9,8 @@
     --sidebar-width: 5rem;
     --sidebar-active-width: 27rem;
 }
-button:visited, button:focus,button:active {
+button:visited, button:focus,button:active,
+select:visited, select:focus,select:active {
     outline: none;
 }
 
@@ -59,10 +60,12 @@ button:visited, button:focus,button:active {
     border-right: 10px solid transparent;
     border-top-width: 10px;
 }
-.base-map-list a:hover{
+.base-map-list a:hover,
+.base-map-list a.active{
     @apply tw-text-tertiary !important;
 }
-.base-map-list a:hover img{
+.base-map-list a:hover img,
+.base-map-list a.active img{
     @apply tw-border-tertiary !important;
 }
 
@@ -101,6 +104,7 @@ ul.tree-view li > .v-input{
 ul.tree-view .v-input .v-label{
     color: #000;
     height: auto;
+    @apply tw-text-base;
 }
 
 
@@ -114,6 +118,10 @@ ul.tree-view .v-input .v-label{
     height: 24px !important;
     width: 24px !important;
     right: 2px !important;*/
+}
+
+.v-application--is-ltr .v-input--selection-controls__input{
+    margin-right: 0.5rem;
 }
 .v-input--switch--inset .v-input--switch__track{
     height: 100%;
@@ -156,6 +164,12 @@ ul.tree-view .v-input .v-label{
 
 .theme--light.v-label{
     color: #000;
+}
+.v-label{
+    @apply tw-text-base;
+}
+.v-icon.v-icon {
+    font-size: 1.5rem;
 }
 
 /** Dark Mode **/
@@ -211,7 +225,7 @@ ul.tree-view .v-input .v-label{
     content: "\f077";
     font-family: "Font Awesome 5 Pro";
     font-weight: 900;
-    font-size: 12px;
+    font-size: 0.7rem;
     color: #fff;
     background: url("../img/blue_circle.svg");
     background-repeat: no-repeat;
@@ -232,7 +246,7 @@ ul.tree-view .v-input .v-label{
     display: block;
     font-family: "Font Awesome 5 Pro";
     font-weight: 900;
-    font-size: 12px;
+    font-size: 0.7rem;
     color: #fff;
     background: url("../img/blue_circle.svg");
     background-repeat: no-repeat;
@@ -252,7 +266,7 @@ ul.tree-view .v-input .v-label{
     display: block;
     font-family: "Font Awesome 5 Pro";
     font-weight: 900;
-    font-size: 12px;
+    font-size: 0.7rem;
     color: #fff;
     background: url("../img/blue_circle.svg");
     background-repeat: no-repeat;
@@ -380,194 +394,34 @@ body.basemap-active .base-map{
     top: 50%;
     left: 50%;
     z-index: 99;
-    width: 12.5em;
-    height: 12.5em;
-    border-radius: 50%;
-    background: transparent;
     opacity: 0;
     -webkit-transition: all .3s ease 0.3s;
     -moz-transition: all .3s ease 0.3s;
     transition: all .3s ease 0.3s;
-    -webkit-transform: scale(0.1) translateX(-50%) translateY(-50%);
-    -ms-transform: scale(0.1) translateX(-50%) translateY(-50%);
-    -moz-transform: scale(0.1) translateX(-50%) translateY(-50%);
-    transform: scale(0.1);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
     pointer-events: none;
-    overflow: hidden;
 }
 .active > .spin-btns{
-    border-radius: 50%;
     opacity: 1;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     transition: all .3s ease;
-    -webkit-transform: scale(1) translateX(-50%) translateY(-50%);
-    -moz-transform: scale(1) translateX(-50%) translateY(-50%);
-    -ms-transform: scale(1) translateX(-50%) translateY(-50%);
-    transform: scale(1) translateX(-50%) translateY(-50%);
     pointer-events: auto;
 }
-.spin-btns:after {
-    content: "";
-    display: block;
-    font-size: 1.6em;
-    width: 4.3em;
-    height: 4.3em;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    border-radius: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    z-index: 10;
-    color: transparent;
-    border: 2px solid #000;
+.spin-btns .intersection:hover{
+    fill: #000000;
+    stroke: #000000;
+    cursor: pointer;
+    transition: fill .2s ease;
+}
+.spin-btns .intersection.active{
+    fill: var(--v-tertiary-base);
+}
+.spin-btns .icon{
     pointer-events: none;
-}
-.spin-btns ul{
-    padding: 0;
-    margin: 0;
-}
-.spin-btns ul li {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    overflow: hidden;
-    margin-top: -1em;
-    margin-left: -10em;
-    width: 10em;
-    height: 10em;
-    font-size: 0.7em;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    transition: all .3s ease;
-    -webkit-transform: rotate(75deg) skew(62deg);
-    -moz-transform: rotate(75deg) skew(62deg);
-    -ms-transform: rotate(75deg) skew(62deg);
-    transform: rotate(75deg) skew(62deg);
-    -webkit-transform-origin: 100% 100%;
-    -moz-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-    pointer-events: none;
-}
-.spin-btns ul li:before {
-    content: "";
-    display: block;
-    width: 2px;
-    height: 3.6em;
-    background: #000;
-    position: absolute;
-    top: 1.8em;
-    right: 0;
-    z-index: 1;
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-    -webkit-transform: translateZ(0);
-    -moz-transform: translateZ(0);
-    transform: translateZ(0);
-}
-.spin-btns ul li:first-child {
-    -webkit-transform: rotate(20deg) skew(18deg);
-    -moz-transform: rotate(20deg) skew(18deg);
-    -ms-transform: rotate(20deg) skew(18deg);
-    transform: rotate(20deg) skew(18deg);
-}
-.spin-btns ul li:nth-child(2) {
-    -webkit-transform: rotate(92deg) skew(18deg);
-    -moz-transform: rotate(92deg) skew(18deg);
-    -ms-transform: rotate(92deg) skew(18deg);
-    transform: rotate(92deg) skew(18deg);
-}
-.spin-btns ul li:nth-child(3) {
-    -webkit-transform: rotate(164deg) skew(18deg);
-    -moz-transform: rotate(164deg) skew(18deg);
-    -ms-transform: rotate(164deg) skew(18deg);
-    transform: rotate(164deg) skew(18deg);
-}
-.spin-btns ul li:nth-child(4) {
-    -webkit-transform: rotate(236deg) skew(18deg);
-    -moz-transform: rotate(236deg) skew(18deg);
-    -ms-transform: rotate(236deg) skew(18deg);
-    transform: rotate(236deg) skew(18deg);
-}
-.spin-btns ul li:nth-child(5) {
-    -webkit-transform: rotate(308deg) skew(18deg);
-    -moz-transform: rotate(308deg) skew(18deg);
-    -ms-transform: rotate(308deg) skew(18deg);
-    transform: rotate(308deg) skew(18deg);
-}
-.spin-btns ul li a {
-    position: absolute;
-    right: -7.25em;
-    bottom: -7.25em;
-    display: block;
-    width: 14.5em;
-    height: 14.5em;
-    border-radius: 50%;
-    background: #37383E;
-    background: -webkit-radial-gradient(transparent 40%, #37383E 40%);
-    background: -moz-radial-gradient(transparent 40%, #08c 40%);
-    background: radial-gradient(transparent 40%, #37383E 40%);
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.2em;
-    line-height: 2;
-    -webkit-transform: skew(-18deg) rotate(-75deg) scale(1);
-    -moz-transform: skew(-18deg) rotate(-75deg) scale(1);
-    -ms-transform: skew(-18deg) rotate(-75deg) scale(1);
-    transform: skew(-18deg) rotate(-56deg) scale(1);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    pointer-events: auto;
-    border-top: 2px solid #000;
-}
-.spin-btns ul li a span {
-    position: relative;
-    top: 1.8em;
-    display: block;
-    font-size: .5em;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-.spin-btns ul li:first-child a span{
-    -webkit-transform: rotate(36deg);
-    -moz-transform: rotate(36deg);
-    transform: rotate(36deg);
-}
-.spin-btns ul li:nth-child(2) a span{
-    -webkit-transform: rotate(-36deg);
-    -moz-transform: rotate(-36deg);
-    transform: rotate(-36deg);
-}
-.spin-btns ul li:nth-child(3) a span{
-    -webkit-transform: rotate(-108deg);
-    -moz-transform: rotate(-108deg);
-    transform: rotate(-108deg);
-}
-.spin-btns ul li:nth-child(4) a span{
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    transform: rotate(180deg);
-}
-.spin-btns ul li:nth-child(5) a span{
-    -webkit-transform: rotate(108deg);
-    -moz-transform: rotate(108deg);
-    transform: rotate(108deg);
-}
-.spin-btns ul li a img{
-    display: inline-block;
-    max-width: 1.2rem;
-}
-.spin-btns ul li.active > a{
-    background: -webkit-radial-gradient(transparent 40%,  40%);
-    background: -moz-radial-gradient(transparent 40%, var(--v-tertiary-base) 40%);
-    background: radial-gradient(transparent 40%, var(--v-tertiary-base) 40%);
-}
-.spin-btns ul li a:hover{
-    background: -webkit-radial-gradient(transparent 40%,  40%);
-    background: -moz-radial-gradient(transparent 40%, #000 40%);
-    background: radial-gradient(transparent 40%, #000 40%);
 }
 
 /*** Tooltip ***/
@@ -640,10 +494,28 @@ body.basemap-active .base-map{
     opacity : 1;
 }
 
+
+/** Drawing Tools **/
+ul.drawing-tools{
+    padding: 0;
+}
+ul.drawing-tools li{
+    padding: 4px;
+}
+ul.drawing-tools li a{
+    padding: 10px;
+}
+
+/** Table **/
+table.data-table td{
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
 /*** Responsive Work Below ***/
 /*****************************/
 html{
-    font-size: 11px !important;
+    font-size: 14px !important;
 }
 /** MIN **/
 @media (min-width: 700px){
@@ -744,8 +616,32 @@ html{
 @media (max-width: 1264px){
     
 }
-@media (max-width: 960px){
+@media (max-width: 860px){
 
+    /* Arrows */
+    .panel .panel-heading:not(.right):before,
+    .panel .panel-heading.right:after,
+    .blue-arrow-right:after{
+        width: 19px;
+        height: 19px;
+        line-height: 19px;
+    }
+    .panel.active .panel-heading:not(.right):before,
+    .panel.active .panel-heading.right:after{
+        line-height: 21px;
+    }
+    .blue-arrow-right:after{text-indent: 1px;}
+
+    /* Base Map */
+    .base-map-list{
+        max-width: 520px;
+        margin-left: auto;
+        margin-right: auto;
+        @apply tw-justify-start;
+    }
+    .base-map-list a {
+        width: 20%;
+    }
 }
 @media (max-width: 700px){
     
@@ -780,10 +676,17 @@ html{
     .spin-btns{
         top: 20vh;
     }
+    
 }
 @media (max-width: 480px){
     
     #nav .nav-links a{
         width: 25%;
+    }
+    .base-map-list{
+        max-width: 360px;
+    }
+    .base-map-list a {
+        width: 33.333%;
     }
 }

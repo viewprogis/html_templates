@@ -10,7 +10,7 @@
     >
       Results
       <button type="button" @click="updateValue(false)">
-        <img src="@/assets/img/icon_close.svg" />
+        <img src="@/assets/img/icon_close.svg" class="tw-w-3" />
       </button>
     </div>
     <div class="tw-bg-white tw-w-full tw-h-full">
@@ -31,7 +31,7 @@
             >
 
             <div class="panel-content tw-py-3 tw-px-4">
-              <table class="tw-text-sm tw-text-left">
+              <table class="data-table tw-text-sm tw-text-left">
                 <tr class="tw-border-b tw-border-solid">
                   <td
                     class="tw-py-1 tw-pr-2 tw-text-right tw-align-top tw-whitespace-no-wrap"
@@ -87,7 +87,7 @@
             >
 
             <div class="panel-content tw-py-3 tw-px-4">
-              <table class="tw-text-sm tw-text-left">
+              <table class="data-table tw-text-sm tw-text-left">
                 <tr class="tw-border-b tw-border-solid">
                   <td
                     class="tw-py-1 tw-pr-2 tw-text-right tw-align-top tw-whitespace-no-wrap"
@@ -114,7 +114,7 @@
 
       <div class="tw-px-4 tw-py-3">
         <button
-          class="btn-primary tw-font-bold tw-rounded-br-15 tw-py-2 tw-px-4 tw-text-sm tw-w-full toggle-spin"
+          class="btn-primary tw-font-bold tw-rounded-br-15 tw-py-3 sm:tw-py-2 tw-px-4 tw-text-sm tw-w-full toggle-spin"
           @click="updateValue(false)"
         >
           Open Analytical Tools

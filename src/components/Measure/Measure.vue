@@ -12,7 +12,7 @@
 
       <div class="panel-content tw-mt-4">
         <!-- Selection -->
-        <ul class="tw-list-none tw-flex tw-flex-wrap" style="padding: 0;">
+        <ul class="drawing-tools tw-list-none tw-flex tw-flex-wrap">
           <li class="tw-p-1">
             <a
               class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12"
@@ -46,7 +46,7 @@
             /></a>
           </li>
         </ul>
-        <ul class="tw-list-none tw-flex tw-flex-wrap" style="padding: 0;">
+        <ul class="drawing-tools tw-list-none tw-flex tw-flex-wrap">
           <li class="tw-p-1">
             <a
               class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12"
@@ -59,7 +59,7 @@
 
         <!-- Length Segment -->
         <table
-          class="tw-text-sm tw-text-left tw-mt-4 tw-w-full tw-max-w-4xs tw-table-fixed"
+          class="tw-text-left tw-mt-4 tw-w-full tw-max-w-4xs tw-table-fixed"
         >
           <tr>
             <th class="tw-p-1 tw-text-xs">Length</th>

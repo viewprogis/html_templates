@@ -35,7 +35,7 @@
 
         <!-- Selection -->
         <div class="tw-font-semibold tw-pt-2 tw-pb-1">Selection</div>
-        <ul class="tw-list-none tw-flex tw-flex-wrap" style="padding: 0;">
+        <ul class="drawing-tools tw-list-none tw-flex tw-flex-wrap">
           <li class="tw-p-1">
             <a
               class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12"
@@ -118,7 +118,7 @@
           </div>
         </div>
 
-        <table class="tw-text-sm tw-text-left tw-mt-4">
+        <table class="tw-text-left tw-mt-4">
           <tr class="tw-border-b tw-border-solid">
             <th class="tw-p-1 tw-text-xs">Area</th>
             <td class="tw-p-1">0 acres</td>
