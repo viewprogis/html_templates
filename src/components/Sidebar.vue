@@ -49,6 +49,8 @@
         </div>
         
         <div class="nav-links tw-flex tw-flex-wrap xs:tw-flex-col tw-flex-none xs:tw-pt-3 xs:tw-border-r xs:tw-border-gray-300">
+          <img id="v-logo" class="tw-hidden xs:tw-block xs:tw-mx-auto tw-mt-1 tw-mb-3" src="@/assets/img/v_logo.svg" />
+
           <router-link
             to="/legend"
             class="tw-block tw-text-center tw-px-2 xs:tw-px-0 xs:tw-mx-auto tw-w-16 xs:tw-w-auto tw-uppercase tw-text-xs xs:tw-mt-2 tw-mb-6"

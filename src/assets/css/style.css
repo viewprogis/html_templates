@@ -512,6 +512,15 @@ table.data-table td{
     padding-bottom: 4px;
 }
 
+/** V logo **/
+body.sidebar-active #v-logo{
+    display: none !important;
+}
+body:not(.sidebar-active) #sidebar .toggle-sidebar {
+    margin-top: 1rem;
+    @apply tw-border-white tw-bg-lightgray tw-text-black;
+}
+
 /*** Responsive Work Below ***/
 /*****************************/
 html{
