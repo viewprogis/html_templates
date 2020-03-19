@@ -423,6 +423,28 @@ ul.tree-view .v-input .v-label{
 .map-buttons li > button:hover{
     @apply tw-bg-graycustom;
 }
+.map-buttons li > a.social-icon{
+    background: #fff;
+    width: auto;
+    height: 1.9rem;
+    padding: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    @apply tw-text-4xl;
+}
+.map-buttons li > a.social-icon.facebook i{
+    color: #3b5998;
+}
+.map-buttons li > a.social-icon.twitter i{
+    color: #1DA1F2;
+}
+.map-buttons li > a.social-icon.linkedin i{
+    color: #0e76a8;
+}
+.map-buttons li > a.social-icon.youtube i{
+    color: #c4302b;
+}
 .tablet-menu-btn{
     -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
     -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;

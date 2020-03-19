@@ -57,23 +57,23 @@
         </ul>
         <ul class="tw-hidden xs:tw-flex tw-pointer-events-auto">
           <li class="tw-mb-2 tw-mr-1">
-            <a href="https://www.facebook.com" class="tw-p-2" target="_blank">
-              <i class="fab fa-facebook-f"></i>
+            <a href="https://www.facebook.com" class="social-icon facebook tw-p-2" target="_blank">
+              <i class="fab fa-facebook-square"></i>
             </a>
           </li>
           <li class="tw-mb-2 tw-mr-1">
-            <a href="https://www.twitter.com" class="tw-p-2" target="_blank">
-              <i class="fab fa-twitter"></i>
+            <a href="https://www.twitter.com" class="social-icon twitter tw-p-2" target="_blank">
+              <i class="fab fa-twitter-square"></i>
             </a>
           </li>
           <li class="tw-mb-2 tw-mr-1">
-            <a href="https://www.linkedin.com" class="tw-p-2" target="_blank">
-              <i class="fab fa-linkedin-in"></i>
+            <a href="https://www.linkedin.com" class="social-icon linkedin tw-p-2" target="_blank">
+              <i class="fab fa-linkedin"></i>
             </a>
           </li>
           <li class="tw-mb-2 tw-mr-3">
-            <a href="https://www.youtube.com" class="tw-p-2" target="_blank">
-              <i class="fab fa-youtube"></i>
+            <a href="https://www.youtube.com" class="social-icon youtube tw-p-2" target="_blank">
+              <i class="fab fa-youtube-square"></i>
             </a>
           </li>
           <li class="tw-mb-2 no-rounded-right">
