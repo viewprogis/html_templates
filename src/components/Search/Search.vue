@@ -1,7 +1,7 @@
 <template>
   <div class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full">
     <!-- Address Results -->
-    <div class="panel tw-bg-white tw-rounded tw-p-3 xs:tw-mt-2">
+    <div class="panel tw-bg-white tw-rounded active">
       <a
         href="javascript:void(0)"
         class="tw-flex tw-items-center panel-heading"
@@ -40,7 +40,7 @@
     </div>
 
     <!-- Parcel Results -->
-    <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-2">
+    <div class="panel tw-bg-white tw-rounded tw-mt-2 active">
       <a
         href="javascript:void(0)"
         class="tw-flex tw-items-center panel-heading"

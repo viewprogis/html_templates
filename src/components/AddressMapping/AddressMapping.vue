@@ -2,7 +2,7 @@
   <div class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full">
     
     <!-- Uploading -->
-    <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-2">
+    <div class="panel tw-bg-white tw-rounded active">
       <a
         href="javascript:void(0)"
         class="tw-flex tw-items-center panel-heading"
@@ -29,7 +29,7 @@
     </div>
 
     <!-- Results -->
-    <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-2">
+    <div class="panel tw-bg-white tw-rounded tw-mt-2">
       <div class="tw-flex tw-items-center">
         <a
           href="javascript:void(0)"
@@ -48,9 +48,9 @@
         <p class="tw-text-sm">Geocoded <b>10 locations</b></p>
 
         <div class="tw-bg-lightgray tw-mb-4 tw-p-1">
-          <div class="tw-overflow-auto tw-h-80">
+          <div class="tw-overflow-auto tw-h-96 tw-leading-snug">
             <!-- Row -->
-            <div class="tw-border-b tw-border-gray-400 tw-px-3 tw-py-1">
+            <div class="tw-px-3 tw-py-1">
               7390 Richland Ave,
               <br />
               Kansas City,
@@ -59,7 +59,7 @@
             </div>
 
             <!-- Row -->
-            <div class="tw-border-b tw-border-gray-400 tw-px-3 tw-py-1">
+            <div class="tw-px-3 tw-py-1">
               7390 Richland Ave,
               <br />
               Kansas City,
@@ -68,7 +68,7 @@
             </div>
 
             <!-- Row -->
-            <div class="tw-border-b tw-border-gray-400 tw-px-3 tw-py-1">
+            <div class="tw-px-3 tw-py-1">
               7390 Richland Ave,
               <br />
               Kansas City,
@@ -77,7 +77,7 @@
             </div>
 
             <!-- Row -->
-            <div class="tw-border-b tw-border-gray-400 tw-px-3 tw-py-1">
+            <div class="tw-px-3 tw-py-1">
               7390 Richland Ave,
               <br />
               Kansas City,
@@ -86,7 +86,16 @@
             </div>
 
             <!-- Row -->
-            <div class="tw-border-b tw-border-gray-400 tw-px-3 tw-py-1">
+            <div class="tw-px-3 tw-py-1">
+              7390 Richland Ave,
+              <br />
+              Kansas City,
+              <br />
+              Kansas, 66111
+            </div>
+
+            <!-- Row -->
+            <div class="tw-px-3 tw-py-1">
               7390 Richland Ave,
               <br />
               Kansas City,

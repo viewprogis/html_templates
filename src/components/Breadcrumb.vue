@@ -1,12 +1,12 @@
 <template>
-  <div class="tw-flex tw-p-3 tw-justify-center xs:tw-justify-start">
+  <div class="tw-flex tw-z-20 tw-bg-lightgray xss:tw-bg-transparent xss:tw-p-3 xss:tw-px-5 xss:tw-m-0 xss:tw-static xss:tw-leading-normal tw-justify-center xss:tw-justify-start tw-absolute tw-top-0 tw-left-0 tw-pl-4 tw-py-2 tw-leading-none">
     <!-- Breadcrumb -->
     <a :href="path" class="tw-mr-1">
       <span class="tw-text-tertiary"
         ><i class="fas fa-long-arrow-alt-left"></i> Back</span
       >
     </a>
-    / Drop Pin
+    <span class="tw-hidden xss:tw-inline-block">/ Drop Pin</span>
   </div>
 </template>
 

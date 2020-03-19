@@ -3,7 +3,16 @@
     <Sidebar :currentSidebar="DynamicComponent">
       <!-- Search Box -->
       <search-box></search-box>
-      <div class="mt-8 tw-block xs:tw-hidden"></div>
+      
+      <!-- Legend Title -->
+      <div class="tw-flex xss:tw-hidden tw-items-center tw-py-2 tw-leading-none tw-absolute tw-top-0 tw-left-0 tw-right-0 xss:tw-static">
+        <div
+          class="tw-flex-grow tw-flex tw-items-center tw-justify-center tw-font-bold tw-text-lg"
+        >
+          Legend
+        </div>
+      </div>
+
     </Sidebar>
     <PalmBeach />
   </div>

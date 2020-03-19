@@ -5,7 +5,7 @@
     <div>
       <!-- Tertiary Pin -->
       <div
-        class="tw-bg-white tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-overflow-hidden tw-text-sm tw-border-l-4 tw-border-solid tw-border-tertiary"
+        class="tw-bg-white tw-flex tw-items-center tw-relative tw-z-10 tw-overflow-hidden tw-text-sm tw-border-l-4 tw-border-solid tw-border-tertiary"
       >
         <div
           class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-tertiary tw-opacity-25"
@@ -23,11 +23,11 @@
 
             <div class="tw-flex tw-items-center tw-text-xs tw-mt-1">
               <div class="tw-flex-grow">
-                <a href="javascript:void(0)" class="tw-mr-3"
-                  ><i class="fas fa-thumbs-up"></i> 432</a
+                <a href="javascript:void(0)" class="tw-mr-3 tw-group"
+                  ><i class="fas fa-thumbs-up group-hover:tw-text-tertiary"></i> 432</a
                 >
-                <a href="javascript:void(0)"
-                  ><i class="fas fa-thumbs-down"></i> 33</a
+                <a href="javascript:void(0)" class="tw-group"
+                  ><i class="fas fa-thumbs-down group-hover:tw-text-tertiary"></i> 33</a
                 >
               </div>
               <a href="javascript:void(0)"
@@ -58,11 +58,11 @@
 
             <div class="tw-flex tw-items-center tw-text-xs tw-mt-1">
               <div class="tw-flex-grow">
-                <a href="javascript:void(0)" class="tw-mr-3"
-                  ><i class="fas fa-thumbs-up"></i> 432</a
+                <a href="javascript:void(0)" class="tw-mr-3 tw-group"
+                  ><i class="fas fa-thumbs-up group-hover:tw-text-tertiary"></i> 432</a
                 >
-                <a href="javascript:void(0)"
-                  ><i class="fas fa-thumbs-down"></i> 33</a
+                <a href="javascript:void(0)" class="tw-group"
+                  ><i class="fas fa-thumbs-down group-hover:tw-text-tertiary"></i> 33</a
                 >
               </div>
               <a href="javascript:void(0)"
@@ -79,7 +79,7 @@
 
             <form>
               <textarea
-                class="tw-w-full tw-rounded tw-bg-lightyellowalpha tw-placeholder-gray-700 tw-outline-none tw-resize-none tw-py-2 tw-px-3"
+                class="tw-w-full tw-rounded tw-bg-lightyellowalpha tw-placeholder-gray-700 tw-outline-none tw-resize-none tw-py-2 tw-px-3 tw-text-sm"
                 rows="5"
                 placeholder="Write your reply..."
               ></textarea>
@@ -89,18 +89,18 @@
               </p>
               <input
                 type="email"
-                class="tw-w-full tw-rounded tw-bg-lightyellowalpha tw-placeholder-gray-700 tw-outline-none tw-resize-none tw-py-2 tw-px-3"
+                class="input-global tw-w-full tw-rounded tw-bg-lightyellowalpha tw-outline-none tw-resize-none tw-py-2 tw-px-3 tw-text-sm"
                 placeholder="Email"
               />
 
               <input
                 type="text"
-                class="tw-mt-2 tw-w-full tw-rounded tw-bg-lightyellowalpha tw-placeholder-gray-700 tw-outline-none tw-resize-none tw-py-2 tw-px-3"
+                class="input-global tw-mt-2 tw-w-full tw-rounded tw-bg-lightyellowalpha tw-outline-none tw-resize-none tw-py-2 tw-px-3 tw-text-sm"
                 placeholder="Screen Name (optional)"
               />
 
               <button
-                class="tw-bg-graycustom tw-text-black tw-font-bold tw-my-4 tw-rounded-br-15 tw-py-1 tw-px-4 tw-float-right tw-w-24 tw-text-lg"
+                class="tw-bg-graycustom tw-text-black tw-font-bold tw-my-4 tw-rounded-br-15 tw-py-1 tw-px-4 tw-float-right tw-w-24"
               >
                 Send
               </button>
@@ -170,11 +170,11 @@
 
             <div class="tw-flex tw-items-center tw-text-xs tw-mt-1">
               <div class="tw-flex-grow">
-                <a href="javascript:void(0)" class="tw-mr-3"
-                  ><i class="fas fa-thumbs-up"></i> 432</a
+                <a href="javascript:void(0)" class="tw-mr-3 tw-group"
+                  ><i class="fas fa-thumbs-up group-hover:tw-text-tertiary"></i> 432</a
                 >
-                <a href="javascript:void(0)"
-                  ><i class="fas fa-thumbs-down"></i> 33</a
+                <a href="javascript:void(0)" class="tw-group"
+                  ><i class="fas fa-thumbs-down group-hover:tw-text-tertiary"></i> 33</a
                 >
               </div>
               <a href="javascript:void(0)"
@@ -205,11 +205,11 @@
 
             <div class="tw-flex tw-items-center tw-text-xs tw-mt-1">
               <div class="tw-flex-grow">
-                <a href="javascript:void(0)" class="tw-mr-3"
-                  ><i class="fas fa-thumbs-up"></i> 432</a
+                <a href="javascript:void(0)" class="tw-mr-3 tw-group"
+                  ><i class="fas fa-thumbs-up group-hover:tw-text-tertiary"></i> 432</a
                 >
-                <a href="javascript:void(0)"
-                  ><i class="fas fa-thumbs-down"></i> 33</a
+                <a href="javascript:void(0)" class="tw-group"
+                  ><i class="fas fa-thumbs-down group-hover:tw-text-tertiary"></i> 33</a
                 >
               </div>
               <a href="javascript:void(0)"
@@ -240,11 +240,11 @@
 
             <div class="tw-flex tw-items-center tw-text-xs tw-mt-1">
               <div class="tw-flex-grow">
-                <a href="javascript:void(0)" class="tw-mr-3"
-                  ><i class="fas fa-thumbs-up"></i> 432</a
+                <a href="javascript:void(0)" class="tw-mr-3 tw-group"
+                  ><i class="fas fa-thumbs-up group-hover:tw-text-tertiary"></i> 432</a
                 >
-                <a href="javascript:void(0)"
-                  ><i class="fas fa-thumbs-down"></i> 33</a
+                <a href="javascript:void(0)" class="tw-group"
+                  ><i class="fas fa-thumbs-down group-hover:tw-text-tertiary"></i> 33</a
                 >
               </div>
               <a href="javascript:void(0)"

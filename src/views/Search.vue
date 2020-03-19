@@ -5,9 +5,9 @@
       <search-box></search-box>
       
       <!-- Search Title -->
-      <div class="tw-flex xs:tw-hidden tw-items-center tw-py-2 tw-px-4">
+      <div class="tw-flex xss:tw-hidden tw-items-center tw-py-2 tw-leading-none tw-absolute tw-top-0 tw-left-0 tw-right-0 xss:tw-static xss:tw-leading-normal xss:tw-py-2 xss:tw-px-4">
         <div
-          class="tw-flex-grow tw-flex tw-items-center tw-justify-center xs:tw-justify-start tw-font-bold xs:tw-font-semibold tw-text-lg"
+          class="tw-flex-grow tw-flex tw-items-center tw-justify-center xss:tw-justify-start tw-font-bold xss:tw-font-semibold tw-text-lg"
         >
           Search
         </div>

@@ -2,7 +2,7 @@
   <div class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full">
     
     <!-- Form -->
-    <div class="tw-bg-white tw-rounded tw-p-3 tw-mt-2">
+    <div class="panel tw-bg-white tw-rounded active">
       <!-- Select Box -->
       <div
         class="tw-w-full tw-relative tw-z-10 tw-rounded tw-overflow-hidden tw-my-2"
@@ -11,7 +11,7 @@
           class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-tertiary tw-opacity-25"
         ></div>
         <select
-          class="tw-py-2 tw-px-4 tw-text-sm tw-w-full tw-placeholder-black tw-appearance-none"
+          class="input-global tw-px-4 tw-text-sm tw-w-full tw-placeholder-black tw-appearance-none"
         >
           <option selected>Poor road condition</option>
           <option>Condition 1</option>
@@ -26,7 +26,7 @@
       </div>
 
       <textarea
-        class="tw-w-full tw-rounded tw-bg-lightbluealpha tw-placeholder-gray-700 tw-outline-none tw-resize-none tw-py-2 tw-px-3"
+        class="tw-w-full tw-rounded tw-bg-lightbluealpha tw-outline-none tw-resize-none tw-py-2 tw-px-3 tw-text-sm"
         rows="5"
         placeholder="Write your message..."
       ></textarea>
@@ -38,13 +38,13 @@
       </p>
       <input
         type="email"
-        class="tw-w-full tw-rounded tw-bg-lightbluealpha tw-placeholder-gray-700 tw-outline-none tw-resize-none tw-py-2 tw-px-3"
+        class="input-global tw-w-full tw-rounded tw-bg-lightbluealpha tw-outline-none tw-resize-none tw-px-3 tw-text-sm"
         placeholder="Email"
       />
 
       <input
         type="text"
-        class="tw-mt-2 tw-w-full tw-rounded tw-bg-lightbluealpha tw-placeholder-gray-700 tw-outline-none tw-resize-none tw-py-2 tw-px-3"
+        class="input-global tw-mt-2 tw-w-full tw-rounded tw-bg-lightbluealpha tw-outline-none tw-resize-none tw-px-3 tw-text-sm"
         placeholder="Screen Name (optional)"
       />
 

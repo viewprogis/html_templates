@@ -6,12 +6,31 @@
 
 /** Global CSS **/
 :root {
-    --sidebar-width: 5rem;
-    --sidebar-active-width: 27rem;
+    --sidebar-width: 72px;
+    --sidebar-active-width: 448px;
+    --logo-component-height: 52px;
 }
+html, body{overflow: hidden;}
 button:visited, button:focus,button:active,
 select:visited, select:focus,select:active {
     outline: none;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    @apply tw-font-light;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    @apply tw-font-light;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    @apply tw-font-light;
+}
+:-moz-placeholder { /* Firefox 18- */
+    @apply tw-font-light;
+}
+input[type=text],
+textarea,
+select{
+    @apply tw-text-sm;
 }
 
 /* Helper CSS */
@@ -19,22 +38,40 @@ select:visited, select:focus,select:active {
     flex-grow: 1;
     flex-basis: 0;
 }
-#nav .nav-links a:hover,
-#nav .nav-links a.router-link-exact-active,
-#nav .nav-links a:hover i,
-#nav .nav-links a.router-link-exact-active i{
+#nav .nav-links > a{
+    width: 100%;
+    height: var(--sidebar-width);
+    padding-bottom: 5px;
+    line-height: 1.2;
+    font-size: 11px;
+    @apply tw-flex tw-flex-col tw-justify-end;
+}
+#nav .nav-links > a i.fa-buffer{
+    font-size: 24px;
+}
+#nav .nav-links > a i.fa-cloud-upload-alt{
+    font-size: 18px;
+}
+#nav .nav-links > a i.material-icons.print{
+    font-size: 24px;
+}
+#nav .nav-links > a.router-link-exact-active,
+#nav .nav-links > a.router-link-exact-active i,
+
+#nav .nav-links > a.router-link-active,
+#nav .nav-links > a.router-link-active i{
     @apply tw-text-tertiary !important;
 }
-#nav .nav-links a img.active,
-#nav .nav-links a img.invert{
+#nav .nav-links > a img.active,
+#nav .nav-links > a img.invert{
     display: none;
 }
-#nav .nav-links a:hover img.active,
-#nav .nav-links a.router-link-exact-active img.active{
+#nav .nav-links > a.router-link-exact-active img.active,
+#nav .nav-links > a.router-link-active img.active{
     display: inline-block;
 }
-#nav .nav-links a:hover img:not(.active):not(.invert),
-#nav .nav-links a.router-link-exact-active img:not(.active):not(.invert){
+#nav .nav-links > a.router-link-exact-active img:not(.active):not(.invert),
+#nav .nav-links > a.router-link-active img:not(.active):not(.invert){
     display: none;
 }
 
@@ -67,6 +104,10 @@ select:visited, select:focus,select:active {
 .base-map-list a:hover img,
 .base-map-list a.active img{
     @apply tw-border-tertiary !important;
+}
+
+.input-global{
+    height: 36px;
 }
 
 /** Tree View **/
@@ -128,19 +169,23 @@ ul.tree-view .v-input .v-label{
     top: 0;
 }
 .v-input--switch--inset .v-input--switch__track, .v-input--switch--inset .v-input--selection-controls__input{
-    width: 42px;
+    width: 38px;
     left: 0;
 }
 .v-input--switch.v-input--dense.v-input--switch--inset .v-input--switch__track{
     width: 38px;
 }
 .v-application--is-ltr .v-input--switch--inset .v-input--selection-controls__ripple, .v-application--is-ltr .v-input--switch--inset .v-input--switch__thumb {
-    -webkit-transform: translate(3px, 0) !important;
-    transform: translate(3px, 0) !important;
+    -webkit-transform: translate(2px, 0) !important;
+    transform: translate(2px, 0) !important;
 }
 .v-application--is-ltr .v-input--switch--inset.v-input--is-dirty .v-input--selection-controls__ripple, .v-application--is-ltr .v-input--switch--inset.v-input--is-dirty .v-input--switch__thumb {
-    -webkit-transform: translate(20px, 0) !important;
-    transform: translate(20px, 0) !important;
+    -webkit-transform: translate(16px, 0) !important;
+    transform: translate(16px, 0) !important;
+}
+.theme--light.v-input--switch .v-input--switch__track,
+.theme--light.v-input--switch .v-input--switch__thumb{
+    @apply tw-text-switchoffgray;
 }
 .v-input--selection-controls__ripple{
     display: none !important;
@@ -150,6 +195,7 @@ ul.tree-view .v-input .v-label{
 .v-slider__thumb-container .v-slider__thumb:before {
     -webkit-transform: scale(1) !important;
     transform: scale(1) !important;
+    opacity: 0.2;
 }
 .v-slider--horizontal .v-slider__track-container{
     -webkit-box-shadow: 0 0 0 2px #F0F2F4 !important;
@@ -172,21 +218,25 @@ ul.tree-view .v-input .v-label{
     font-size: 1.5rem;
 }
 
+.v-application p{
+    margin-bottom: 10px;
+}
+
 /** Dark Mode **/
 .dark-mode .sidebar{
-    @apply tw-bg-black tw-text-white !important;
+    @apply tw-bg-darkmodegray tw-text-white !important;
 }
 .dark-mode #nav .nav-links{
     border-color: rgba(255,255,255,0.2);
 }
-.dark-mode #nav .nav-links a img:not(.active):not(.invert){
+.dark-mode #nav .nav-links > a img:not(.active):not(.invert){
     display: none;
 }
-.dark-mode #nav .nav-links a img.invert{
+.dark-mode #nav .nav-links > a img.invert{
     display: inline-block;
 }
-.dark-mode #nav .nav-links a:hover img.invert,
-.dark-mode #nav .nav-links a.router-link-exact-active img.invert{
+.dark-mode #nav .nav-links > a.router-link-exact-active img.invert,
+.dark-mode #nav .nav-links > a.router-link-active img.invert{
     display: none;
 }
 .dark-mode .mobile-toolbox-btn span{
@@ -199,22 +249,27 @@ ul.tree-view .v-input .v-label{
 ::-webkit-scrollbar-track
 {
     /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
-    border-radius: 10px;
+    border-radius: 12px;
     background-color: transparent;
 }
 ::-webkit-scrollbar
 {
-	width: 10px;
+	width: 12px;
 	background-color: transparent;
 }
 ::-webkit-scrollbar-thumb
 {
-	border-radius: 10px;
+	border-radius: 12px;
 	/*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);*/
 	background-color: #A4A5AF;
 }
 
 /*** Panel Open/Collapse ***/
+.panel{
+    @apply tw-px-4;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+}
 .panel > .panel-content{
     display: none;
 }
@@ -222,7 +277,7 @@ ul.tree-view .v-input .v-label{
     display: block;
 }
 .panel .panel-heading:not(.right):before{
-    content: "\f077";
+    content: "\f054";
     font-family: "Font Awesome 5 Pro";
     font-weight: 900;
     font-size: 0.7rem;
@@ -230,10 +285,10 @@ ul.tree-view .v-input .v-label{
     background: url("../img/blue_circle.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: 22px;
     width: 22px;
     height: 22px;
-    line-height: 22px;
+    line-height: 23px;
     text-align: center;
     @apply tw-mr-2;
 }
@@ -251,7 +306,7 @@ ul.tree-view .v-input .v-label{
     background: url("../img/blue_circle.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: 22px;
     width: 22px;
     height: 22px;
     line-height: 22px;
@@ -271,7 +326,7 @@ ul.tree-view .v-input .v-label{
     background: url("../img/blue_circle.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: 22px;
     width: 22px;
     height: 22px;
     line-height: 22px;
@@ -281,11 +336,15 @@ ul.tree-view .v-input .v-label{
 
 /** Search home btn **/
 .search-home-btn{
-    background: rgba(0,0,0,0.08);
+    width: 44px;
+    background: rgba(0,0,0,0.05);
 }
+.search-home-btn .invert{display: none;}
 .dark-mode .search-home-btn{
-    background: rgba(255,255,255,0.8);
+    background: rgba(255,255,255,0.08);
 }
+.dark-mode .search-home-btn img{display: none;}
+.dark-mode .search-home-btn .invert{display: block;}
 
 /** Radio Buttons **/
 .v-application .v-radio .v-icon{
@@ -362,7 +421,7 @@ ul.tree-view .v-input .v-label{
 .tablet-menu-btn:hover,
 .map-buttons li > a:hover,
 .map-buttons li > button:hover{
-    @apply tw-bg-lightgray;
+    @apply tw-bg-graycustom;
 }
 .tablet-menu-btn{
     -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
@@ -412,13 +471,13 @@ body.basemap-active .base-map{
     pointer-events: auto;
 }
 .spin-btns .intersection:hover{
-    fill: #000000;
-    stroke: #000000;
+    fill: #000000 !important;
+    stroke: #000000 !important;
     cursor: pointer;
     transition: fill .2s ease;
 }
 .spin-btns .intersection.active{
-    fill: var(--v-tertiary-base);
+    fill: var(--v-tertiary-base) !important;
 }
 .spin-btns .icon{
     pointer-events: none;
@@ -506,19 +565,44 @@ ul.drawing-tools li a{
     padding: 10px;
 }
 
-/** Table **/
-table.data-table td{
-    padding-top: 4px;
-    padding-bottom: 4px;
-}
 
 /** V logo **/
+#v-logo{
+    height: var(--logo-component-height);
+}
 body.sidebar-active #v-logo{
-    display: none !important;
+    @apply tw-fixed tw-top-0 tw-right-0 tw-mt-4 tw-mr-4 tw-h-auto;
 }
 body:not(.sidebar-active) #sidebar .toggle-sidebar {
-    margin-top: 1rem;
     @apply tw-border-white tw-bg-lightgray tw-text-black;
+}
+body:not(.sidebar-active) .dark-mode #sidebar .toggle-sidebar{
+    @apply tw-border-graycustom tw-bg-darkmodegray tw-text-graycustom;
+}
+
+
+/** Sidebar **/
+.panel-fix-width{width: 352px;}
+#show-next-links, #show-prev-links{display: none;}
+#show-prev-links{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+#show-next-links img.invert, #show-prev-links img.invert{
+    display: none;
+}
+.dark-mode #show-next-links img.invert, .dark-mode #show-prev-links img.invert{
+    display: block;
+}
+.dark-mode #show-next-links img:not(.invert), .dark-mode #show-prev-links img:not(.invert){
+    display: none;
+}
+.menu-separator{
+    @apply tw-hidden tw-absolute tw-bottom-0 tw-left-0 tw-right-0 tw-mx-auto tw-w-4/5 tw-border-t tw-border-graycustom;
+}
+.dark-mode .menu-separator{
+    @apply tw-opacity-25;
 }
 
 /*** Responsive Work Below ***/
@@ -527,29 +611,31 @@ html{
     font-size: 14px !important;
 }
 /** MIN **/
-@media (min-width: 700px){
+@media (min-width: 480px){
     html{
-        font-size: 12px !important;
+        font-size: 16px !important;
     }
 
-    /** Sidebar Toggle **/
-    #sidebar{
-        width: var(--sidebar-width);
+    
+    /** Sidebar Header **/
+    #logoComponentsDiv{
+        height: var(--logo-component-height);
     }
-    body:not(.sidebar-active) #sidebar{
-        width: 0;
-    }
-    body:not(.sidebar-active) #sidebar > *:not(#logoComponentsDiv):not(.tablet-menu-btn-wrap){
-        @apply tw-hidden;
-    }
-    #sidebar #nav{
-        width: var(--sidebar-width);
-    }
+
     body.sidebar-active #sidebar{
         width: var(--sidebar-active-width);
     }
     #sidebar .toggle-sidebar{
-        @apply tw-absolute tw-z-10 tw-right-0 tw-mt-2 tw--mr-3 tw-flex tw-items-center tw-justify-center tw-w-8 tw-h-8 tw-border tw-border-lightgray tw-rounded-full tw-bg-tertiary tw-text-white;
+        @apply tw-absolute tw-z-10 tw-right-0 tw--mr-3 tw-flex tw-items-center tw-justify-center tw-w-8 tw-h-8 tw-border tw-border-lightgray tw-rounded-full tw-bg-tertiary tw-text-white;
+        max-width: 30px;
+        max-height: 30px;
+        top: 11px;
+    }
+    #sidebar .toggle-sidebar:hover{
+        @apply tw-bg-lightgray tw-text-black;
+    }
+    .dark-mode #sidebar .toggle-sidebar:hover{
+        @apply tw-border-graycustom tw-bg-darkmodegray tw-text-graycustom;
     }
     #sidebar .toggle-sidebar:after{
         content: "\f053";
@@ -568,7 +654,12 @@ html{
         transform: translateX(-50%);
         border-radius: 0px 0px 25px 25px;
         box-shadow: 0 0 10px -5px rgba(0, 0, 0, 0.7);
+        height: 41px;
+        padding-left: 10px;
+        padding-right: 25px;
     }
+    body:not(.sidebar-active) #sidebar #logoComponentsDiv img{max-height: 27px;}
+    body:not(.sidebar-active) #sidebar #logoComponentsDiv a{@apply tw-text-sm;}
     body:not(.sidebar-active) #sidebar #logoComponentsDiv #zoning-map-viewer{
         @apply tw-hidden;
     }
@@ -576,11 +667,52 @@ html{
         @apply tw-opacity-0 tw-invisible;
     }
 }
-@media (min-width: 860px){
-    html{
-        font-size: 13px !important;
-    }
+@media (min-width: 768px){
+    
 
+    /** Sidebar Toggle **/
+    #sidebar{
+        width: var(--sidebar-width);
+    }
+    body:not(.sidebar-active) #sidebar{
+        width: 0;
+    }
+    body:not(.sidebar-active) #sidebar > *:not(#logoComponentsDiv):not(.tablet-menu-btn-wrap){
+        @apply tw-hidden;
+    }
+    #sidebar #nav{
+        width: var(--sidebar-width);
+    }
+    body.sidebar-active #sidebar{
+        width: var(--sidebar-active-width);
+    }
+    .menu-separator{@apply tw-block;}
+
+    
+
+    #nav .nav-links > a.search-link{
+        display: none;
+    }
+    #nav .nav-links > a:not(.search-link):not(.settings-link){
+        @apply tw-hidden;
+    }
+    #nav .nav-links > a.show-links:not(.search-link):not(.settings-link){
+        @apply tw-flex;
+    }
+        
+    #nav .nav-links > a:not(.settings-link):not(.router-link-exact-active):not(.router-link-active):hover{
+        background: rgba(0,0,0,0.08);
+    }
+    .dark-mode #nav .nav-links > a:not(.settings-link):not(.router-link-exact-active):not(.router-link-active):hover{
+        background: rgba(255,255,255,0.1);
+    }
+}
+@media (min-width: 992px){
+    
+    
+    
+}
+@media (min-width: 1024px){
     .base-map-collapse{
         @apply tw-text-black !important;
         font-size: 0 !important;
@@ -588,33 +720,24 @@ html{
     .base-map-collapse i{
         @apply tw-text-base !important;
     }
-}
-@media (min-width: 1100px){
-    html{
-        font-size: 14px !important;
-    }
-
     .map-buttons{
         padding-left: var(--sidebar-width);
     }
     .sidebar-active .map-buttons{
         padding-left: var(--sidebar-active-width);
     }
-
     body:not(.sidebar-active) #sidebar{
         width: var(--sidebar-width);
     }
     body:not(.sidebar-active) #sidebar > *:not(#logoComponentsDiv):not(.tablet-menu-btn-wrap){
         @apply tw-flex;
     }
+    body:not(.sidebar-active) .dark-mode #v-logo{@apply tw-invisible;}
 }
 @media (min-width: 1264px){
-    html{
-        font-size: 16px !important;
-    }
-    :root{
-        --sidebar-active-width: 30rem;
-    }
+    
+    
+    
 }
 @media (min-width: 1904px){
 
@@ -623,27 +746,15 @@ html{
 
 /** MAX **/
 @media (max-width: 1264px){
-    
+    body.sidebar-active #v-logo{
+        @apply tw-hidden !important;
+    }
 }
-@media (max-width: 860px){
-
-    /* Arrows */
-    .panel .panel-heading:not(.right):before,
-    .panel .panel-heading.right:after,
-    .blue-arrow-right:after{
-        width: 19px;
-        height: 19px;
-        line-height: 19px;
-    }
-    .panel.active .panel-heading:not(.right):before,
-    .panel.active .panel-heading.right:after{
-        line-height: 21px;
-    }
-    .blue-arrow-right:after{text-indent: 1px;}
+@media (max-width: 1024px){
 
     /* Base Map */
     .base-map-list{
-        max-width: 520px;
+        max-width: 710px;
         margin-left: auto;
         margin-right: auto;
         @apply tw-justify-start;
@@ -652,17 +763,32 @@ html{
         width: 20%;
     }
 }
-@media (max-width: 700px){
+@media (max-width: 992px){
+
     
-    #nav .nav-links a{
+
+    /* Base Map */
+    .base-map-list{
+        max-width: 520px;
+    }
+}
+@media (max-width: 767px){
+    
+    :root {
+        --sidebar-active-width: 376px;
+    }
+
+    
+    #nav .nav-links > a{
         width: 14.2%;
+        @apply tw-h-auto tw-justify-start tw-mb-5;
     }
 
     .dark-mode #nav,
     .dark-mode #sidebarComponentsDiv{
-        @apply tw-bg-black tw-text-white !important;
+        @apply tw-bg-darkmodegray tw-text-white !important;
     }
-    .dark-mode #nav .nav-links a span{
+    .dark-mode #nav .nav-links > a span{
         @apply tw-bg-transparent tw-border tw-border-gray-500;
     }
 
@@ -674,22 +800,45 @@ html{
     body:not(.toolbox-active) #sidebar #nav{
         @apply tw-hidden;
     }
-    body.sidebar-active #sidebar #sidebarComponentsDiv > div{
-        height: 70vh;
-    }
     body:not(.sidebar-active) #sidebar #sidebarComponentsDiv{
+        @apply tw-hidden;
+    }
+
+    
+    body:not(.sidebar-active) #sidebar > a.toggle-sidebar{
         @apply tw-hidden;
     }
 
     /** Sping btn **/
     .spin-btns{
-        top: 20vh;
+        top: 175px;
     }
     
 }
-@media (max-width: 480px){
+@media (max-width: 600px){
+
+    #nav .nav-links > a{
+        width: 20%;
+    }
+}
+@media (max-width: 479px){
     
-    #nav .nav-links a{
+    /* Arrows */
+    .panel .panel-heading:not(.right):before,
+    .panel .panel-heading.right:after,
+    .blue-arrow-right:after{
+        width: 19px;
+        height: 19px;
+        line-height: 19px;
+        background-size: 19px;
+    }
+    .panel.active .panel-heading:not(.right):before,
+    .panel.active .panel-heading.right:after{
+        line-height: 21px;
+    }
+    .blue-arrow-right:after{text-indent: 1px;}
+
+    #nav .nav-links > a{
         width: 25%;
     }
     .base-map-list{
@@ -698,4 +847,22 @@ html{
     .base-map-list a {
         width: 33.333%;
     }
+
+    
+    body.sidebar-active #sidebar #sidebarComponentsDiv > div{
+        height: 80vh;
+        padding-top: 45px;
+    }
+    #zoning-map-viewer{
+        @apply tw-block tw-invisible;
+    }
+
+    .panel-fix-width{
+        width: 100%;
+    }
+}
+@media (max-width: 374px){
+
+    #logoComponentsDiv .logo{max-width: 75px;}
+    #logoComponentsDiv .logo-text{@apply tw-text-base;}
 }

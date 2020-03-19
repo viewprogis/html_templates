@@ -2,7 +2,7 @@
   <div class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full">
     
     <!-- Buffer Opened -->
-    <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-2">
+    <div class="panel tw-bg-white tw-rounded active">
       <a
         href="javascript:void(0)"
         class="tw-flex tw-items-center panel-heading"
@@ -19,7 +19,7 @@
             class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-tertiary tw-opacity-25"
           ></div>
           <select
-            class="tw-py-2 tw-px-4 tw-text-sm tw-w-full tw-placeholder-black tw-appearance-none"
+            class="input-global tw-px-4 tw-text-sm tw-w-full tw-placeholder-black tw-appearance-none"
           >
             <option selected>Parcels</option>
             <option>Parcel 1</option>
@@ -40,7 +40,7 @@
             <a
               class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12"
               href="javascript:void(0)"
-              data-tooltip="Draw point"
+              data-tooltip="Draw Point"
               ><img class="tw-mx-auto" src="@/assets/img/pin_icon.svg"
             /></a>
           </li>
@@ -48,7 +48,7 @@
             <a
               class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12"
               href="javascript:void(0)"
-              data-tooltip="Draw line"
+              data-tooltip="Draw Line"
               ><img class="tw-mx-auto" src="@/assets/img/selection_line.svg"
             /></a>
           </li>
@@ -56,7 +56,7 @@
             <a
               class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12"
               href="javascript:void(0)"
-              data-tooltip="Draw polygon"
+              data-tooltip="Draw Polygon"
               ><img class="tw-mx-auto" src="@/assets/img/selection_polygon.png"
             /></a>
           </li>
@@ -64,7 +64,7 @@
             <a
               class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12"
               href="javascript:void(0)"
-              data-tooltip="Select parcel"
+              data-tooltip="Select Parcel"
               ><img class="tw-mx-auto" src="@/assets/img/selection_layer.svg"
             /></a>
           </li>
@@ -94,16 +94,16 @@
           class="tw-inline-flex tw-items-center tw-bg-lightgray tw-rounded tw-overflow-hidden"
         >
           <input
-            class="tw-flex-grow tw-w-32 tw-bg-transparent tw-border-none tw-appearance-none tw-py-2 tw-px-4 tw-text-gray-700 tw-leading-tight focus:tw-outline-none"
+            class="input-global tw-flex-grow tw-w-24 tw-bg-transparent tw-border-none tw-appearance-none tw-px-4 tw-text-sm tw-leading-tight focus:tw-outline-none"
             type="text"
-            placeholder="placeholder"
+            placeholder=""
           />
           <div class="tw-flex-none tw-relative tw-z-10">
             <div
               class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-tertiary tw-opacity-25"
             ></div>
             <select
-              class="tw-py-2 tw-px-4 tw-text-sm tw-w-full tw-placeholder-black tw-appearance-none"
+              class="input-global tw-px-4 tw-text-sm tw-w-full tw-placeholder-black tw-appearance-none"
             >
               <option selected>ft</option>
               <option>inch</option>

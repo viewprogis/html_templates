@@ -4,7 +4,7 @@
       <a
         class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12"
         href="javascript:void(0)"
-        data-tooltip="Draw point"
+        data-tooltip="Draw Point"
         ><img class="tw-mx-auto" src="@/assets/img/pin_icon.svg"
       /></a>
     </li>
@@ -12,7 +12,7 @@
       <a
         class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12"
         href="javascript:void(0)"
-        data-tooltip="Draw line"
+        data-tooltip="Draw Line"
         ><img class="tw-mx-auto" src="@/assets/img/selection_line.svg"
       /></a>
     </li>
@@ -20,7 +20,7 @@
       <a
         class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12"
         href="javascript:void(0)"
-        data-tooltip="Draw polygon"
+        data-tooltip="Draw Polygon"
         ><img class="tw-mx-auto" src="@/assets/img/selection_polygon.png"
       /></a>
     </li>
@@ -28,7 +28,7 @@
       <a
         class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12"
         href="javascript:void(0)"
-        data-tooltip="Draw circle"
+        data-tooltip="Draw Circle"
         ><img class="tw-mx-auto" src="@/assets/img/draw_circle.svg"
       /></a>
     </li>
@@ -36,7 +36,7 @@
       <a
         class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12"
         href="javascript:void(0)"
-        data-tooltip="Draw rectangle"
+        data-tooltip="Draw Rectangle"
         ><img class="tw-mx-auto" src="@/assets/img/draw_rectangle.svg"
       /></a>
     </li>
@@ -44,7 +44,7 @@
       <a
         class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12"
         href="javascript:void(0)"
-        data-tooltip="Draw freehand curve"
+        data-tooltip="Draw Freehand Curve"
         ><img class="tw-mx-auto" src="@/assets/img/draw_curve.svg"
       /></a>
     </li>
@@ -52,7 +52,7 @@
       <a
         class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12"
         href="javascript:void(0)"
-        data-tooltip="Delete drawing"
+        data-tooltip="Delete Drawing"
         ><img class="tw-mx-auto" src="@/assets/img/trash_icon.svg"
       /></a>
     </li>

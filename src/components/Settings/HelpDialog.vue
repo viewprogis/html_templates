@@ -20,20 +20,20 @@
           </p>
 
           <textarea
-            class="tw-w-full tw-rounded tw-bg-lightbluealpha tw-placeholder-gray-700 tw-outline-none tw-resize-none tw-py-2 tw-px-3"
+            class="tw-w-full tw-rounded tw-bg-lightbluealpha tw-outline-none tw-resize-none tw-py-2 tw-px-3"
             rows="10"
             placeholder="Write your message..."
           ></textarea>
 
           <input
             type="email"
-            class="tw-mt-3 tw-w-full tw-rounded tw-bg-lightbluealpha tw-placeholder-gray-700 tw-outline-none tw-resize-none tw-py-2 tw-px-3"
+            class="input-global tw-mt-3 tw-w-full tw-rounded tw-bg-lightbluealpha tw-outline-none tw-resize-none tw-py-2 tw-px-3"
             placeholder="Email"
           />
 
           <input
             type="text"
-            class="tw-mt-2 tw-w-full tw-rounded tw-bg-lightbluealpha tw-placeholder-gray-700 tw-outline-none tw-resize-none tw-py-2 tw-px-3"
+            class="input-global tw-mt-2 tw-w-full tw-rounded tw-bg-lightbluealpha tw-outline-none tw-resize-none tw-py-2 tw-px-3"
             placeholder="Screen Name (optional)"
           />
 

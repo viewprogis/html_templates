@@ -2,7 +2,7 @@
   <div class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full">
     
     <!-- Upcoming Events -->
-    <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-2">
+    <div class="panel tw-bg-white tw-rounded active">
       <a
         href="javascript:void(0)"
         class="tw-flex tw-items-center panel-heading"
@@ -12,7 +12,7 @@
 
       <div class="panel-content tw-mt-4">
         <!-- Event 1 -->
-        <div class="tw-border-t tw-border-solid tw-border-gray-300 tw-py-4">
+        <div class="tw-border-t tw-border-solid tw-border-gray-300 tw-py-4 tw-px-2 tw-text-sm">
           <h1 class="tw-text-2xl tw-font-bold tw-mb-2 tw-leading-tight">
             Upcoming Event 1
           </h1>
@@ -29,7 +29,7 @@
         </div>
 
         <!-- Event 2 -->
-        <div class="tw-border-t tw-border-solid tw-border-gray-300 tw-py-4">
+        <div class="tw-border-t tw-border-solid tw-border-gray-300 tw-py-4 tw-px-2 tw-text-sm">
           <h1 class="tw-text-2xl tw-font-bold tw-mb-2 tw-leading-tight">
             Upcoming Event 2
           </h1>
@@ -46,7 +46,7 @@
         </div>
 
         <!-- Event 3 -->
-        <div class="tw-border-t tw-border-solid tw-border-gray-300 tw-py-4">
+        <div class="tw-border-t tw-border-solid tw-border-gray-300 tw-py-4 tw-px-2 tw-text-sm">
           <h1 class="tw-text-2xl tw-font-bold tw-mb-2 tw-leading-tight">
             Upcoming Event 3
           </h1>

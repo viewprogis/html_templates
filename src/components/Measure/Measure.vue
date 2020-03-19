@@ -2,7 +2,7 @@
   <div class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full">
     
     <!-- Measure -->
-    <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-2">
+    <div class="panel tw-bg-white tw-rounded active">
       <a
         href="javascript:void(0)"
         class="tw-flex tw-items-center panel-heading"
@@ -17,7 +17,7 @@
             <a
               class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12"
               href="javascript:void(0)"
-              data-tooltip="Measure line"
+              data-tooltip="Measure Line"
               ><img class="tw-mx-auto" src="@/assets/img/selection_line.svg"
             /></a>
           </li>
@@ -25,7 +25,7 @@
             <a
               class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12"
               href="javascript:void(0)"
-              data-tooltip="Measure circle"
+              data-tooltip="Measure Circle"
               ><img class="tw-mx-auto" src="@/assets/img/draw_circle.svg"
             /></a>
           </li>
@@ -33,7 +33,7 @@
             <a
               class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12"
               href="javascript:void(0)"
-              data-tooltip="Measure polygon"
+              data-tooltip="Measure Polygon"
               ><img class="tw-mx-auto" src="@/assets/img/selection_polygon.png"
             /></a>
           </li>
@@ -41,7 +41,7 @@
             <a
               class="tw-flex tw-items-center tw-rounded-lg tw-p-2 tw-border hover:tw-border-tertiary tw-w-12 tw-h-12"
               href="javascript:void(0)"
-              data-tooltip="Measure rectangle"
+              data-tooltip="Measure Rectangle"
               ><img class="tw-mx-auto" src="@/assets/img/draw_rectangle.svg"
             /></a>
           </li>

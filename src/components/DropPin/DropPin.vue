@@ -2,7 +2,7 @@
   <div class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full">
     
     <!-- Participate Opened -->
-    <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-2">
+    <div class="panel tw-bg-white tw-rounded active">
       <a
         href="javascript:void(0)"
         class="tw-flex tw-items-center panel-heading"
@@ -17,7 +17,7 @@
 
         <a
           href="/drop-pin/comments"
-          class="tw-flex tw-items-center tw-relative tw-z-10 tw-mt-4 tw-rounded tw-overflow-hidden tw-py-2 tw-px-4 tw-text-sm"
+          class="input-global tw-flex tw-items-center tw-relative tw-z-10 tw-mt-4 tw-rounded tw-overflow-hidden tw-py-2 tw-px-4 tw-text-sm"
         >
           <div
             class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-tertiary tw-opacity-25"
@@ -29,7 +29,7 @@
     </div>
 
     <!-- Drop Pin Opened -->
-    <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-2">
+    <div class="panel tw-bg-white tw-rounded tw-mt-2 active">
       <a
         href="javascript:void(0)"
         class="tw-flex tw-items-center panel-heading"
@@ -44,16 +44,16 @@
 
         <!-- Tertiary Pin -->
         <div
-          class="tw-flex tw-items-center tw-relative tw-z-10 tw-rounded-sm tw-overflow-hidden tw-py-1 tw-px-4 tw-text-sm tw-border-l-4 tw-border-solid tw-border-tertiary"
+          class="tw-group tw-flex tw-items-center tw-relative tw-z-10 tw-rounded-sm tw-overflow-hidden tw-py-1 tw-px-4 tw-text-sm tw-border-l-4 tw-border-solid tw-border-tertiary"
         >
           <div
-            class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-tertiary tw-opacity-25"
+            class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-tertiary tw-opacity-25 group-hover:tw-opacity-50"
           ></div>
 
           <div class="tw-flex-grow">
             <v-switch color="tertiary" inset>
               <template v-slot:label>
-                <div class="tw-flex tw-flex-col tw-text-black">
+                <div class="tw-flex tw-flex-col tw-text-black tw-text-sm">
                   <b class="tw-text-base">Traffic Issues</b>
                   86 active pins
                 </div>
@@ -61,21 +61,21 @@
             </v-switch>
           </div>
           <i
-            class="fas fa-map-marker-alt tw-text-tertiary tw-text-3xl tw-ml-2"
+            class="fas fa-map-marker-alt tw-text-tertiary tw-text-2xl tw-ml-2"
           ></i>
         </div>
 
         <!-- Yellow Pin -->
         <div
-          class="tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-rounded-sm tw-overflow-hidden tw-py-1 tw-px-4 tw-text-sm tw-border-l-4 tw-border-solid tw-border-secondary"
+          class="tw-group tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-rounded-sm tw-overflow-hidden tw-py-1 tw-px-4 tw-text-sm tw-border-l-4 tw-border-solid tw-border-secondary"
         >
           <div
-            class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-secondary tw-opacity-25"
+            class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-secondary tw-opacity-25 group-hover:tw-opacity-50"
           ></div>
           <div class="tw-flex-grow">
             <v-switch color="secondary" inset>
               <template v-slot:label>
-                <div class="tw-flex tw-flex-col tw-text-black">
+                <div class="tw-flex tw-flex-col tw-text-black tw-text-sm">
                   <b class="tw-text-base">Traffic Issues</b>
                   86 active pins
                 </div>
@@ -83,21 +83,21 @@
             </v-switch>
           </div>
           <i
-            class="fas fa-map-marker-alt tw-text-secondary tw-text-3xl tw-ml-2"
+            class="fas fa-map-marker-alt tw-text-secondary tw-text-2xl tw-ml-2"
           ></i>
         </div>
 
         <!-- Red Pin -->
         <div
-          class="tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-rounded-sm tw-overflow-hidden tw-py-1 tw-px-4 tw-text-sm tw-border-l-4 tw-border-solid tw-border-redcustom"
+          class="tw-group tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-rounded-sm tw-overflow-hidden tw-py-1 tw-px-4 tw-text-sm tw-border-l-4 tw-border-solid tw-border-redcustom"
         >
           <div
-            class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-redcustom tw-opacity-25"
+            class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-redcustom tw-opacity-25 group-hover:tw-opacity-50"
           ></div>
           <div class="tw-flex-grow">
             <v-switch color="red" inset>
               <template v-slot:label>
-                <div class="tw-flex tw-flex-col tw-text-black">
+                <div class="tw-flex tw-flex-col tw-text-black tw-text-sm">
                   <b class="tw-text-base">Traffic Issues</b>
                   86 active pins
                 </div>
@@ -105,21 +105,21 @@
             </v-switch>
           </div>
           <i
-            class="fas fa-map-marker-alt tw-text-redcustom tw-text-3xl tw-ml-2"
+            class="fas fa-map-marker-alt tw-text-redcustom tw-text-2xl tw-ml-2"
           ></i>
         </div>
 
         <!-- Primary Pin -->
         <div
-          class="tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-rounded-sm tw-overflow-hidden tw-py-1 tw-px-4 tw-text-sm tw-border-l-4 tw-border-solid tw-border-primary"
+          class="tw-group tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-rounded-sm tw-overflow-hidden tw-py-1 tw-px-4 tw-text-sm tw-border-l-4 tw-border-solid tw-border-primary"
         >
           <div
-            class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-primary tw-opacity-25"
+            class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-primary tw-opacity-25 group-hover:tw-opacity-50"
           ></div>
           <div class="tw-flex-grow">
             <v-switch color="primary" inset>
               <template v-slot:label>
-                <div class="tw-flex tw-flex-col tw-text-black">
+                <div class="tw-flex tw-flex-col tw-text-black tw-text-sm">
                   <b class="tw-text-base">Traffic Issues</b>
                   86 active pins
                 </div>
@@ -127,21 +127,21 @@
             </v-switch>
           </div>
           <i
-            class="fas fa-map-marker-alt tw-text-primary tw-text-3xl tw-ml-2"
+            class="fas fa-map-marker-alt tw-text-primary tw-text-2xl tw-ml-2"
           ></i>
         </div>
 
         <!-- Blue Pin -->
         <div
-          class="tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-rounded-sm tw-overflow-hidden tw-py-1 tw-px-4 tw-text-sm tw-border-l-4 tw-border-solid tw-border-bluecustom"
+          class="tw-group tw-flex tw-items-center tw-relative tw-z-10 tw-mt-2 tw-rounded-sm tw-overflow-hidden tw-py-1 tw-px-4 tw-text-sm tw-border-l-4 tw-border-solid tw-border-bluecustom"
         >
           <div
-            class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-bluecustom tw-opacity-25"
+            class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-bluecustom tw-opacity-25 group-hover:tw-opacity-50"
           ></div>
           <div class="tw-flex-grow">
             <v-switch color="blue" inset>
               <template v-slot:label>
-                <div class="tw-flex tw-flex-col tw-text-black">
+                <div class="tw-flex tw-flex-col tw-text-black tw-text-sm">
                   <b class="tw-text-base">Traffic Issues</b>
                   86 active pins
                 </div>
@@ -149,7 +149,7 @@
             </v-switch>
           </div>
           <i
-            class="fas fa-map-marker-alt tw-text-bluecustom tw-text-3xl tw-ml-2"
+            class="fas fa-map-marker-alt tw-text-bluecustom tw-text-2xl tw-ml-2"
           ></i>
         </div>
 

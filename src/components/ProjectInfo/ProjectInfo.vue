@@ -2,7 +2,7 @@
   <div class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full">
     
     <!-- Information -->
-    <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-2">
+    <div class="panel tw-bg-white tw-rounded active">
       <a
         href="javascript:void(0)"
         class="tw-flex tw-items-center panel-heading"
@@ -24,68 +24,68 @@
           determine the current and future transportation needs to best serve
           the communities along US 67.
         </p>
-
-        <ul>
-          <li class="mb-1">
+        <br/>
+        <ul class="tw-leading-tight">
+          <li class="tw-mb-3">
             <a href="javascript:void(0)" class="hover:tw-underline"
               ><span class="tw-text-tertiary"
                 >Presentation from April 4 Workgroup meeting</span
               ></a
             >
           </li>
-          <li class="mb-1">
+          <li class="tw-mb-3">
             <a href="javascript:void(0)" class="hover:tw-underline"
               ><span class="tw-text-tertiary"
                 >Comment Sheet from April 4 Workgroup meeting</span
               ></a
             >
           </li>
-          <li class="mb-1">
+          <li class="tw-mb-3">
             <a href="javascript:void(0)" class="hover:tw-underline"
               ><span class="tw-text-tertiary"
                 >Online Engagement Instructions</span
               ></a
             >
           </li>
-          <li class="mb-1">
+          <li class="tw-mb-3">
             <a href="javascript:void(0)" class="hover:tw-underline"
               ><span class="tw-text-tertiary">Fact Sheet</span></a
             >
           </li>
-          <li class="mb-1">
+          <li class="tw-mb-3">
             <a href="javascript:void(0)" class="hover:tw-underline"
               ><span class="tw-text-tertiary">Study Location Map</span></a
             >
           </li>
-          <li class="mb-1">
+          <li class="tw-mb-3">
             <a href="javascript:void(0)" class="hover:tw-underline"
               ><span class="tw-text-tertiary"
                 >US 67 GIS Viewer for the Project Study</span
               ></a
             >
           </li>
-          <li class="mb-1">
+          <li class="tw-mb-3">
             <a href="javascript:void(0)" class="hover:tw-underline"
               ><span class="tw-text-tertiary"
                 >US 67 Mindmixer; Community Outreach Site</span
               ></a
             >
           </li>
-          <li class="mb-1">
+          <li class="tw-mb-3">
             <a href="javascript:void(0)" class="hover:tw-underline"
               ><span class="tw-text-tertiary"
                 >US 67 Traffic Study – Press release (English)</span
               ></a
             >
           </li>
-          <li class="mb-1">
+          <li class="tw-mb-3">
             <a href="javascript:void(0)" class="hover:tw-underline"
               ><span class="tw-text-tertiary"
                 >US 67 Traffic Study – Press release (Spanish)</span
               ></a
             >
           </li>
-          <li class="mb-1">
+          <li class="tw-mb-3">
             <a href="javascript:void(0)" class="hover:tw-underline"
               ><span class="tw-text-tertiary">Fact Sheet (Spanish)</span></a
             >
@@ -95,7 +95,7 @@
     </div>
 
     <!-- Contact Information -->
-    <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-2">
+    <div class="panel tw-bg-white tw-rounded tw-mt-2 active">
       <a
         href="javascript:void(0)"
         class="tw-flex tw-items-center panel-heading"

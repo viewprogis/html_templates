@@ -1,5 +1,5 @@
 <template>
-  <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-2">
+  <div class="panel tw-bg-white tw-rounded tw-mt-2 active">
     <a href="javascript:void(0)" class="tw-flex tw-items-center panel-heading">
       <span class="tw-text-tertiary">Activate Private Layers</span></a
     >
@@ -12,13 +12,13 @@
 
       <form>
         <input
-          class="tw-w-full tw-bg-lightbluealpha tw-placeholder-gray-700 tw-rounded tw-appearance-none tw-py-3 tw-px-4 tw-leading-tight focus:tw-outline-none tw-placeholder-black"
+          class="input-global tw-w-full tw-bg-lightbluealpha tw-rounded tw-appearance-none tw-py-3 tw-px-4 tw-leading-tight focus:tw-outline-none tw-text-sm"
           type="text"
           placeholder="Username"
         />
 
         <input
-          class="tw-w-full tw-bg-lightbluealpha tw-placeholder-gray-700 tw-rounded tw-appearance-none tw-mt-3 tw-py-3 tw-px-4 tw-leading-tight focus:tw-outline-none tw-placeholder-black"
+          class="input-global tw-w-full tw-bg-lightbluealpha tw-rounded tw-appearance-none tw-mt-3 tw-py-3 tw-px-4 tw-leading-tight focus:tw-outline-none tw-text-sm"
           type="password"
           placeholder="Password"
         />

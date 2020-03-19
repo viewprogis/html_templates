@@ -5,14 +5,14 @@ module.exports = {
       //Matching breakpoints with Vuetify.
       xss: "480px",
       // => @media (min-width: 480px) { ... }
-      xs: "700px",
-      // => @media (min-width: 700px) { ... }
+      xs: "768px",
+      // => @media (min-width: 768px) { ... }
 
-      sm: "860px",
-      // => @media (min-width: 860px) { ... }
+      sm: "992px",
+      // => @media (min-width: 992px) { ... }
 
-      md: "1100px",
-      // => @media (min-width: 1100px) { ... }
+      md: "1024px",
+      // => @media (min-width: 1024px) { ... }
 
       lg: "1264px",
       // => @media (min-width: 1264px) { ... }
@@ -39,7 +39,9 @@ module.exports = {
         lightgreenalpha: "rgba(157, 198, 83, 0.2)",
         darkbluealpha: "rgba(81, 144, 246, 0.2)",
         bluepurple: "#6641FF",
-        bp: "#0070FF"
+        bp: "#0070FF",
+        darkmodegray: "#37383E",
+        switchoffgray: "#A4A5AF"
       },
       textColor: {
         inherit: "inherit"

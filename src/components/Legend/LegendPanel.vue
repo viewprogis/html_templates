@@ -1,6 +1,6 @@
 <template>
   <!-- Legend Panel -->
-  <div class="panel tw-bg-white tw-rounded tw-p-3 active">
+  <div class="panel tw-bg-white tw-rounded active">
     <a href="javascript:void(0)" class="tw-flex tw-items-center panel-heading">
       <span class="tw-text-tertiary">Legend</span></a
     >

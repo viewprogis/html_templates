@@ -1,9 +1,8 @@
 <template>
   <div class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full">
-    <div class="tw-mt-2"></div>
 
     <!-- Parameter Opened -->
-    <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-2">
+    <div class="panel tw-bg-white tw-rounded active">
       <a
         href="javascript:void(0)"
         class="tw-flex tw-items-center panel-heading"
@@ -19,7 +18,7 @@
           class="tw-flex tw-items-center tw-relative tw-z-10 tw-mt-4 tw-rounded tw-overflow-hidden tw-py-2 tw-px-4 tw-text-sm"
         >
           <div
-            class="tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-tertiary tw-opacity-25"
+            class="input-global tw-text-sm tw-absolute tw--z-10 tw-left-0 tw-top-0 tw-w-full tw-h-full tw-bg-tertiary tw-opacity-25"
           ></div>
           <span class="tw-flex-grow">Search on enCodePlus</span
           ><a href="javascript:void(0)" class="blue-arrow-right"></a>
@@ -29,7 +28,7 @@
     </div>
 
     <!-- Landuse lookup Panel -->
-    <div class="panel tw-bg-white tw-rounded tw-p-3 tw-mt-2 active">
+    <div class="panel tw-bg-white tw-rounded tw-mt-2 active">
       <div class="tw-flex tw-items-center">
         <a
           href="javascript:void(0)"
@@ -49,42 +48,42 @@
         <table class="tw-text-sm tw-text-left tw-w-full">
           <tr class="tw-border-b tw-border-solid">
             <th
-              class="tw-py-2 tw-pr-2 tw-align-top tw-whitespace-no-wrap"
+              class="tw-py-2 tw-pr-2 tw-align-top tw-whitespace-no-wrap tw-font-semibold"
             >
               Land Use Category:
             </th>
             <td class="tw-py-2 tw-pl-2 tw-w-full">
               <a href="javascript:void(0)" class="tw-block"
-                ><span class="tw-text-tertiary hover:tw-underline hover:tw-font-bold"
+                ><span class="tw-text-tertiary hover:tw-underline hover:tw-font-semibold"
                   >Commercial</span
                 ></a>
             </td>
           </tr>
           <tr class="tw-border-b tw-border-solid">
-            <th class="tw-py-2 tw-pr-2 tw-align-top">
+            <th class="tw-py-2 tw-pr-2 tw-align-top tw-font-semibold">
               Land Use:
             </th>
             <td class="tw-py-2 tw-pl-2 tw-w-full">
               <a href="javascript:void(0)" class="tw-block"
-                ><span class="tw-text-tertiary hover:tw-underline hover:tw-font-bold"
+                ><span class="tw-text-tertiary hover:tw-underline hover:tw-font-semibold"
                   >Architecture Offices</span
                 ></a>
             </td>
           </tr>
           <tr class="tw-border-b tw-border-solid">
-            <th class="tw-py-2 tw-pr-2 tw-align-top">
+            <th class="tw-py-2 tw-pr-2 tw-align-top tw-font-semibold">
               Sort by:
             </th>
             <td class="tw-py-2 tw-pl-2 tw-leading-tight tw-w-full">
               <a href="javascript:void(0)" class="tw-block"
-                ><span class="tw-text-tertiary hover:tw-underline hover:tw-font-bold"
+                ><span class="tw-text-tertiary hover:tw-underline hover:tw-font-semibold"
                   >Permitted Uses</span
                 ></a>
             </td>
           </tr>
         </table>
         
-        <div class="tw-text-sm tw-mt-8">
+        <div class="tw-text-xs tw-mt-8">
           <a href="javascript:void(0)"><span class="tw-text-tertiary tw-font-bold">Select All</span></a>&nbsp;/&nbsp;
           <a href="javascript:void(0)"><span class="tw-text-tertiary tw-font-bold">Deselect All</span></a>
         </div>

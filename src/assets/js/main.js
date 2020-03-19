@@ -12,8 +12,8 @@ export default {
     if (!runOnce) {
       setTimeout(() => {
         /** Breakpoints **/
-        var xs = window.matchMedia("(max-width: 700px)");
-
+        var xs = window.matchMedia("(max-width: 767px)");
+        var md = window.matchMedia("(max-width: 1023px)");
 
         runOnce = true;
         let isHomepage = this.$route.path == "/";
@@ -193,7 +193,100 @@ export default {
         $(document).on("click", ".toggle-spin", function(e) {
           e.stopImmediatePropagation();
           $("#spin-3d").toggleClass("active");
+          if(md.matches){
+            $("body").removeClass("sidebar-active").removeClass("toolbox-active");
+          }
         });
+        
+        /** Sidebar Scroll functions **/
+        let numberofLinksShowing = 8;
+        let allMenusSelector = "#nav .nav-links > a:not(.search-link):not(.settings-link)";
+        function showMenuItems(start, end){
+          $(allMenusSelector).removeClass("show-links");
+          $(allMenusSelector).slice(start, end).addClass("show-links");
+        }
+        function checkForActiveClass(start, end){
+          return $(allMenusSelector).slice(start, end).filter(".router-link-active").length > 0 ? true : false;
+        }
+        function showNextBtn(){
+          $("#show-next-links").show();
+        }
+        function hideNextBtn(){
+          $("#show-next-links").hide();
+        }
+        function showPrevBtn(){
+          $("#show-prev-links").show();
+        }
+        function hidePrevBtn(){
+          $("#show-prev-links").hide();
+        }
+        function triggerMenuScroll(items){
+          numberofLinksShowing = items;
+          
+          if(checkForActiveClass(numberofLinksShowing, $(allMenusSelector).length)){ //Keep the next links opened if it has active class
+            showMenuItems(numberofLinksShowing, $(allMenusSelector).length);
+
+            hideNextBtn();
+            showPrevBtn();
+          }else{
+            showMenuItems(0, numberofLinksShowing);
+
+            if($(allMenusSelector).length != $(allMenusSelector).filter(".show-links").length){ //If all menu items are showing
+              showNextBtn();
+              hidePrevBtn();
+            }
+          }
+        }
+        
+        $(document).on("click", "#show-next-links", function(e) {
+          e.stopImmediatePropagation();
+          
+          showMenuItems(numberofLinksShowing, $(allMenusSelector).length);
+          hideNextBtn();
+          showPrevBtn();
+        });
+        $(document).on("click", "#show-prev-links", function(e) {
+          e.stopImmediatePropagation();
+          
+          showMenuItems(0, numberofLinksShowing);
+          showNextBtn();
+          hidePrevBtn();
+        });
+
+        /** Triggering Menu scroll on load and resize **/
+        function triggerMenuScrollAutomatic(){
+
+          var wHeight = $(window).height();
+          var getUnits = $(window).height().toString().length;
+          
+          if(window.matchMedia("(min-height: "+ wHeight +"px)").matches){
+            
+            if(getUnits > 3){//window height is in thousands
+
+              if(wHeight > 1264)
+                triggerMenuScroll(parseInt(wHeight.toString().substring(0, 2)) + 2);
+              else
+              triggerMenuScroll(parseInt(wHeight.toString().substring(0, 2)) + 1);
+
+            }else if(getUnits > 2){//window height is in hundreds
+              triggerMenuScroll(parseInt(wHeight.toString().substring(0, 1)));
+            }
+          }else{
+            triggerMenuScroll(6);
+          }
+
+        }
+        triggerMenuScrollAutomatic();
+        
+        $(window).on('resize orientationchange', function(){
+          triggerMenuScrollAutomatic();
+        });
+
+        /** Resize SVG on mobile, tablet **/
+        if(xs.matches){
+          $(".spin-btns svg").attr("viewBox", "-350 -300 1060 1060");
+        }
+        
       }, 200);
     }
   }
