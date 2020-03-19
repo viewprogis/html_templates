@@ -5,8 +5,8 @@ module.exports = {
       //Matching breakpoints with Vuetify.
       xss: "480px",
       // => @media (min-width: 480px) { ... }
-      xs: "768px",
-      // => @media (min-width: 768px) { ... }
+      xs: "769px",
+      // => @media (min-width: 769px) { ... }
 
       sm: "992px",
       // => @media (min-width: 992px) { ... }

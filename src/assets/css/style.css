@@ -689,7 +689,7 @@ html{
         @apply tw-opacity-0 tw-invisible;
     }
 }
-@media (min-width: 768px){
+@media (min-width: 769px){
     
 
     /** Sidebar Toggle **/
@@ -794,7 +794,7 @@ html{
         max-width: 520px;
     }
 }
-@media (max-width: 767px){
+@media (max-width: 768px){
     
     :root {
         --sidebar-active-width: 376px;

@@ -12,7 +12,7 @@ export default {
     if (!runOnce) {
       setTimeout(() => {
         /** Breakpoints **/
-        var xs = window.matchMedia("(max-width: 767px)");
+        var xs = window.matchMedia("(max-width: 768px)");
         var md = window.matchMedia("(max-width: 1023px)");
 
         runOnce = true;
