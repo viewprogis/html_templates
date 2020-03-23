@@ -8,7 +8,7 @@
     <a href="javascript:void(0)" class="toggle-sidebar"></a>
 
     <!-- Sidebar Activate/inActivate - Tablet -->
-    <div class="tablet-menu-btn-wrap tw-fixed tw-bottom-0 tw-left-0 tw-px-4 tw-py-4 tw-mb-2 tw-z-10 tw-hidden xs:tw-block md:tw-hidden">
+    <div class="tablet-menu-btn-wrap tw-fixed tw-bottom-0 tw-left-0 tw-px-4 tw-py-4 tw-z-10 tw-hidden xs:tw-block md:tw-hidden">
       <a href="javascript:void(0)" class="tablet-menu-btn tw-flex md:tw-hidden tw-bg-white tw-w-12 tw-h-12 tw-rounded-sm tw-items-center tw-justify-center"><img src="@/assets/img/mobile_menu.svg"/></a>
     </div>
 
@@ -45,7 +45,7 @@
         <!-- Mobile Title -->
         <div class="tw-relative tw-text-lg tw-font-bold tw-text-center tw-mb-10 xs:tw-hidden">
           Toolbox
-          <a href="javascript:void(0)" class="mobile-toolbox-btn tw-absolute tw-right-0 tw-mr-4"><span class="tw-text-tertiary">Close</span></a>
+          <a href="javascript:void(0)" class="mobile-toolbox-btn tw-text-base tw-absolute tw-right-0 tw-mr-4"><span class="tw-text-tertiary">Close</span></a>
         </div>
         
         <div class="nav-links tw-flex tw-flex-wrap xs:tw-flex-col tw-flex-none xs:tw-h-full">
@@ -286,7 +286,7 @@
           </div>
           <router-link
             to="/settings"
-            class="settings-link tw-block tw-text-center tw-px-2 xs:tw-px-0 xs:tw-px-0 xs:tw-mx-auto tw-uppercase xs:tw-mb-5"
+            class="settings-link tw-block tw-text-center tw-px-2 xs:tw-px-0 xs:tw-px-0 xs:tw-mx-auto tw-uppercase xs:tw-mb-4"
           >
             <span class="tw-text-inherit tw-border tw-border-gray-500 xs:tw-border-none xs:tw-bg-transparent tw-w-12 tw-h-12 tw-mx-auto tw-mb-2 xs:tw-mb-0 tw-p-3 xs:tw-p-0 tw-flex tw-items-center tw-justify-center tw-rounded-full xs:tw-rounded-none xs:tw-block xs:tw-w-auto xs:tw-h-auto">
             <i class="fas fa-cog tw-text-xl xs:tw-text-2xl xs:tw-mt-10"></i>
@@ -317,7 +317,7 @@
       </div>
       <div class="tw-flex-grow
       tw-fixed tw-bottom-0 tw-left-0 tw-w-full xss:tw-w-auto tw-rounded-tl-lg tw-rounded-tr-lg xss:tw-rounded-none tw-px-3 tw-pt-8 xss:tw-static xss:tw-p-0 tw-bg-lightgray xss:tw-bg-transparent" id="sidebarComponentsDiv">
-        <div class="tw-relative xss:tw-static tw-flex tw-flex-col xss:tw-pb-3 tw-h-full">
+        <div class="tw-relative xss:tw-static tw-flex tw-flex-col xss:tw-pb-4 tw-h-full">
           <a href="javascript:void(0)" class="mobile-menu-btn tw-absolute tw-z-10 tw-top-0 tw-left-0 tw-mt-2 tw-ml-4 tw-font-bold tw-text-lg xss:tw-hidden"><img src="@/assets/img/mobile_menu_tertiary.svg"/></a>
           <a href="javascript:void(0)" class="mobile-toolbox-active tw-absolute tw-z-10 tw-top-0 tw-right-0 tw-mt-2 tw-mr-4 tw-font-bold tw-text-lg tw-leading-none xss:tw-hidden"><span class="tw-text-tertiary">Close</span></a>
           <slot />

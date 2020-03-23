@@ -65,6 +65,7 @@ export default {
             e.stopImmediatePropagation();
 
             toggleToolbox();
+            hideSidebar();
         });
         $(document).on("click", "#nav .nav-links a", function(e) {
             e.stopImmediatePropagation();

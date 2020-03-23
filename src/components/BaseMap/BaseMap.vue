@@ -7,7 +7,11 @@
       href="javascript:void(0)"
       class="tw-w-24 tw-h-1 tw-bg-graycustom tw-rounded-br-15 tw-block tw-mx-auto tw-mb-5 base-map-collapse"
     ></a>
-    <div class="tw-text-center tw-font-bold tw-mb-6">Basemap</div>
+    <div class="tw-text-center tw-font-bold tw-mb-6 tw-w-full tw-max-w-10xl tw-mx-auto tw-relative">
+      Basemap
+      <a href="javascript:void(0)" class="tw-absolute tw-top-0 tw-right-0 tw-text-base tw-font-bold base-map-collapse"
+        ><span class="tw-text-tertiary">Close</span></a>
+    </div>
 
     <div class="tw-flex tw-max-w-10xl tw-mx-auto">
       <div class="tw-flex tw-flex-grow tw-flex-wrap tw-justify-center tw-text-center tw-text-sm base-map-list">
@@ -82,9 +86,9 @@
           <span>Topographic</span>
         </a>
       </div>
-      <a href="javascript:void(0)" class="tw-absolute tw-top-0 tw-right-0 tw-mt-8 tw-mr-8 md:tw-static md:tw-mt-8 md:tw-ml-10 base-map-collapse"
+      <a href="javascript:void(0)" class="tw-hidden md:tw-block tw-mt-8 tw-ml-10 base-map-collapse"
         ><i class="fas fa-chevron-down"></i
-      >Close</a>
+      ></a>
     </div>
   </div>
 </template>
