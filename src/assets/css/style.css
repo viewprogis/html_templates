@@ -429,7 +429,7 @@ ul.tree-view .v-input .v-label{
 .map-buttons li > button:hover{
     @apply tw-bg-graycustom;
 }
-.map-buttons li > a.social-icon{
+/*.map-buttons li > a.social-icon{
     @apply tw-bg-black;
     width: auto;
     height: 1.9rem;
@@ -442,7 +442,7 @@ ul.tree-view .v-input .v-label{
 .map-buttons li > a.social-icon i{
     color: #fff;
 }
-/*.map-buttons li > a.social-icon.facebook i{
+.map-buttons li > a.social-icon.facebook i{
     color: #3b5998;
 }
 .map-buttons li > a.social-icon.twitter i{
